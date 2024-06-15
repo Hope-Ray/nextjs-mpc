@@ -3,7 +3,7 @@ import { FaUser, FaMobileAlt } from "react-icons/fa";
 const SubWelcome = () => {
   return (
     <div className="bg-slate-300 bg-no-repeat bg-cover bg-bottom min-h-screen relative">
-      <div className="container md:px-[5rem] px-4 grid md:grid-cols-2 gap-4 absolute top-[87px] inset-0 mx-auto my-auto">
+      <div className="container md:px-[5rem] px-4 grid md:grid-cols-2 gap-4 absolute top-[87px] inset-0 mx-auto">
         <div className="hero-content flex justify-center items-center">
           <div className="h-auto w-full md:w-96 flex flex-col p-4 gap-8">
             <h3 className="text-2xl md:text-3xl font-bold text-brandColor text-justify">
@@ -19,7 +19,7 @@ const SubWelcome = () => {
 
         {/* Contact Form */}
         <div className="hero-content flex justify-center items-center">
-          <div className="bg-[#F1F1F6] rounded-lg w-full md:w-96 p-4">
+          <div className="bg-[#F1F1F6] rounded-lg w-full md:w-96 p-4 h-auto">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               BOOK AN APPOINTMENT
               <div className="relative py-2">
@@ -28,7 +28,7 @@ const SubWelcome = () => {
                 </div>
               </div>
             </div>
-            <form className="space-y-4 px-5 pb-3">
+            <form className="space-y-4 px-5 pb-3 mb-3">
               <div className="flex flex-col space-y-4">
                 <div className="relative flex-1">
                   <label className="block text-lg font-normal text-gray-700">
