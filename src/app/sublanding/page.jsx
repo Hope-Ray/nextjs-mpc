@@ -16,20 +16,14 @@ const SubLanding = () => {
     <div>
       <SubWelcome />
       <div className="mb-10">
-        <ConditionsTreat />
+        <ConditionsTreat setIsOpen={setIsOpen}/>
         <div className="text-right pr-[5rem]">
-          <button
-            onClick={() => setIsOpen(true)}
-            className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
-          >
-            And Many More
-          </button>
           <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </div>
       <WhyMpc />
       <div>
-        <SubTestimonials />
+        <SubTestimonials setIsOpen={setIsOpen}/>
       </div>
       <FAQ/>
       <Infographics/>

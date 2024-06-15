@@ -84,8 +84,7 @@ const team = [
   },
 ];
 
-const SubTestimonials = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const SubTestimonials = ({setIsOpen}) => {
 
   const yAxisAnimation = {
     initial: { y: 100, opacity: 0 },
@@ -101,19 +100,25 @@ const SubTestimonials = () => {
 
   return (
     <div id="testimonials" className="">
-      <motion.div {...yAxisAnimation} className="pt-[1rem]">
-        <h2 className=" text-brandColor text-[48px] font-medium text-center ">
-          Testimonials
-        </h2>
-        <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
-        <div className="text-right pr-[5rem]">
+      <motion.div
+        {...yAxisAnimation}
+        className="py-[1rem] md:grid md:grid-cols-3 gap-4"
+      >
+        <div></div>
+        <div>
+          <h2 className=" text-brandColor text-[48px] font-medium text-center">
+            Conditions We Treat
+          </h2>
+          <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
+        </div>
+        <div className="flex justify-center md:justify-end items-center">
           <button
             onClick={() => setIsOpen(true)}
-            className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
+            className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity 
+          md:mr-[5rem] "
           >
-            Know More..
+            And Many More
           </button>
-          <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </motion.div>
       <motion.div
