@@ -8,7 +8,7 @@ const SubWelcome = () => {
         <div className="hero-content flex justify-center items-center">
           <div className="h-96 w-96 flex flex-col p-4 gap-8">
             <h3 className="md:text-3xl font-bold text-brandColor text-justify">
-              YOUR JOURNEY TO PAIN-FREE, CUSTOMIZED, NONINVASIVE, DRUG-FREE TREATMENTS
+              YOUR JOURNEY TO PAIN-FREE, CUSTOMIZED, NONINVASIVE,<br /> DRUG-FREE TREATMENTS
             </h3>
             <p className="w-5/6 text-white text-justify">
               We’re happy to answer any questions you may have and help your

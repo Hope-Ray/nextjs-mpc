@@ -19,7 +19,7 @@ const Infographics = () => {
   };
 
   return (
-    <div className="px-[5rem] py-[2rem]">
+    <div className="px-5 md:px-[5rem] py-[2rem]">
       <motion.div {...yAxisAnimation} className="pt-[1rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center ">
           Infographics
