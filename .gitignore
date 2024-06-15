@@ -12,6 +12,7 @@
 # next.js
 /.next/
 /out/
+/MPC_14_06_24.zip
 
 # production
 /build
