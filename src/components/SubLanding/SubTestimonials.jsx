@@ -107,18 +107,12 @@ const SubTestimonials = ({setIsOpen}) => {
         <div></div>
         <div>
           <h2 className=" text-brandColor text-[48px] font-medium text-center">
-            Conditions We Treat
+            Testimonials
           </h2>
           <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
         </div>
         <div className="flex justify-center md:justify-end items-center">
-          <button
-            onClick={() => setIsOpen(true)}
-            className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity 
-          md:mr-[5rem] "
-          >
-            And Many More
-          </button>
+          
         </div>
       </motion.div>
       <motion.div

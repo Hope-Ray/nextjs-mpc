@@ -13,7 +13,7 @@ const yAxisAnimation = {
     duration: 1,
   },
 };
-const WhyMpc = () => {
+const WhyMpc = ({setIsOpen}) => {
 
 
   const yAxisAnimation = {
@@ -29,11 +29,26 @@ const WhyMpc = () => {
   };
   return (
     <div>
-      <motion.div {...yAxisAnimation} className="pb-[1rem]">
-        <h2 className=" text-brandColor text-[48px] text-center pb-[3rem]">
-          WHY MY PAIN CLINIC
-        </h2>
-        <div className=" w-[100px] h-[2px] mx-auto border-gradient  "></div>
+      <motion.div
+        {...yAxisAnimation}
+        className="py-[1rem] md:grid md:grid-cols-3 gap-4"
+      >
+        <div></div>
+        <div>
+          <h2 className=" text-brandColor text-[48px] font-medium text-center">
+            Why MY PAIN CLINIC
+          </h2>
+          <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
+        </div>
+        <div className="flex justify-center md:justify-end items-center">
+          <button
+            onClick={() => setIsOpen(true)}
+            className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity 
+          md:mr-[5rem] "
+          >
+            Know More
+          </button>
+        </div>
       </motion.div>
       <div className="bg-[#E4E4F1]">
         <div className="max-w-7xl py-6 mx-auto w-[90%] grid grid-cols-1 md:grid-cols-4 gap-4 ">
