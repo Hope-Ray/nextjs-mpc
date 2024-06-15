@@ -19,7 +19,7 @@ const SubWelcome = () => {
 
         {/* Contact Form */}
         <div className="hero-content flex justify-center items-center">
-          <div className="bg-[#F1F1F6] rounded-lg w-full md:w-96 p-4 md:p-0">
+          <div className="bg-[#F1F1F6] rounded-lg w-full md:w-96 p-4">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               BOOK AN APPOINTMENT
               <div className="relative py-2">
