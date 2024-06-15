@@ -41,7 +41,7 @@ const Infographics = () => {
             Icon={FaHands}
           />
           <Card
-            title="Revolutionary Sports Injuries Rehabilation"
+            title="Revolutionary Rehabilitation"
             subtitle=""
             href="#"
             Icon={FaRunning}
