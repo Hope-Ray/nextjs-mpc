@@ -65,7 +65,7 @@ const SubConditionsTreat = ({ setIsOpen }) => {
           <button
             onClick={() => setIsOpen(true)}
             className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity 
-          md:mr-[5rem] "
+          md:mr-[5rem] mt-5 md:mt-0"
           >
             And Many More
           </button>

@@ -14,12 +14,12 @@ const SubSlickSlider = ({ team }) => {
     sliderRef.slickPrev();
   };
   var settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
+    dots: false,
+    infinite: false,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
