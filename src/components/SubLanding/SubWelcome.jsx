@@ -19,7 +19,7 @@ const SubWelcome = () => {
 
         {/* Contact Form */}
         <div className="hero-content flex justify-center items-center">
-          <div className="bg-[#F1F1F6] rounded-lg w-full md:w-96 p-4 h-auto">
+          <div className="bg-[#F1F1F6] rounded-lg min-w-full md:w-96 p-4 mb-3">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               BOOK AN APPOINTMENT
               <div className="relative py-2">
@@ -28,7 +28,7 @@ const SubWelcome = () => {
                 </div>
               </div>
             </div>
-            <form className="space-y-4 px-5 pb-3 mb-3">
+            <form className="space-y-4 px-5 pb-3">
               <div className="flex flex-col space-y-4">
                 <div className="relative flex-1">
                   <label className="block text-lg font-normal text-gray-700">
