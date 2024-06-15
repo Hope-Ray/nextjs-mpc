@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import ConditionsTreat from "@/components/ConditionsWeTreat/ConditionsTreat";
 import SubWelcome from "@/components/SubLanding/SubWelcome";
 import SubTestimonials from "@/components/SubLanding/SubTestimonials";
 import WhyMpc from "@/components/SubLanding/WhyMpc";

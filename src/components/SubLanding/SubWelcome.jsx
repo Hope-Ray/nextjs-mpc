@@ -2,7 +2,7 @@ import { FaUser, FaMobileAlt } from "react-icons/fa";
 
 const SubWelcome = () => {
   return (
-    <div className="bg-slate-300 bg-no-repeat bg-cover bg-bottom h-[100vh] relative">
+    <div className="bg-slate-300 bg-no-repeat bg-cover bg-bottom min-h-[100vh] relative">
       <div className="container md:px-[5rem] px-4 grid md:grid-cols-2 gap-4 absolute top-[87px] inset-0 mx-auto">
         <div className="hero-content flex justify-center items-center">
           <div className="h-auto w-full md:w-96 flex flex-col p-4 gap-8">
