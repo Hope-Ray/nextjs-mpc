@@ -2,32 +2,348 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.transition {
+  transition: all ease-in 0.7s;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(19, 21, 21, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(19, 21, 21, 0.15);
+}
+
+.border-gradient {
+  /* border-top: 1px solid; */
+
+  /* background-image: linear-gradient(283.4deg, #5bd6dd 23.54%, #036ded 70.28%); */
+
+  background-color: #5488c4;
+  background-clip: border-box;
+  background-origin: border-box;
+}
+
+.hovergradient {
+  /* change */
+
+  /* background-image: linear-gradient(283.4deg, #5bd6dd 23.54%, #036ded 70.28%); */
+  background-color: #4f82bb;
+
+  background-clip: border-box;
+  background-origin: border-box;
+  transition: all ease-in 2s;
+}
+
+.text_gradient:hover {
+  background-image: linear-gradient(to right, #036ded, #5bd6dd);
+  /* Clip the background gradient to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text transparent */
+  color: #5488c4;
+}
+
+.textGradient {
+  background-image: linear-gradient(to right, #036ded, #5bd6dd);
+  /* Clip the background gradient to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text transparent */
+  color: transparent;
+}
+
+
+
+.welcomebg {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/public/home_new/homeBG.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  overflow: hidden;
+}
+
+.welcomebg video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* .welcomebg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 85%; 
+  width: 200%;
+  height: 150%;
+  background: rgba(84, 136, 196, 0.555); 
+  transform: rotate(-75deg) translateX(-60%);
+  transform-origin: top left;
+  z-index: 5; 
+  pointer-events: none;
+} */
+ 
+.welcome-slash::before {
+  content: '';
+  position: absolute;
+  top: 155%; /* Adjust the position as needed */
+  left: 70%; /* Set left to cover from the left edge */
+  width: 150vh; /* Adjust the width to cover the entire container */
+  height: 150%; /* Adjust the height as needed */
+  background: rgba(84, 136, 196, 0.555);
+  transform: rotate(-75deg) translateY(-50%); /* Adjust the rotation and translation */
+  transform-origin: top left;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (min-width: 1536px) {
+  .welcome-slash::before {
+    content: '';
+    position: absolute;
+    top: 155%; /* Adjust the position as needed */
+    left: 115%; /* Set left to cover from the left edge */
+    width: 150vh; /* Adjust the width to cover the entire container */
+    height: 150%; /* Adjust the height as needed */
+    background: rgba(84, 136, 196, 0.555);
+    transform: rotate(-75deg) translateY(-50%); /* Adjust the rotation and translation */
+    transform-origin: top left;
+    z-index: 0;
+    pointer-events: none;
   }
 }
+
+@media (max-width: 768px) {
+  .welcomebg::before {
+    left: 80%; 
+    width: 1000%; 
+    height: 200%;
+    transform: rotate(-80deg) translateX(-50%);
+  }
+}
+
+/* @media (max-width: 480px) {
+  .welcomebg::before {
+    left: 80%; 
+    width: 250%; 
+    height: 250%; 
+    transform: rotate(-65deg) translateX(-50%);
+  }
+} */
+
+.Aboutwelcomebg {
+  background-image: url(/home_new/aboutHomeBg.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .welcomebg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/public/home/welocmebgmobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.border_gradient {
+  position: relative;
+  /* Ensure proper positioning of pseudo-element */
+  border-radius: 6px;
+  /* Apply border radius to the container */
+  overflow: hidden;
+  /* Ensure gradient border doesn't overflow */
+
+  /* Apply gradient border to a pseudo-element */
+}
+
+.border_gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  /* change */
+  /* border-image: linear-gradient(to right, #036ded, #5bd6dd) 1; */
+
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.btnGlass {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.apointment {
+  background-image: linear-gradient(
+      to right,
+      rgba(39, 36, 166, 0.9),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/public/home/appointment.svg);
+}
+
+.teamBg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/public/home/teambg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonialBg {
+  background-image: url(/src/assets/images/Testimonials/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.FooterBg {
+  /* background-image: url(/src/assets/images/Footer_/footer.svg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*  cards style is here */
+.main_container {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  transition: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.main_container:hover .content {
+  height: 100%;
+  opacity: 1;
+}
+
+/* training css is here */
+
+.trainningHeaderPage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/public/home_new/headeraBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* hexagon css is here */
+
+/* checkbox style  */
+
+.main {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.main input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1.4px solid #454545;
+  border-radius: 4.38px;
+}
+
+/* Hover effect */
+
+/* Checked effect */
+.main input:checked ~ .checkbox-container {
+  background-color: green;
+}
+
+/* Checkmark */
+.checkbox-container::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Display checkmark when checked */
+.main input:checked ~ .checkbox-container::after {
+  display: block;
+}
+
+.object-fit {
+  object-fit: cover;
+  /* You can adjust this value according to your needs */
+}
+
+.scroll-add {
+  overflow-y: auto;
+  height: 70%;
+}
+
+#style-4::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#style-4::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+#style-4::-webkit-scrollbar-thumb {
+  background-color: #5d93d5;
+  border: 1px solid #555555;
+}
+
