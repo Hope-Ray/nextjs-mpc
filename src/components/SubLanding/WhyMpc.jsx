@@ -53,7 +53,7 @@ const WhyMpc = ({setIsOpen}) => {
       <div className="bg-[#E4E4F1]">
         <div className="max-w-7xl py-6 mx-auto w-[90%] grid grid-cols-1 md:grid-cols-4 gap-4 ">
           <div className="p-2">
-            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3">
+            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3 text-center">
               Specialized Expertise
             </h2>
             <p className="text-[#454545] md:text-base text-sm font-normal text-justify">
@@ -64,7 +64,7 @@ const WhyMpc = ({setIsOpen}) => {
             </p>
           </div>
           <div className="p-2">
-            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3">
+            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3 text-center">
               Sports Excellence
             </h2>
             <p className="text-[#454545] md:text-base text-sm font-normal text-justify">
@@ -75,7 +75,7 @@ const WhyMpc = ({setIsOpen}) => {
             </p>
           </div>
           <div className="p-2">
-            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3">
+            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3 text-center">
               Advanced Treatments
             </h2>
             <p className="text-[#454545] md:text-base text-sm font-normal text-justify">
@@ -85,7 +85,7 @@ const WhyMpc = ({setIsOpen}) => {
             </p>
           </div>
           <div className="p-2">
-            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3">
+            <h2 className="md:text-2xl text-lg text-[#000000] font-medium my-3 text-center">
               Comprehensive Care
             </h2>
             <p className="text-[#454545] md:text-base text-sm font-normal text-justify">

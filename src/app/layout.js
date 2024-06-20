@@ -17,7 +17,8 @@ export default function RootLayout({ children }) {
       <body className='relative'>
         <Navbar/>
         {children}
-         <a href="https://wa.me/+918169400907" className="z-50 fixed min-h-[2.5rem] rounded-full bottom-5 bg-green-600  right-5 text-white text-4xl">
+         <a href="https://wa.me/+918169400907" className="z-50 fixed min-h-[2.5rem] 
+          rounded-full bottom-5 bg-green-600 right-5 text-white text-4xl md:text-5xl">
            <FaWhatsapp  className="m-2"/>
          </a>
         <Footer/>

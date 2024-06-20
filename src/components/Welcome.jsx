@@ -24,20 +24,20 @@ const Welcome = () => {
           style={{ zIndex: 10 }}
         >
           {/* <p className="z-50 absolute">dasdsa</p> */}
-          <div className=" md:mr-0 z-50 absolute bottom-[30px]">
+          <div className=" md:mr-0 z-50 absolute bottom-[3rem]">
             <h2 className="text-4xl font-medium md:w-10/12 text-right">
               MY PAIN CLINIC
             </h2>
             <div className="flex justify-end gap-[2rem] md:w-10/12 text-right">
               <a
                 href="/contactus"
-                className=" w-[200px] h-[53px] flex justify-center items-center text-[#fff] text-[16px]  rounded-[6px] transition-all ease-linear delay-150 border_gradient hovergradient md:my-[1rem] my-[0.3rem] font-bold"
+                className=" w-[200px] h-[53px] flex justify-center items-center text-brandColor text-[16px]  rounded-[6px] transition-all ease-linear delay-150 bg-white md:my-[1rem] my-[0.3rem] font-bold hover:opacity-90"
               >
-                Consult now
+                Consult Now
               </a>
             </div>
             <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
-              Your journey</h2> 
+              Your Journey</h2> 
               <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
               to a Pain-Free Life 
             </h2>

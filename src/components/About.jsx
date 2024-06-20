@@ -18,7 +18,7 @@ const About = () => {
     <div className=" relative py-[1rem] bg-[#F7F7FC] " id="about">
       <motion.div {...yAxisAnimation} className="py-[2rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center ">
-          About us
+          About Us
         </h2>
         <div className=" w-[100px] h-[2px] mx-auto border-gradient  "></div>
       </motion.div>

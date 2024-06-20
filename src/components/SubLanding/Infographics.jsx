@@ -20,12 +20,12 @@ const Infographics = () => {
 
   return (
     <div className="px-5 md:px-[5rem] py-[2rem]">
-      <motion.div {...yAxisAnimation} className="pt-[1rem]">
+      {/* <motion.div {...yAxisAnimation} className="pt-[1rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center ">
           Infographics
         </h2>
         <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
-      </motion.div>
+      </motion.div> */}
       <div>
         <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 mt-5">
           <Card

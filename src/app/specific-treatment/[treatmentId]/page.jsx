@@ -1,26 +1,27 @@
-"use client";
-import React, { useEffect, useState } from "react";
+
 import treatmentsData from "@/hooks/treatments";
 import { FaUser, FaMobileAlt, FaArrowLeft } from "react-icons/fa";
 import { IoMailOutline, IoLocationOutline } from "react-icons/io5";
 
-import StaggeredDropDown from "@/components/Dropdown/StaggeredDropDown";
 import Link from "next/link";
 
-const TreatmentDetails = ({ params }) => {
-  const [treatmentData, setTreatmentData] = useState({});
+export async function generateStaticParams() {
+
+  return Object.keys(treatmentsData).map((key) => ({
+    treatmentId: key,
+  }))
+}
+
+ const TreatmentDetails = ({ params }) => {
+
+  const { treatmentId } = params
 
   const fetchTreatmentData = (treatmentSlug) => {
     return treatmentsData[treatmentSlug] || null;
   };
 
-  useEffect(() => {
-    const treatmentData = fetchTreatmentData(params.treatmentId);
-    console.log(params.treatmentId);
+  const treatmentData = fetchTreatmentData(treatmentId);
 
-    console.log(treatmentData?.image);
-    setTreatmentData(treatmentData);
-  }, []);
 
   if (!treatmentData) {
     return <div className="pt-[87px] h-min-screen">Loading...</div>;
@@ -38,11 +39,11 @@ const TreatmentDetails = ({ params }) => {
     console.log("Share clicked");
   };
 
-  const optionsList = [
-    { text: "Surgery Recommended", onClick: handleEdit },
-    { text: "MRI / Spine X-ray", onClick: handleDuplicate },
-    { text: "None", onClick: handleShare },
-  ];
+  // const optionsList = [
+  //   { text: "Surgery Recommended", onClick: handleEdit },
+  //   { text: "MRI / Spine X-ray", onClick: handleDuplicate },
+  //   { text: "None", onClick: handleShare },
+  // ];
 
   return (
     <div className="pt-[87px] min-h-screen">
@@ -75,7 +76,7 @@ const TreatmentDetails = ({ params }) => {
           </div>
           <div className="px-4 md:flex md:px-[5rem] py-[2rem] min-h-[20rem]">
             {/* Content Here */}
-            <div className="w-full md:w-[70%] py-[2rem] pe-[2rem]">
+            <div className="w-full md:w-[70%] pb-[2rem] pe-[2rem]">
       {treatmentData.content &&
         Object.entries(treatmentData.content).map(([sectionTitle, items]) => (
           <div key={sectionTitle} className="mt-[2rem]">
@@ -162,14 +163,14 @@ const TreatmentDetails = ({ params }) => {
                         />
                       </div>
                     </div>
-                    <div className="relative flex-1">
+                    {/* <div className="relative flex-1">
                       <div className="flex items-center relative w-full">
                         <StaggeredDropDown
                           buttonName="MRI/ Spine X-ray"
                           optionsList={optionsList}
                         />
                       </div>
-                    </div>
+                    </div> */}
                     <div className="relative flex-1">
                       <div className="flex items-center relative group">
                         <span className="absolute left-3 text-gray-500 group-focus-within:text-brandColor transition-colors duration-300">
@@ -203,5 +204,8 @@ const TreatmentDetails = ({ params }) => {
     </div>
   );
 };
+
+
+
 
 export default TreatmentDetails;

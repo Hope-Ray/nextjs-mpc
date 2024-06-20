@@ -17,7 +17,7 @@ export default function TestimonialSlider({ team }) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -113,7 +113,7 @@ export default function TestimonialSlider({ team }) {
                   <h4 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                     {items.paragraph1}
                   </h4>
-                  <p className="block text-lg leading-relaxed ">
+                  <p className="block text-md leading-relaxed ">
                     {items.para2}
                   </p>
                 </div>

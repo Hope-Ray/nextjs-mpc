@@ -220,16 +220,20 @@ const Footer = () => {
               }}
               className="flex items-center gap-3"
             >
-              <a href="#" className="hover:text-yellow-400 flex flex-1 gap-4">
+              <div className="hover:text-yellow-400 flex flex-1 gap-4">
                 <div className="min-h-30 flex items-center justify-center  rounded-md border-2 border-transparent text-4xl">
                   <IoCallOutline />
                 </div>
                 <p>
-                  Phone : +91 81694 00907,
-                  <br /> +91 81694 00916,
-                  <br /> +91 81694 00905
+                  Phone :
+                  <br />{" "}
+                  <a href="https://wa.me/+918169400907">+91 81694 00907,</a>
+                  <br />{" "}
+                  <a href="https://wa.me/+918169400916">+91 81694 00916,</a>
+                  <br />{" "}
+                  <a href="https://wa.me/+918169400905">+91 81694 00905</a>
                 </p>
-              </a>
+              </div>
             </motion.li>
             <motion.li
               initial={{ x: -100, opacity: 0 }}
@@ -283,10 +287,16 @@ const Footer = () => {
               >
                 <FaFacebookF />
               </a>
-              <a href="#" className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor">
+              <a
+                href="#"
+                className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor"
+              >
                 <FaYoutube />
               </a>
-              <a href="#" className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor">
+              <a
+                href="#"
+                className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor"
+              >
                 <FaLinkedinIn />
               </a>
             </motion.li>
@@ -304,9 +314,20 @@ const Footer = () => {
         }}
       >
         <span>
-          &copy; 2024 -
-          <a className="hover:text-yellow-400" href="https://mypainclinicglobal.com/">MY PAIN CLINIC</a> | Design
-          By <a className="hover:text-yellow-400" href="https://www.salt-tech.com/">Salt Tech</a>
+          &copy; 2024&nbsp;
+          <a
+            className="hover:text-yellow-400"
+            href="https://mypainclinicglobal.com/"
+          >
+            MY PAIN CLINIC&nbsp;
+          </a>
+          
+          <a
+            className="hover:text-yellow-400"
+            href="https://www.salt-tech.com/"
+          >
+            | Design By Salt Tech
+          </a>
         </span>
       </div>
     </footer>

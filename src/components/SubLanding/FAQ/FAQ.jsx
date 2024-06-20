@@ -24,7 +24,7 @@ const FAQ = () => {
         </h2>
         <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
       </motion.div>
-      <div className="max-w-full mx-auto mt-10 px-5 md:px-[5rem]">
+      <div className="max-w-[70%] mx-auto mt-10 px-5 md:px-[5rem]">
         <Accordian2 className="flex flex-col gap-3">
           <AccordianItem
             value="1"
