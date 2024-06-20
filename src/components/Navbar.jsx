@@ -3,11 +3,14 @@ import React, { useState } from "react";
 import { IoCall } from "react-icons/io5";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
-  const [showSerach, setShowSearch] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [dropdownOpenIndex, setDropdownOpenIndex] = useState(null); // State to track open dropdown
+
   const navLinks = [
     {
       id: 1,
@@ -18,6 +21,118 @@ const Navbar = () => {
       id: 2,
       text: "We Treat",
       linkTo: "/weTreat",
+      dropdownContent: [
+        {
+          text: "Back Pain",
+          linkTo: "/specific-treatment/back-pain",
+          imgUrl: '/home_new/back.jpg'
+        },
+        {
+          text: "Slipped Disc",
+          linkTo: "/specific-treatment/slipped-disc",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Neck Pain",
+          linkTo: "/specific-treatment/neck-pain",
+          imgUrl: '/home_new/Neck.jpg'
+        },
+        {
+          text: "Cervical Spondylosis",
+          linkTo: "/specific-treatment/cervical-spondylosis",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Osteoarthritis",
+          linkTo: "/specific-treatment/osteoarthritis",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Frozen Shoulder",
+          linkTo: "/specific-treatment/frozen-shoulder",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Tennis Elbow",
+          linkTo: "/specific-treatment/tennis-elbow",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Plantar Fasciitis",
+          linkTo: "/specific-treatment/plantar-fasciitis",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Carpal Tunnel",
+          linkTo: "/specific-treatment/carpal-tunnel-syndrome",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Sciatica",
+          linkTo: "/specific-treatment/sciatica",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Hamstring Injuries",
+          linkTo: "/specific-treatment/hamstring-injuries",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Acl Tear",
+          linkTo: "/specific-treatment/acl-tear",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Mcl Tear",
+          linkTo: "/specific-treatment/mcl-tear",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Heel Spur",
+          linkTo: "/specific-treatment/heel-spur",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Knee Pain",
+          linkTo: "/specific-treatment/heel-spur",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Elbow Pain",
+          linkTo: "/specific-treatment/elbow-pain",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Shoulder Impingement",
+          linkTo: "/specific-treatment/shoulder-impingement",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Tendonitis",
+          linkTo: "/specific-treatment/tendonitis",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Bursitis",
+          linkTo: "/specific-treatment/bursitis",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Radiculopathy",
+          linkTo: "/specific-treatment/radiculopathy",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Rotator Cuff Injury",
+          linkTo: "/specific-treatment/rotator_cuff_injury",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Joint Dislocation",
+          linkTo: "/specific-treatment/joint_dislocation",
+          imgUrl: 'https://placehold.co/400'
+        },
+      ],
     },
     {
       id: 3,
@@ -45,68 +160,121 @@ const Navbar = () => {
       linkTo: "/contactus",
     },
   ];
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+    setDropdownOpenIndex(index); // Open dropdown on hover
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+    setDropdownOpenIndex(null); // Close dropdown on mouse leave
+  };
+
+  const handleCloseDropdown = () => {
+    setDropdownOpenIndex(null); // Close dropdown on link click
+  };
+
   return (
-    <nav className=" bg-[#080808] h-[87px] flex mf:justify-around justify-between px-[1rem] items-center text-[#B1B4B6] fixed top-0 w-[100%] z-50" id="navbar">
+    <nav className="bg-[#080808] h-[87px] flex mf:justify-around justify-between px-[1rem] items-center text-[#B1B4B6] fixed top-0 w-[100%] z-50" id="navbar">
       <div>
         <Link href="/">
           <img style={{ width: "40%" }} src="/images/logo-mpc.png" alt="logo" />
         </Link>
       </div>
-      {/* desktop menu is here */}
+      
+      {/* Desktop menu */}
       <div className="mf:flex justify-center items-center gap-[1.5rem] text-[16px] font-medium transition hidden">
-        {navLinks.map(({ id, text, linkTo }, idx) => {
-          return (
-            <Link
-              href={linkTo}
-              key={id}
-              className={`" text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105  text_gradient "`}
-            >
-              {text}
+        {navLinks.map(({ id, text, linkTo, dropdownContent }, index) => (
+          <div
+            key={id}
+            className="relative group"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href={linkTo}>
+              <span
+                className="flex items-center py-4 text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105 text_gradient"
+              >
+                {text}
+                {dropdownContent && (
+                  <FaChevronDown
+                    className={`ml-2 transition-transform duration-300 ease-in-out ${
+                      dropdownOpenIndex === index ? "rotate-180" : "rotate-0"
+                    }`}
+                  />
+                )}
+              </span>
             </Link>
-          );
-        })}
+            {dropdownContent && dropdownOpenIndex === index && (
+              <div className="fixed overflow-y-auto left-0 w-full top-[70px] h-[100vh] bg-[#080808] text-[#fff] shadow-lg px-4 md:px-[5rem] pb-[87px] z-10 opacity-100">
+                <div className="grid grid-cols-7 gap-[30px] w-full">
+                  {dropdownContent.map((item, idx) => (
+                    <Link key={idx} href={item.linkTo}>
+                      <div
+                        className="rounded-md p-4 flex flex-col items-center justify-center hover:bg-brandColor min-h-[10rem]"
+                        onMouseEnter={() => setHoveredIndex(index)} 
+                        onMouseLeave={() => setHoveredIndex(null)}
+                        onClick={handleCloseDropdown}
+                      >
+                        <img
+                          src={item.imgUrl}
+                          alt="treatment-img"
+                          className="h-[6rem] w-[6rem] rounded-full"
+                        />
+                        <div className="block px-4 py-2 rounded text-xs">
+                          {item.text}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
 
-      {/* mobile menu is here */}
+      {/* Mobile menu */}
       <div
-        className={`" mf:hidden items-center right-0   text-[16px] font-medium   absolute h-screen  bg-black text-[#fff] flex shadow-xl  flex-col gap-[2rem] w-[300px] rounded-[30px]  py-[2rem] transition-all ease-linear delay-150 z-20 " ${
-          show ? " hidden " : "top-4"
-        } `}
+        className={`mf:hidden items-center right-0 text-[16px] font-medium absolute h-screen bg-black text-[#fff] flex shadow-xl flex-col gap-[2rem] w-[300px] rounded-[30px] py-[2rem] transition-all ease-linear z-20 ${
+          show ? "hidden" : "top-4"
+        }`}
       >
-        {navLinks.map(({ id, text, linkTo }, idx) => {
-          return (
-            <Link
-              href={linkTo}
-              key={idx}
-              className="text-[#FAFAFA] transition-all ease-out delay-150 hover:scale-105  text_gradient"
-            >
-              {text}
-            </Link>
-          );
-        })}
+        {navLinks.map(({ id, text, linkTo }, idx) => (
+          <Link
+            key={idx}
+            href={linkTo}
+            onClick={() => setShow(!show)} // Close mobile menu on link click
+            className="text-[#FAFAFA] transition-all ease-out delay-150 hover:scale-105 text_gradient"
+          >
+            {text}
+          </Link>
+        ))}
         <div
-          className=" text-[30px] mf:hidden block absolute left-4 top-4 "
+          className="text-[30px] mf:hidden block absolute left-4 top-4"
           onClick={() => setShow(!show)}
         >
           <RxCross2 />
         </div>
       </div>
 
+      {/* Call button */}
       <div>
-          <a
-            href="tel:+91 81694 00907"
-            className=" text-[14px] font-bold block"
+        <a href="tel:+91 81694 00907" className="text-[14px] font-bold block">
+          <button
+            id="call-bttn"
+            className="flex justify-center gap-[1rem] rounded-[36px] mf:w-[200px] mf:px-[0rem] px-[0.8rem] py-[0.8rem] items-center transition border-gradient text-[#fff] hover:scale-105"
           >
-        <button id="call-bttn" className=" flex justify-center gap-[1rem] rounded-[36px] mf:w-[200px] mf:px-[0rem] px-[0.8rem] py-[0.8rem]  items-center transition border-gradient text-[#fff] hover:scale-105">
-          
-          <IoCall className=" md:text-[18px] text-[16px]" />
-          <p className="md:block hidden">+91 81694 00907</p>
-        </button>
-          </a>
+            <IoCall className="md:text-[18px] text-[16px]" />
+            <p className="md:block hidden">+91 81694 00907</p>
+          </button>
+        </a>
       </div>
 
+      {/* Menu toggle for mobile */}
       <div
-        className=" text-[30px] mf:hidden block "
+        className="text-[30px] mf:hidden block"
         onClick={() => setShow(!show)}
       >
         <HiMenuAlt2 />

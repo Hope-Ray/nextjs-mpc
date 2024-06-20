@@ -47,7 +47,7 @@ const ContactUsPage = () => {
   return (
     <>
       <div className="bg-brandColor pt-44 text-black" id="assessments">
-        <div className="container mx-auto md:px-[5rem] px-4 grid md:grid-cols-2 gap-4">
+        <div className="container mx-auto md:px-[5rem] px-4 grid md:grid-cols-2 gap-4 bg-brandColor">
           <motion.div
             {...leftAxisAnimation}
             className="contact-content bg-white rounded-lg p-4"
@@ -193,7 +193,7 @@ const ContactUsPage = () => {
             </form>
           </motion.div>
         </div>
-        <div className="container mx-auto md:px-[5rem] px-4 grid md:grid-cols-3 gap-4 mt-10 mb-10">
+        <div className="container bg-brandColor mx-auto md:px-[5rem] px-4 grid md:grid-cols-3 gap-4 mt-10 pb-[2rem]">
           {/* CARD 1 */}
           <motion.div
             {...yAxisAnimation}
@@ -250,7 +250,7 @@ const ContactUsPage = () => {
             </motion.div>
           </div>
         </div>
-        <Career/>
+        {/* <Career/> */}
       </div>
     </>
   );

@@ -2,7 +2,8 @@ import { FaUser, FaMobileAlt } from "react-icons/fa";
 
 const SubWelcome = () => {
   return (
-    <div className="bg-slate-300 bg-no-repeat bg-cover bg-bottom min-h-screen relative">
+    <div className="bg-[url('/home_new/syblandingBG.png')] bg-no-repeat bg-cover bg-bottom min-h-screen relative">
+      <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="container py-2 md:px-[5rem] px-4 grid md:grid-cols-2 gap-1 md:gap-4 absolute top-[87px] inset-0 mx-auto">
         <div className="hero-content flex justify-center items-center">
           <div className="h-auto w-full md:w-96 flex flex-col p-4 gap-8">
@@ -19,7 +20,7 @@ const SubWelcome = () => {
 
         {/* Contact Form */}
         <div className="hero-content flex justify-center items-center">
-          <div className="bg-[#F1F1F6] rounded-lg min-w-full md:w-96 p-4 mb-3">
+          <div className="bg-[#F1F1F6] rounded-lg md:w-96 p-4 mb-3">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               BOOK AN APPOINTMENT
               <div className="relative py-2">

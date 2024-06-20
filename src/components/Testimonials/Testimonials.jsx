@@ -8,7 +8,7 @@ const team = [
     para2:
       "I see an improvement in my skin and hair after doing the treatment. Keep up the great work Team Elixir!",
     name: "Sheela Saxsena",
-    rating: 4,
+    rating: 5,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const team = [
     para2:
       "Tanya and the team are extremely professional and warm! Glad to have elixir as part of my routine 😊",
     name: "Ninad Verma",
-    rating: 4,
+    rating: 5,
   },
   {
     id: 4,

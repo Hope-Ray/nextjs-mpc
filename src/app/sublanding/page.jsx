@@ -15,7 +15,7 @@ const SubLanding = () => {
   return (
     <div>
       <SubWelcome />
-      <div className="mb-10">
+      <div className="mb-10 mt-[2rem]">
         {/* <ConditionsTreat setIsOpen={setIsOpen}/> */}
         <SubConditionsTreat setIsOpen={setIsOpen}/>
         <div className="text-right pr-[5rem]">

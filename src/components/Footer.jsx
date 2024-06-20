@@ -23,7 +23,7 @@ const yAxisAnimation = {
 const Footer = () => {
   return (
     <footer
-      className="text-white px-8 lg:h-[60vh] py-12 bg-[#5488c4] relative FooterBg"
+      className="text-white px-8 lg:h-[60vh] py-12 bg-[#5488c4] relative FooterBg z-40"
       id="contact"
     >
       {/* <img className='absolute h-[40vh] bottom-[20%] left-0 right-0' src={Images1} alt="" /> */}
