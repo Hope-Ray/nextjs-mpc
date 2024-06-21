@@ -3,25 +3,24 @@ import { SubCarousel } from "./SubCarousel/SubCarousel";
 
 const SubWelcome = () => {
   return (
-    <div className=" bg-no-repeat bg-cover bg-gray-500 bg-bottom h-screen relative">
+    <div className="bg-no-repeat bg-cover bg-gray-500 bg-bottom h-screen relative">
       {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
-      <div className="flex max-h-full pt-[87px] px-[5rem]">
-        <div className="hero-content w-[50%] flex flex-col justify-center items-center">
-          <div className="h-[30%] w-full">
-            <SubCarousel></SubCarousel>
+      <div className="flex h-full pt-[87px]">
+        <div className="hero-content w-[50%] flex flex-col h-full overflow-hidden">
+          <div className="flex-1 w-full overflow-hidden">
+            <SubCarousel />
           </div>
-          <div className="max-h-[30%] w-full  flex flex-col p-4 gap-2">
+          <div className="min-h-32 w-full flex flex-col gap-2 justify-center p-4 overflow-hidden">
             <h3 className="text-2xl md:text-base font-bold text-brandColor text-justify">
-              YOUR JOURNEY TO PAIN-FREE, CUSTOMIZED, NONINVASIVE, DRUG-FREE TREATMENTS
+              YOUR JOURNEY TO PAIN-FREE,<br /> CUSTOMIZED, NONINVASIVE, DRUG-FREE TREATMENTS
             </h3>
             <p className="w-full md:w-5/6 text-base text-white text-justify">
               We’re happy to answer any questions you may have and help you
               determine which of our services best fit your needs.
             </p>
-            <div className="flex justify-center md:justify-center shadow-lg"></div>
           </div>
-          <div className="h-[30%] w-full">
-            <SubCarousel></SubCarousel>
+          <div className="flex-1 w-full overflow-hidden">
+            <SubCarousel />
           </div>
         </div>
 

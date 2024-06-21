@@ -53,7 +53,7 @@ export const SubCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden h-full py-4">
+    <div className="relative overflow-hidden h-full">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -68,13 +68,10 @@ export const SubCarousel = () => {
         }}
         transition={SPRING_OPTIONS}
         onDragEnd={onDragEnd}
-        className="flex cursor-grab h-full items-center active:cursor-grabbing"
+        className="flex cursor-grab h-full w-full active:cursor-grabbing"
       >
         <Images imgIndex={imgIndex} />
       </motion.div>
-
-      {/* <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} /> */}
-      {/* <GradientEdges /> */}
     </div>
   );
 };
@@ -92,10 +89,10 @@ const Images = ({ imgIndex }) => {
               backgroundPosition: "center",
             }}
             animate={{
-              scale: imgIndex === idx ? 0.95 : 0.85,
+              scale: imgIndex === idx ? 1 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video h-full w-full shrink-0 rounded-xl bg-neutral-800 object-cover"
+            className="h-full w-full shrink-0  object-cover"
           />
         );
       })}
