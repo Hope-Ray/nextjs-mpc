@@ -3,10 +3,10 @@ import { SubCarousel } from "./SubCarousel/SubCarousel";
 
 const SubWelcome = () => {
   return (
-    <div className=" bg-no-repeat bg-cover bg-gray-500 bg-bottom min-h-screen relative">
-      <div className="absolute inset-0 bg-black opacity-40"></div>
-      <div className="container py-2 md:px-[5rem] px-4 grid md:grid-cols-2 gap-1 md:gap-4 absolute top-[87px] inset-0 mx-auto">
-        <div className="hero-content max-h-[35rem] flex flex-col justify-center items-center">
+    <div className=" bg-no-repeat bg-cover bg-gray-500 bg-bottom h-screen relative">
+      {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
+      <div className="flex max-h-full pt-[87px] px-[5rem]">
+        <div className="hero-content w-[50%] flex flex-col justify-center items-center">
           <div className="h-[30%] w-full">
             <SubCarousel></SubCarousel>
           </div>
@@ -26,7 +26,7 @@ const SubWelcome = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="hero-content flex justify-center items-center">
+        <div className="hero-content w-[50%] flex justify-center items-center">
           <div className="bg-[#F1F1F6] rounded-lg md:w-96 p-4 mb-3">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               BOOK AN APPOINTMENT
