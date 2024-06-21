@@ -10,7 +10,7 @@ const SubWelcome = () => {
           <div className="flex-1 w-full overflow-hidden">
             <SubCarousel />
           </div>
-          <div className="min-h-32 w-full flex flex-col gap-2 justify-center p-4 overflow-hidden">
+          <div className="min-h-[30%] w-full flex flex-col gap-2 justify-center p-4 overflow-hidden">
             <h3 className="text-2xl md:text-base font-bold text-brandColor text-justify">
               YOUR JOURNEY TO PAIN-FREE,<br /> CUSTOMIZED, NONINVASIVE, DRUG-FREE TREATMENTS
             </h3>
