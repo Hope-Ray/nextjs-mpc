@@ -52,13 +52,13 @@ const About = () => {
         <div className=" flex h-auto">
           <div className=" flex flex-col gap-[2rem] md:w-[540px] w-[95%] md:mx-0 mx-auto  md:text-xl text-lg  text-justify">
             <p>
-            Welcome to My PAIN CLINIC, a premier establishment under the esteemed banner of M/s. Global Body Fix, setting the gold standard for pain management and rehabilitation across the Asia-Pacific region.
+            Welcome to MY PAIN CLINIC, a premier establishment under the esteemed banner of M/s. Global Body Fix, setting the gold standard for pain management and rehabilitation across the Asia-Pacific region.
             </p>
             <p>
             Nestled in the vibrant heart of Mumbai's Bandra-West, our clinic is more than just a healthcare facility; it's a sanctuary of advanced solutions and compassionate care. We seamlessly blend cutting-edge technology in Physiotherapy and Sports Rehabilitation with a commitment to your well-being.
             </p>
             <p>
-            My PAIN CLINIC stands at the forefront of clinical excellence, offering innovative pain management and rehabilitation solutions.
+            MY PAIN CLINIC stands at the forefront of clinical excellence, offering innovative pain management and rehabilitation solutions.
             </p>
             {/* <p>
               banner of M/s. Global Body Fix, setting the gold standard for pain
@@ -88,11 +88,11 @@ const About = () => {
               <button className=" flex justify-center gap-[1rem] rounded-[7px] w-[140px] px-[0.8rem] py-[0.8rem] sm:p-2 items-center transition bg-brandColor text-[#fff] hover:scale-105">
                 {" "}
                 <a
-                  href="/aboutus"
+                  href="/contactus"
                   className=" text-[14px] font-bold mf:block "
                 >
-                  Learn more
-                </a>{" "}
+                  Learn More
+                </a>
               </button>
               {/* <Btn
                 text={"How we work"}

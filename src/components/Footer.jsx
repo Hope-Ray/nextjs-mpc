@@ -220,18 +220,18 @@ const Footer = () => {
               }}
               className="flex items-center gap-3"
             >
-              <div className="hover:text-yellow-400 flex flex-1 gap-4">
+              <div className="flex flex-1 gap-4">
                 <div className="min-h-30 flex items-center justify-center  rounded-md border-2 border-transparent text-4xl">
                   <IoCallOutline />
                 </div>
                 <p>
                   Phone :
                   <br />{" "}
-                  <a href="https://wa.me/+918169400907">+91 81694 00907,</a>
+                  <a className="hover:text-yellow-400" href="https://wa.me/+918169400907">+91 81694 00907,</a>
                   <br />{" "}
-                  <a href="https://wa.me/+918169400916">+91 81694 00916,</a>
+                  <a className="hover:text-yellow-400" href="https://wa.me/+918169400916">+91 81694 00916,</a>
                   <br />{" "}
-                  <a href="https://wa.me/+918169400905">+91 81694 00905</a>
+                  <a className="hover:text-yellow-400" href="https://wa.me/+918169400905">+91 81694 00905</a>
                 </p>
               </div>
             </motion.li>

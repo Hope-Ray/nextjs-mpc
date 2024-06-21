@@ -5,13 +5,13 @@ const SubWelcome = () => {
   return (
     <div className="bg-no-repeat bg-cover bg-gray-500 bg-bottom h-screen relative">
       {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
-      <div className="flex h-full pt-[87px]">
-        <div className="hero-content w-[50%] flex flex-col h-full overflow-hidden">
+      <div className="md:flex h-full pt-[87px]">
+        <div className="hero-content md:w-[50%] flex flex-col h-full overflow-hidden">
           <div className="flex-1 w-full overflow-hidden">
             <SubCarousel />
           </div>
-          <div className="min-h-[30%] w-full flex flex-col gap-2 justify-center p-4 overflow-hidden">
-            <h3 className="text-2xl md:text-base font-bold text-brandColor text-justify">
+          <div className="min-h-[20%] w-full flex flex-col gap-2 justify-center p-4 overflow-hidden">
+            <h3 className="text-2xl md:text-lg 2xl:text-3xl font-bold text-brandColor text-justify">
               YOUR JOURNEY TO PAIN-FREE,<br /> CUSTOMIZED, NONINVASIVE, DRUG-FREE TREATMENTS
             </h3>
             <p className="w-full md:w-5/6 text-base text-white text-justify">
@@ -25,7 +25,7 @@ const SubWelcome = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="hero-content w-[50%] flex justify-center items-center">
+        <div className="hero-content hidden md:w-[50%] md:flex justify-center items-center">
           <div className="bg-[#F1F1F6] rounded-lg md:w-96 p-4 mb-3">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               BOOK AN APPOINTMENT
