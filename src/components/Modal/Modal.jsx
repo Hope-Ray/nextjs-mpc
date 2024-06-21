@@ -18,9 +18,9 @@ const Modal = ({ isOpen, setIsOpen }) => {
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}
-            className="rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className="rounded-lg w-full max-w-96 shadow-xl cursor-default relative overflow-hidden"
           >
-            <div className="relative z-10">
+            <div className="relative z-10 md:w-96">
               <div className="hero-content flex justify-center items-center">
                 <div className="bg-[#F1F1F6] rounded-lg w-full">
                   <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
@@ -34,7 +34,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                   <form className="space-y-4 px-5 pb-3">
                     <div className="flex space-x-4">
                       <div className="relative flex-1">
-                        <label className="block text-lg font-normal text-gray-700">
+                        <label className="block text-left text-lg font-normal text-gray-700">
                           Your Name <span className="text-red-500">*</span>
                         </label>
                         <div className="mt-1 flex items-center relative group">
@@ -54,7 +54,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                     </div>
                     <div className="flex space-x-4">
                       <div className="relative flex-1">
-                        <label className="block text-lg font-normal text-gray-700">
+                        <label className="block text-left text-lg font-normal text-gray-700">
                           Number <span className="text-red-500">*</span>
                         </label>
                         <div className="mt-1 flex items-center relative group">

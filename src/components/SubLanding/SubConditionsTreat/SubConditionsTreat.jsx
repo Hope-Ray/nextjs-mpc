@@ -50,26 +50,11 @@ const SubConditionsTreat = ({ setIsOpen }) => {
 
   return (
     <div id="condition-we-treat">
-      <motion.div
-        {...yAxisAnimation}
-        className="py-[1rem] md:grid md:grid-cols-3 gap-4"
-      >
-        <div></div>
-        <div>
-          <h2 className=" text-brandColor text-[48px] font-medium text-center">
-            Conditions We Treat
-          </h2>
-          <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
-        </div>
-        <div className="flex justify-center md:justify-end items-center">
-          <button
-            onClick={() => setIsOpen(true)}
-            className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity 
-          md:mr-[5rem] mt-5 md:mt-0"
-          >
-            And Many More
-          </button>
-        </div>
+      <motion.div {...yAxisAnimation} className="py-[1rem]">
+        <h2 className=" text-brandColor text-[48px] font-medium text-center">
+          Conditions We Treat
+        </h2>
+        <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
       </motion.div>
       <motion.div
         initial={{ x: -200, opacity: 0 }}
@@ -86,6 +71,14 @@ const SubConditionsTreat = ({ setIsOpen }) => {
       >
         <SubSlickSlider team={team} />
       </motion.div>
+      <div className="flex justify-center">
+        <button
+          onClick={() => setIsOpen(true)}
+          className="bg-gradient-to-r bg-brandColor text-white font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity mt-5 md:mt-0"
+        >
+          And Many More
+        </button>
+      </div>
     </div>
   );
 };

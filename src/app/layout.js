@@ -1,10 +1,20 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FaWhatsapp  } from "react-icons/fa6";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+const futura = localFont(
+  {
+    src: [{
+      path: "../../public/fonts/futura medium bt.ttf",
+      weight: "500",
+    }],
+    variable: "--font-futura"
+  }
+);
 
 export const metadata = {
   title: "MPC",
@@ -13,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${futura.variable}`}>
       <body className='relative'>
         <Navbar/>
         {children}

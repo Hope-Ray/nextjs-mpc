@@ -1,20 +1,27 @@
 import { FaUser, FaMobileAlt } from "react-icons/fa";
+import { SubCarousel } from "./SubCarousel/SubCarousel";
 
 const SubWelcome = () => {
   return (
-    <div className="bg-[url('/home_new/syblandingBG.png')] bg-no-repeat bg-cover bg-bottom min-h-screen relative">
+    <div className=" bg-no-repeat bg-cover bg-gray-500 bg-bottom min-h-screen relative">
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="container py-2 md:px-[5rem] px-4 grid md:grid-cols-2 gap-1 md:gap-4 absolute top-[87px] inset-0 mx-auto">
-        <div className="hero-content flex justify-center items-center">
-          <div className="h-auto w-full md:w-96 flex flex-col p-4 gap-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-brandColor text-justify">
-              YOUR JOURNEY TO PAIN-FREE,<br /> CUSTOMIZED,<br /> NONINVASIVE,<br /> DRUG-FREE TREATMENTS
+        <div className="hero-content max-h-[35rem] flex flex-col justify-center items-center">
+          <div className="h-[30%] w-full">
+            <SubCarousel></SubCarousel>
+          </div>
+          <div className="max-h-[30%] w-full  flex flex-col p-4 gap-2">
+            <h3 className="text-2xl md:text-base font-bold text-brandColor text-justify">
+              YOUR JOURNEY TO PAIN-FREE, CUSTOMIZED, NONINVASIVE, DRUG-FREE TREATMENTS
             </h3>
-            <p className="w-full md:w-5/6 text-white text-justify">
+            <p className="w-full md:w-5/6 text-base text-white text-justify">
               We’re happy to answer any questions you may have and help you
               determine which of our services best fit your needs.
             </p>
             <div className="flex justify-center md:justify-center shadow-lg"></div>
+          </div>
+          <div className="h-[30%] w-full">
+            <SubCarousel></SubCarousel>
           </div>
         </div>
 

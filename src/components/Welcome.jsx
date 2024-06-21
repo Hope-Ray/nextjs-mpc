@@ -25,7 +25,7 @@ const Welcome = () => {
         >
           {/* <p className="z-50 absolute">dasdsa</p> */}
           <div className=" md:mr-0 z-50 absolute bottom-[3rem]">
-            <h2 className="text-4xl font-medium md:w-10/12 text-right">
+            <h2 className="text-4xl font-medium md:w-10/12 text-right font-futura">
               MY PAIN CLINIC
             </h2>
             <div className="flex justify-end gap-[2rem] md:w-10/12 text-right">

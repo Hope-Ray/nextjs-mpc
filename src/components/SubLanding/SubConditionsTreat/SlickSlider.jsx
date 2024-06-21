@@ -79,8 +79,8 @@ const SubSlickSlider = ({ team }) => {
           {team.map((items, id) => (
             <div key={id}>
               <a href={`/weTreat#${items.slug}`}>
-              <div className="grid lg:grid-cols-1  my-12 lg:items-center ">
-                <div className=" mf:w-[97%] w-full relative h-[375px] overflow-hidden">
+              <div className="grid lg:grid-cols-1  my-4 lg:items-center ">
+                <div className=" mf:w-[97%] w-full relative h-[20rem] overflow-hidden">
                 
                   <img
                     className="absolute inset-0 w-full h-full object-cover rounded-[20px]"

@@ -38,7 +38,7 @@ const WhyMpc = () => {
       <div>
         <motion.div {...yAxisAnimation} className="py-[1rem]">
           <h2 className=" text-brandColor text-[48px] font-medium text-center py-[3rem]">
-            Why MPC
+          Why MY PAIN CLINIC
           </h2>
           <div className=" w-[100px] h-[2px] mx-auto border-gradient  "></div>
         </motion.div>

@@ -20,6 +20,9 @@ module.exports = {
       screens: {
         mf: "1200px",
       },
+      fontFamily: {
+        futura: ['var(--font-futura)']
+      }
     },
   },
   plugins: [],
