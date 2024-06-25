@@ -1,9 +1,9 @@
-"use client"
+"use client";
+
 import { AnimatePresence, motion } from "framer-motion";
-import { FiAlertCircle } from "react-icons/fi";
 import { FaUser, FaMobileAlt } from "react-icons/fa";
 
-const Modal = ({ isOpen, setIsOpen }) => {
+const AppointmentModal = ({ isOpen, setIsOpen }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -92,4 +92,4 @@ const Modal = ({ isOpen, setIsOpen }) => {
   );
 };
 
-export default Modal;
+export default AppointmentModal;

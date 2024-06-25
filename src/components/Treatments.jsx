@@ -21,7 +21,7 @@ const Treatments = () => {
       //   id: 1,
       //   image: "/home_new/advance physio_11zon.jpg",
       //   description:
-      //     "Musculoskeletal and orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, and related structures. These conditions resulting from many causes may lead to pain, reduced mobility, and functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes and advanced manual therapy techniques.",
+      //     "Musculoskeletal & orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, & related structures. These conditions resulting from many causes may lead to pain, reduced mobility, & functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes & advanced manual therapy techniques.",
       //   btnText: "Advanced Physiotherapy",
       //   listArray: [
           
@@ -31,7 +31,7 @@ const Treatments = () => {
         id: 2,
         image: "/home_new/3 Robotic Spine Aligner.jpg",
         description:
-          "Experience precise spinal adjustments to alleviate back pain and improve spinal health. This treatment aims to relax and release the paraspinal muscles, increasing flexibility and mobility in the spine. It is effective for addressing stiffness and posture-related issues such as kyphosis, scoliosis, degenerative spine conditions, and neck-back pain.",
+          "Experience precise spinal adjustments to alleviate back pain & improve spinal health. This treatment aims to relax & release the paraspinal muscles, increasing flexibility & mobility in the spine. It is effective for addressing stiffness & posture-related issues such as kyphosis, scoliosis, degenerative spine conditions, & neck-back pain.",
         btnText: "Robotic Spine Aligner",
         listArray: [
           "Enhances Precision in Adjustments",
@@ -41,7 +41,7 @@ const Treatments = () => {
           "Improves Patient Safety",
           "Supports Customized Treatment Plans",
           "Enhances Diagnostic Accuracy",
-          "Reduces Pain and Discomfort",
+          "Reduces Pain & Discomfort",
           "Monitors Progress in Real-time",
           "Promotes Faster Recovery",
           "Integrates with Medical Records",
@@ -52,7 +52,7 @@ const Treatments = () => {
         id: 3,
         image: "/home_new/PBM laser_11zon.jpg",
         description:
-          "Detects and treats painful trigger points and promotes tissue healing with advanced laser technology. This therapy induces pain relief and deep tissue repair while controlling swelling and enhancing blood flow. It is beneficial for conditions including frozen shoulder, neuropathic pain, carpal tunnel syndrome, tennis elbow, golfer's elbow, tenosynovitis, tendonitis, fractures, muscle strains, sprains, and ligament tears.",
+          "Detects & treats painful trigger points & promotes tissue healing with advanced laser technology. This therapy induces pain relief & deep tissue repair while controlling swelling & enhancing blood flow. It is beneficial for conditions including frozen shoulder, neuropathic pain, carpal tunnel syndrome, tennis elbow, golfer's elbow, tenosynovitis, tendonitis, fractures, muscle strains, sprains, & ligament tears.",
         btnText: "PBM Therapy",
         listArray: [
           "Reduces Pain",
@@ -73,7 +73,7 @@ const Treatments = () => {
         id: 4,
         image: "/home_new/5 TECAR THERAPY.jpeg",
         description:
-          "Musculoskeletal and orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, and related structures. These conditions resulting from many causes may lead to pain, reduced mobility, and functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes and advanced manual therapy techniques.",
+          "Musculoskeletal & orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, & related structures. These conditions resulting from many causes may lead to pain, reduced mobility, & functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes & advanced manual therapy techniques.",
         btnText: "Deep Tissue Thermo Therapy",
         listArray: [
           "Reduces Muscle Tension",
@@ -93,7 +93,7 @@ const Treatments = () => {
         id: 5,
         image: "/home_new/6 Acoustic Wave.JPEG",
         description:
-          "Musculoskeletal and orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, and related structures. These conditions resulting from many causes may lead to pain, reduced mobility, and functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes and advanced manual therapy techniques.",
+          "Musculoskeletal & orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, & related structures. These conditions resulting from many causes may lead to pain, reduced mobility, & functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes & advanced manual therapy techniques.",
         btnText: "Acoustic Wave Therapy",
         listArray: [
           "Reduces Pain",
@@ -113,7 +113,7 @@ const Treatments = () => {
         id: 6,
         image: "/home_new/Spine Decompression _11zon.jpg",
         description:
-          "Musculoskeletal and orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, and related structures. These conditions resulting from many causes may lead to pain, reduced mobility, and functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes and advanced manual therapy techniques.",
+          "Musculoskeletal & orthopaedic conditions encompass a wide range of issues affecting the bones, muscles, joints, & related structures. These conditions resulting from many causes may lead to pain, reduced mobility, & functional limitations. Treatment often involves a combination of customised in-house physical therapy programmes & advanced manual therapy techniques.",
         btnText: "Spine Decompression Therapy",
         listArray: [
           "Relieves Back Pain",

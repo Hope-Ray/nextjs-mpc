@@ -50,7 +50,7 @@ const Navbar = () => {
         {
           text: "Frozen Shoulder",
           linkTo: "/specific-treatment/frozen-shoulder",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: '/home_new/shoulder.jpg'
         },
         {
           text: "Tennis Elbow",
@@ -78,14 +78,9 @@ const Navbar = () => {
           imgUrl: 'https://placehold.co/400'
         },
         {
-          text: "Acl Tear",
+          text: "Acl / Mcl Tear",
           linkTo: "/specific-treatment/acl-tear",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Mcl Tear",
-          linkTo: "/specific-treatment/mcl-tear",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: '/home_new/acl_tear_pain.jpg'
         },
         {
           text: "Heel Spur",
@@ -95,12 +90,12 @@ const Navbar = () => {
         {
           text: "Knee Pain",
           linkTo: "/specific-treatment/heel-spur",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: '/home_new/knee.jpg'
         },
         {
           text: "Elbow Pain",
           linkTo: "/specific-treatment/elbow-pain",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: '/home_new/elbow.jpg'
         },
         {
           text: "Shoulder Impingement",
@@ -134,21 +129,43 @@ const Navbar = () => {
         },
       ],
     },
+    // {
+    //   id: 3,
+    //   text: "Treatments",
+    //   linkTo: "/treatments",
+    // },
     {
       id: 3,
-      text: "Treatments",
-      linkTo: "/treatments",
+      text: "Our Treatments",
+      linkTo: "#",
+      dropdownContent: [
+        {
+          text: "Treatments",
+          linkTo: "/treatments",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Assessments",
+          linkTo: "/assessments",
+          imgUrl: 'https://placehold.co/400'
+        },
+        {
+          text: "Services",
+          linkTo: "/services",
+          imgUrl: 'https://placehold.co/400'
+        }
+      ]
     },
-    {
-      id: 4,
-      text: "Assessments",
-      linkTo: "/assessments",
-    },
-    {
-      id: 5,
-      text: "Services",
-      linkTo: "/services",
-    },
+    // {
+    //   id: 4,
+    //   text: "Assessments",
+    //   linkTo: "/assessments",
+    // },
+    // {
+    //   id: 5,
+    //   text: "Services",
+    //   linkTo: "/services",
+    // },
     {
       id: 6,
       text: "Blogs",
@@ -163,16 +180,16 @@ const Navbar = () => {
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
-    setDropdownOpenIndex(index); // Open dropdown on hover
+    setDropdownOpenIndex(index); 
   };
 
   const handleMouseLeave = () => {
     setHoveredIndex(null);
-    setDropdownOpenIndex(null); // Close dropdown on mouse leave
+    setDropdownOpenIndex(null); 
   };
 
   const handleCloseDropdown = () => {
-    setDropdownOpenIndex(null); // Close dropdown on link click
+    setDropdownOpenIndex(null); 
   };
 
   return (
@@ -192,43 +209,62 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href={linkTo}>
-              <span
-                className="flex items-center py-4 text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105 text_gradient"
-              >
+            {dropdownContent ? (
+              <div className="flex items-center py-4 text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105 text_gradient cursor-pointer">
                 {text}
-                {dropdownContent && (
-                  <FaChevronDown
-                    className={`ml-2 transition-transform duration-300 ease-in-out ${
-                      dropdownOpenIndex === index ? "rotate-180" : "rotate-0"
-                    }`}
-                  />
-                )}
-              </span>
-            </Link>
+                <FaChevronDown
+                  className={`ml-2 transition-transform duration-300 ease-in-out ${
+                    dropdownOpenIndex === index ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </div>
+            ) : (
+              <Link href={linkTo}>
+                <span
+                  className="flex items-center py-4 text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105 text_gradient"
+                >
+                  {text}
+                </span>
+              </Link>
+            )}
             {dropdownContent && dropdownOpenIndex === index && (
-              <div className="fixed overflow-y-auto left-0 w-full top-[70px] h-[100vh] bg-[#080808] text-[#fff] shadow-lg px-4 md:px-[5rem] pb-[87px] z-10 opacity-100">
-                <div className="grid grid-cols-7 gap-[30px] w-full">
-                  {dropdownContent.map((item, idx) => (
-                    <Link key={idx} href={item.linkTo}>
-                      <div
-                        className="rounded-md p-4 flex flex-col items-center justify-center hover:bg-brandColor min-h-[10rem]"
-                        onMouseEnter={() => setHoveredIndex(index)} 
-                        onMouseLeave={() => setHoveredIndex(null)}
-                        onClick={handleCloseDropdown}
-                      >
-                        <img
-                          src={item.imgUrl}
-                          alt="treatment-img"
-                          className="h-[6rem] w-[6rem] rounded-full"
-                        />
-                        <div className="block px-4 py-2 rounded text-xs">
+              <div className={`bg-[#080808] text-[#fff] shadow-lg z-10 ${text === 'Our Treatments' ? 'top-[60px] rounded absolute w-full' : 'fixed overflow-y-auto left-0 w-full top-[70px] h-[100vh] px-4 md:px-[5rem] pb-[87px] opacity-100'}`}>
+                {text === 'Our Treatments' ? (
+                  <div className="flex flex-col gap-2">
+                    {dropdownContent.map((item, idx) => (
+                      <Link className="p-2 hover:bg-brandColor " key={idx} href={item.linkTo}>
+                        <div
+                          className="px-2 text-center text-[1.1rem]"
+                          onClick={handleCloseDropdown}
+                        >
                           {item.text}
                         </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-7 gap-[30px] w-full">
+                    {dropdownContent.map((item, idx) => (
+                      <Link key={idx} href={item.linkTo}>
+                        <div
+                          className="rounded-md p-4 flex flex-col items-center justify-center hover:bg-brandColor min-h-[10rem]"
+                          onMouseEnter={() => setHoveredIndex(index)} 
+                          onMouseLeave={() => setHoveredIndex(null)}
+                          onClick={handleCloseDropdown}
+                        >
+                          <img
+                            src={item.imgUrl}
+                            alt="treatment-img"
+                            className="h-[6rem] w-[6rem] rounded-full"
+                          />
+                          <div className="block px-4 py-2 rounded text-xs">
+                            {item.text}
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
           </div>

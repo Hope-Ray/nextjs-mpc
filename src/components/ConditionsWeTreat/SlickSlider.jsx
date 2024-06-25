@@ -78,7 +78,7 @@ const SlickSlider = ({ team }) => {
         >
           {team.map((items, id) => (
             <div key={id}>
-              <a href={`/weTreat#${items.slug}`}>
+              <a href={`/specific-treatment/${items.slug}`}>
               <div className="grid lg:grid-cols-1  my-12 lg:items-center ">
                 <div className=" mf:w-[97%] w-full relative h-[375px] overflow-hidden">
                 

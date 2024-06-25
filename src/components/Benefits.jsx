@@ -21,7 +21,7 @@ const Benefits = () => {
         id: 1,
         image: "/home_new/14 HBOT_11zon.jpg",
         description:
-          "Enhance healing with oxygen therapy in a pressurised chamber promoting muscle recovery, tissue repair and immune system support.",
+          "Enhance healing with oxygen therapy in a pressurised chamber promoting muscle recovery, tissue repair & immune system support.",
         btnText: "Hyperbaric Oxygen Therapy",
         listArray: [
           "Increases Oxygen Levels",
@@ -43,14 +43,14 @@ const Benefits = () => {
         image: "/home_new/16 Pilates_11zon.jpg",
 
         description:
-          "Pilates is a system of exercise designed to strengthen core muscles and improve flexibility as well as to alleviate back pain and enhance mobility.",
+          "Pilates is a system of exercise designed to strengthen core muscles & improve flexibility as well as to alleviate back pain & enhance mobility.",
           listArray: [
             "Improves Flexibility",
             "Increases Core Strength",
             "Enhances Posture",
             "Reduces Back Pain",
             "Promotes Muscle Tone",
-            "Enhances Balance and Coordination",
+            "Enhances Balance & Coordination",
             "Supports Injury Prevention",
             "Improves Mental Focus",
             "Reduces Stress",
@@ -65,7 +65,7 @@ const Benefits = () => {
         image: "/home_new/15 Cryotherapy_11zon.jpg",
 
         description:
-          "Provides whole-body exposure to extremely cold temperatures for a brief duration with the help of liquid nitrogen in vapour form. This therapy is often used for muscle recovery, pain relief, inflammation reduction, reduced stress, and improved sleeping patterns.",
+          "Provides whole-body exposure to extremely cold temperatures for a brief duration with the help of liquid nitrogen in vapour form. This therapy is often used for muscle recovery, pain relief, inflammation reduction, reduced stress, & improved sleeping patterns.",
         btnText: "Cryotherapy Chamber",
         listArray: [
           "Reduces Muscle Soreness",
@@ -87,7 +87,7 @@ const Benefits = () => {
         image: "/home_new/ice bath_11zon.jpg",
 
         description:
-          "Ice baths involve immersing the body in ice-cold water to reduce inflammation and soothe sore muscles promoting faster recovery and pain relief.",
+          "Ice baths involve immersing the body in ice-cold water to reduce inflammation & soothe sore muscles promoting faster recovery & pain relief.",
         btnText: "Ice Bath",
         listArray: [
           "Reduces Muscle Soreness",
@@ -109,7 +109,7 @@ const Benefits = () => {
         image: "/home_new/EMS_11zon.jpg",
 
         description:
-          "EMS training uses electrical impulses to stimulate muscle contractions and reduces strain on your joints and ligaments, it allows for targeted muscle stimulation. Strengthen muscles and improve circulation with targeted electrical stimulation, reducing pain and promoting recovery.",
+          "EMS training uses electrical impulses to stimulate muscle contractions & reduces strain on your joints & ligaments, it allows for targeted muscle stimulation. Strengthen muscles & improve circulation with targeted electrical stimulation, reducing pain & promoting recovery.",
         btnText: "EMS Training",
         listArray: [
           "Increases Muscle Strength",
@@ -131,7 +131,7 @@ const Benefits = () => {
       //   image: "/home_new/Services-3.jpg",
 
       //   description:
-      //     "EMS training uses electrical impulses to stimulate muscle contractions and reduces strain on your joints and ligaments, it allows for targeted muscle stimulation. Strengthen muscles and improve circulation with targeted electrical stimulation, reducing pain and promoting recovery.",
+      //     "EMS training uses electrical impulses to stimulate muscle contractions & reduces strain on your joints & ligaments, it allows for targeted muscle stimulation. Strengthen muscles & improve circulation with targeted electrical stimulation, reducing pain & promoting recovery.",
       //   btnText: "Hydrotherapy",
       //   listArray: [
       //     "Relieves Muscle Tension",
@@ -143,7 +143,7 @@ const Benefits = () => {
       //     "Increases Range of Motion",
       //     "Supports Rehabilitation from Injuries",
       //     "Boosts Immune System Function",
-      //     "Reduces Swelling and Inflammation",
+      //     "Reduces Swelling & Inflammation",
       //     "Enhances Overall Well-being",
       //     "Provides Cardiovascular Benefits",
       //   ],

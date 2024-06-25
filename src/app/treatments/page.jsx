@@ -74,7 +74,7 @@ const Treatments = () => {
         image: "/home_new/Spine Decompression _11zon.jpg",
 
         description:
-          "Decompress spinal discs to relieve pressure and pain associated with herniated or degenerative discs. This treatment is useful for addressing herniated discs, sciatica, slipped discs, and vertigo. It provides targeted decompression and distraction, aiding in the stretching and relaxation of tight fascia and muscles in spasm.",
+          "Decompress spinal discs to relieve pressure and pain associated with herniated or degenerative discs. This treatment is useful for addressing herniated discs, sciatica, slipped discs, and vertigo. It provides targeted decompression and distraction, aiding in the stretching and relaxation of tight fascia   muscles in spasm.",
         btnText: "Spine Decompression Therapy",
       },
     ],

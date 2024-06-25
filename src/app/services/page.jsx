@@ -50,7 +50,7 @@ const ServicesPage = () => {
         image: "/home_new/15 Cryotherapy_11zon.jpg",
 
         description:
-          "Provides whole-body exposure to extremely cold temperatures for a brief duration with the help of liquid nitrogen in vapour form. This therapy is often used for muscle recovery, pain relief, inflammation reduction, reduced stress, and improved sleeping patterns.",
+          "Provides whole-body exposure to extremely cold temperatures for a brief duration with the help of liquid nitrogen in vapour form. This therapy is often used for muscle recovery, pain relief, inflammation reduction, reduced stress and improved sleeping patterns.",
         btnText: "Cryotherapy Chamber",
       },
       {

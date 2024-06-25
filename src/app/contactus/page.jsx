@@ -46,11 +46,11 @@ const ContactUsPage = () => {
 
   return (
     <>
-      <div className="bg-brandColor pt-44 text-black" id="assessments">
-        <div className="container mx-auto md:px-[5rem] px-4 grid md:grid-cols-2 gap-4 bg-brandColor">
+      <div className="bg-white pt-44 text-black" id="assessments">
+        <div className="container mx-auto md:px-[5rem] px-4 grid md:grid-cols-2 gap-8 bg-white">
           <motion.div
             {...leftAxisAnimation}
-            className="contact-content bg-white rounded-lg p-4"
+            className="contact-content bg-white rounded-lg p-4 shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1"
           >
             <h3 className="md:text-2xl font-medium text-brandColor">
               YOUR JOURNEY TO PAIN-FREE, VIBRANT LIFE BEGINS HERE
@@ -74,7 +74,7 @@ const ContactUsPage = () => {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div {...rightAxisAnimation} className="bg-white rounded-lg">
+          <motion.div {...rightAxisAnimation} className="bg-white rounded-lg shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1">
             <div className="text-2xl text-center md:text-3xl font-medium text-brandColor py-2">
               GET IN TOUCH
               <div className="relative py-2">
@@ -193,18 +193,18 @@ const ContactUsPage = () => {
             </form>
           </motion.div>
         </div>
-        <div className="container bg-brandColor mx-auto md:px-[5rem] px-4 grid md:grid-cols-3 gap-4 mt-10 pb-[2rem]">
+        <div className="container bg-white mx-auto md:px-[5rem] px-4 grid md:grid-cols-3 gap-4 mt-10 pb-[2rem]">
           {/* CARD 1 */}
           <motion.div
             {...yAxisAnimation}
-            className="shadow-[10px_10px_4px_rgba(0,0,0,0.2)] bg-white rounded-md h-28 flex gap-2 p-2 content-center"
+            className="shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1 bg-white rounded-md h-28 flex gap-2 p-2 content-center"
           >
             <div className="flex justify-center items-center">
               <IoLocationSharp className="text-brandColor text-[30px]"/>
             </div>
             <div>
               <h3 className="text-lg font-medium text-brandColor">
-                My PAIN CLINIC
+                MY PAIN CLINIC
               </h3>
               <p className="text-sm font-medium">
                 Address : Sphere Mall, Navchandra Building, V. N, Linking Rd,
@@ -216,19 +216,20 @@ const ContactUsPage = () => {
           <div>
             <motion.div
               {...yAxisAnimation}
-              className="shadow-[10px_10px_4px_rgba(0,0,0,0.2)] bg-white rounded-md h-28 flex gap-2 p-2 content-center"
+              className="shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1 bg-white rounded-md h-28 flex gap-2 p-2 content-center"
             >
               <div className="flex justify-center items-center">
                 <FaPhoneVolume className="text-brandColor text-[30px]"/>
               </div>
               <div className="">
                 <h3 className="text-lg font-medium text-brandColor content-center">
-                  Phone :{" "}
+                  Reach Out To Us{" "}
                 </h3>
                 <h3 className="text-sm font-medium">
-                  +91 81694 00905, +91 81694 00916,
+                <strong className="text-brandColor">Phone: </strong>+91 81694 00905, +91 81694 00916,
                 </h3>
-                <h3 className="text-sm font-medium">+91 81694 00907</h3>
+                <h3 className="text-sm font-medium">+91 81694 00907,</h3>
+                <h3 className="text-sm font-medium"><strong className="text-brandColor">Email: </strong>connect@mypainclinicglobal.com</h3>
               </div>
             </motion.div>
           </div>
@@ -236,15 +237,15 @@ const ContactUsPage = () => {
           <div>
             <motion.div
               {...yAxisAnimation}
-              className="shadow-[10px_10px_4px_rgba(0,0,0,0.2)] bg-white rounded-md h-28 flex gap-4 p-2"
+              className="shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1 bg-white rounded-md h-28 flex gap-4 p-2"
             >
               <div className="flex justify-center items-center">
                 <FaEnvelope className="text-brandColor text-[30px]"/>
               </div>
               <div>
-                <h3 className="text-lg font-medium text-brandColor">Email</h3>
+                <h3 className="text-lg font-medium text-brandColor">Career</h3>
                 <p className="text-base font-medium">
-                  connect@mypainclinicglobal.com
+                  career@mypainclinicglobal.com
                 </p>
               </div>
             </motion.div>

@@ -38,13 +38,13 @@ const Assessments = () => {
         image: "/home_new/10_Foot_Insole.jpg",
         description:
           "Complete foot scanning and analysis related to posture and other ailments. Address foot- related pain with personalised shoe inserts, easing discomfort from conditions such as flat feet, heel spurs, plantar fasciitis, knee pain, and lower back pain.",
-        btnText: "Foot Analysis And Customised Insoles",
+        btnText: "Foot Analysis & Customised Insoles",
       },
       {
         id: 6,
         image: "/home_new/Posture analysis _11zon.jpg",
         description:
-          "Posture analysis and correction aim to identify and address issues related to body alignment and posture that may contribute to musculoskeletal discomfort. Correcting poor posture can alleviate pain and improve overall musculoskeletal health.",
+          "Posture analysis & correction aim to identify and address issues related to body alignment and posture that may contribute to musculoskeletal discomfort. Correcting poor posture can alleviate pain and improve overall musculoskeletal health.",
         btnText: "Posture Analysis & Correction",
       },
       {
@@ -73,7 +73,7 @@ const Assessments = () => {
         image: "/home_new/Untitled design_11zon.jpg",
         description:
           "Antenatal care ensures the health of pregnant women and their babies through exercises and interventions by specialized doctors. Postnatal care focuses on women's physical well-being after childbirth, including musculoskeletal issues, with rehabilitation and exercises aiding recovery.",
-        btnText: "Antenatal and Postnatal Care",
+        btnText: "Antenatal & Postnatal Care",
       },
       {
         id: 11,

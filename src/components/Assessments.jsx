@@ -20,7 +20,7 @@ const Assessments = () => {
         id: 1,
         image: "/home_new/Sports rehab_11zon.jpg",
         description:
-          "The ultimate in sports injury rehabilitation with our comprehensive programmes designed to recover from injuries and prevent future pain. Our expert team specialises in movement analysis, functional assessments, motor rehabilitation, and cognitive-motor skills training, ensuring holistic recovery and peak athletic performance. Utilising state-of-the-art metabolic test equipment and strength and conditioning protocols, we empower you to excel in your sport while minimising the risk of future injuries.",
+          "The ultimate in sports injury rehabilitation with our comprehensive programmes designed to recover from injuries & prevent future pain. Our expert team specialises in movement analysis, functional assessments, motor rehabilitation, & cognitive-motor skills training, ensuring holistic recovery & peak athletic performance. Utilising state-of-the-art metabolic test equipment & strength & conditioning protocols, we empower you to excel in your sport while minimising the risk of future injuries.",
         btnText: "Sports Injuries & Rehabilitation",
         listArray: [
           "Reduces Pain",
@@ -30,7 +30,7 @@ const Assessments = () => {
           "Restores Range of Motion",
           "Reduces Inflammation",
           "Prevents Re-injury",
-          "Enhances Coordination and Balance",
+          "Enhances Coordination & Balance",
           "Supports Tissue Healing",
           "Improves Athletic Performance",
           "Reduces Scar Tissue Formation",
@@ -42,7 +42,7 @@ const Assessments = () => {
         id: 2,
         image: "/home_new/7_Gait.jpg",
         description:
-          "Involves the detailed assessment of an individual's walking or running pattern, identifying subtle abnormalities or imbalances. This analysis is crucial for diagnosing and correcting issues related to musculoskeletal problems, sports performance, and injury prevention.",
+          "Involves the detailed assessment of an individual's walking or running pattern, identifying subtle abnormalities or imbalances. This analysis is crucial for diagnosing & correcting issues related to musculoskeletal problems, sports performance, & injury prevention.",
         btnText: "Micro Gait Analysis & Correction",
         listArray: [
           "Identifies Gait Abnormalities",
@@ -52,7 +52,7 @@ const Assessments = () => {
           "Optimizes Athletic Performance",
           "Corrects Muscle Imbalances",
           "Reduces Pain",
-          "Enhances Balance and Stability",
+          "Enhances Balance & Stability",
           "Supports Injury Rehabilitation",
           "Improves Foot Mechanics",
           "Increases Overall Mobility",
@@ -63,7 +63,7 @@ const Assessments = () => {
         id: 3,
         image: "/home_new/Assessment-3.jpeg",
         description:
-          "Improve endurance and manage cardiovascular conditions that may contribute to pain, ensuring a stronger, healthier heart. We test RMR (resting metabolic rate) and VO2 Max. It helps to assess the functioning of your heart and lungs.",
+          "Improve endurance & manage cardiovascular conditions that may contribute to pain, ensuring a stronger, healthier heart. We test RMR (resting metabolic rate) & VO2 Max. It helps to assess the functioning of your heart & lungs.",
         btnText: "Cardio Coach",
         listArray: [
           "Enhances Cardiovascular Fitness",
@@ -84,12 +84,12 @@ const Assessments = () => {
         id: 4,
         image: "/home_new/9 Witty_11zon.jpg",
         description:
-          "Agility and endurance training programmes aim to enhance an individual's physical performance, including reaction time, change in direction, and cognitive awareness, which is beneficial for those seeking to improve their readiness while playing.",
+          "Agility & endurance training programmes aim to enhance an individual's physical performance, including reaction time, change in direction, & cognitive awareness, which is beneficial for those seeking to improve their readiness while playing.",
         btnText: "Witty System",
         listArray: [
           "Enhances Athletic Performance",
           "Measures Reaction Time",
-          "Tracks Speed and Agility",
+          "Tracks Speed & Agility",
           "Provides Real-time Feedback",
           "Supports Data Analysis",
           "Improves Training Efficiency",
@@ -105,8 +105,8 @@ const Assessments = () => {
         id: 5,
         image: "/home_new/10_Foot_Insole.jpg",
         description:
-          "Complete foot scanning and analysis related to posture and other ailments. Address foot- related pain with personalised shoe inserts, easing discomfort from conditions such as flat feet, heel spurs, plantar fasciitis, knee pain, and lower back pain",
-        btnText: "Foot Analysis And Customised Insoles",
+          "Complete foot scanning & analysis related to posture & other ailments. Address foot- related pain with personalised shoe inserts, easing discomfort from conditions such as flat feet, heel spurs, plantar fasciitis, knee pain, & lower back pain",
+        btnText: "Foot Analysis & Customised Insoles",
         listArray: [
           "Identifies Foot Abnormalities",
           "Provides Customized Support",
@@ -126,7 +126,7 @@ const Assessments = () => {
         id: 6,
         image: "/home_new/Posture analysis _11zon.jpg",
         description:
-          "Cardio coach (Using KORR, USA) helps in analysing the function of lungs and heart by reflecting the oxygen uptake and its use by the body while performing any action, it also helps to mark the parameters that require improvement and helps in maintaining the endurance based performance.",
+          "Cardio coach (Using KORR, USA) helps in analysing the function of lungs & heart by reflecting the oxygen uptake & its use by the body while performing any action, it also helps to mark the parameters that require improvement & helps in maintaining the endurance based performance.",
         btnText: "Posture Analysis & Correction",
         listArray: [
           "Detects Spinal Misalignments",

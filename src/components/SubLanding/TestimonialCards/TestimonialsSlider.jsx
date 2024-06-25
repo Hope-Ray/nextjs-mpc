@@ -88,8 +88,8 @@ export default function TestimonialSlider({ team }) {
               <div className="relative flex flex-col text-gray-700 bg-white shadow-[2px_2px_4px_rgba(0,0,0,0.2)] rounded-xl w-70 h-80 m-4">
                 <div className=" flex gap-4 mx-4 my-1 h-14 ">
                   <div className="w-full">
-                    <p className="font-medium text-2xl">{items.name}</p>
-                    <div className="flex items-center">
+                    <p className="font-medium text-2xl text-center">{items.name}</p>
+                    <div className="flex items-center justify-center">
                       {[...Array(5)].map((_, index) => (
                         <svg
                           key={index}
@@ -110,10 +110,10 @@ export default function TestimonialSlider({ team }) {
                   </div>
                 </div>
                 <div className="px-4 flex flex-col gap-2">
-                  <h4 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                  {/* <h4 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                     {items.paragraph1}
-                  </h4>
-                  <p className="block text-md leading-relaxed text-justify">
+                  </h4> */}
+                  <p className="block text-md leading-relaxed text-center">
                     {items.para2}
                   </p>
                 </div>
