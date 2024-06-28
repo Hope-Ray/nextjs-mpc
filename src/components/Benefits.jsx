@@ -62,7 +62,7 @@ const Benefits = () => {
       },
       {
         id: 3,
-        image: "/home_new/15 Cryotherapy_11zon.jpg",
+        image: "/home_new/cryotherapy_1.png",
 
         description:
           "Provides whole-body exposure to extremely cold temperatures for a brief duration with the help of liquid nitrogen in vapour form. This therapy is often used for muscle recovery, pain relief, inflammation reduction, reduced stress, & improved sleeping patterns.",
@@ -84,7 +84,7 @@ const Benefits = () => {
       },
       {
         id: 4,
-        image: "/home_new/ice bath_11zon.jpg",
+        image: "/home_new/ice_bath_1.png",
 
         description:
           "Ice baths involve immersing the body in ice-cold water to reduce inflammation & soothe sore muscles promoting faster recovery & pain relief.",

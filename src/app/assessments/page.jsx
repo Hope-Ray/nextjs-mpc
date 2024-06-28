@@ -35,7 +35,7 @@ const Assessments = () => {
       },
       {
         id: 5,
-        image: "/home_new/10_Foot_Insole.jpg",
+        image: "/home_new/foot_analysis.png",
         description:
           "Complete foot scanning and analysis related to posture and other ailments. Address foot- related pain with personalised shoe inserts, easing discomfort from conditions such as flat feet, heel spurs, plantar fasciitis, knee pain, and lower back pain.",
         btnText: "Foot Analysis & Customised Insoles",

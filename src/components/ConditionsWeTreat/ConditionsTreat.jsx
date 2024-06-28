@@ -26,14 +26,14 @@ const ConditionsTreat = () => {
     {
       id: 4,
       image: '/home_new/foot.jpg',
-      name: "Foot Pain",
-      slug: "foot-pain",
+      name: "Heel Spur",
+      slug: "heel-spur",
     },
     {
       id: 5,
       image: '/home_new/shoulder.jpg',
-      name: "Shoulder Pain",
-      slug: "shoulder-pain",
+      name: "Frozen Shoulder",
+      slug: "frozen-shoulder",
     },
     {
       id: 6,
@@ -44,38 +44,38 @@ const ConditionsTreat = () => {
     {
       id: 7,
       image: '/home_new/hip.jpg',
-      name: "Hip Pain",
-      slug: "hip-pain",
+      name: "Osteoarthritis",
+      slug: "osteoarthritis",
     },
     {
       id: 8,
       image: '/home_new/wrist.jpg',
-      name: "Wrist Pain",
-      slug: "wrist-pain",
+      name: "Carpal Tunnel Syndrome",
+      slug: "carpal-tunnel-syndrome",
     },
     {
       id: 9,
       image: '/home_new/joint.jpg',
-      name: "Joint Pain",
-      slug: "joint-pain",
+      name: "Joint Dislocation",
+      slug: "joint-dislocation",
     },
     {
       id: 10,
       image: '/home_new/acl_tear_pain.jpg',
-      name: "ACL Tear",
+      name: "Acl / Mcl Tear",
       slug: "acl-tear",
     },
     {
       id: 11,
       image: '/home_new/nerve_pain.jpg',
-      name: "Nerve Pain",
-      slug: "nerve-pain",
+      name: "Sciatica",
+      slug: "sciatica",
     },
     {
       id: 12,
       image: '/home_new/full Body.jpg',
-      name: "Full Body Pain",
-      slug: "full-body-pain",
+      name: "Post Surgery",
+      slug: "post-surgery",
     },
   ];
 

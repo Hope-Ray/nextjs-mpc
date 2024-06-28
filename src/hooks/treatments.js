@@ -39,7 +39,7 @@ const  treatmentsData = {
     weakness in the outer layer (annulus fibrosus) and can press on nearby spinal nerves
     or the spinal cord itself.
   `,
-  image: '/home_new/slipped_disc.jpg',
+  image: '/home_new/slipped_disk.png',
   content: {
     'Symptoms of a Slipped Disc': [
       'Pain: Pain may be localized in the area of the herniated disc or may radiate to other parts of the body, such as the buttocks, legs, or arms, depending on which nerves are affected.',
@@ -88,7 +88,7 @@ const  treatmentsData = {
       discs, which act as shock absorbers and allow for flexibility and movement of the neck.
       In cervical spondylosis, the discs and vertebrae may undergo changes such as:
     `,
-    image: '/home_new/acl_tear_pain.jpg',
+    image: '/home_new/Cervical_Spondylosis.png',
     content: {
       'Degenerative Degenerative Changes in Cervical Spondylosis:': [
         'Degeneration of Discs: The intervertebral discs may lose their elasticity and hydration, becoming thinner and less effective at cushioning the vertebrae.',
@@ -124,7 +124,7 @@ const  treatmentsData = {
     down and wears away, leading to bone-on-bone contact within the joint. This can cause
     pain, swelling, and stiffness in the affected joint.
   `,
-  image: '/home_new/osteoarthritis.jpg',
+  image: '/home_new/Osteoarthritis.png',
   content: {
     'Causes of Osteoarthritis': [
       'Age: Osteoarthritis becomes more common as people age, as the wear and tear on the joints accumulate over time.',
@@ -153,7 +153,7 @@ const  treatmentsData = {
       adhesions or scar tissue. This causes the capsule to become tight and inflexible,
       resulting in the characteristic symptoms of frozen shoulder.
     `,
-    image: '/home_new/frozen-shoulder.jpg',
+    image: '/home_new/shoulder.jpg',
     content: {
       'Risk Factors for Frozen Shoulder': [
         'Age and Gender: Frozen shoulder is more common in people between the ages of 40 and 60, and it tends to affect women more often than men.',
@@ -179,7 +179,7 @@ const  treatmentsData = {
     attach to the lateral epicondyle, a bony bump on the outside of the elbow. This can lead
     to tiny tears or inflammation in the tendons, resulting in pain and discomfort.
   `,
-  image: '/home_new/tennis-elbow.jpg',
+  image: '/home_new/tennis_elbow.png',
   content: {
     'Causes of Tennis Elbow': [
       'Tennis (particularly backhand strokes).',
@@ -204,7 +204,7 @@ const  treatmentsData = {
       connecting the heel bone to the toes. It serves to support the arch of the foot and helps
       absorb shock during activities like walking, running, and jumping.
     `,
-    image: '/home_new/plantar-fasciitis.jpg',
+    image: '/home_new/Plantar_Fasciitis.png',
     content: {
       'Causes of Plantar Fasciitis': [
         'Overuse or Repetitive Strain: Activities that place excessive stress on the plantar fascia, such as running, walking long distances, or standing for extended periods, can lead to irritation and inflammation of the tissue.',
@@ -228,7 +228,7 @@ const  treatmentsData = {
       This compression can lead to a variety of symptoms, primarily affecting the hand and
       fingers.
     `,
-    image: '/home_new/carpal-tunnel-syndrome.jpg',
+    image: '/home_new/Carpal_Tunnel_Syndrome.png',
     content: {
       'Causes of Carpal Tunnel Syndrome': [
         'Repetitive Hand Use: Activities or occupations that involve repetitive hand movements or use of vibrating tools can increase the risk of developing carpal tunnel syndrome.',
@@ -256,7 +256,7 @@ const  treatmentsData = {
       compresses or irritates the sciatic nerve, causing inflammation, pain, and other
       symptoms along the course of the nerve.
     `,
-    image: '/home_new/sciatica.jpg',
+    image: '/home_new/Sciatica.png',
     content: {
       'Common Causes of Sciatica': [
         'Herniated Disc: A herniated or bulging disc in the lumbar spine can compress the sciatic nerve root, leading to sciatic pain.',
@@ -285,14 +285,21 @@ const  treatmentsData = {
       sprinting, kicking, or jumping, especially if the muscles are not adequately warmed up or
       if there is underlying weakness or imbalance in the muscles.
     `,
-    image: '/home_new/hamstring.jpg',
+    image: '/home_new/Hamstring_Injuries.png',
     content: {
-      'Types of Hamstring Injuries': [
+      
+      'Types of Hamstring Injuries': {
+      'Strains:': [
         'Grade 1: Mild strain with minimal tearing of muscle fibers. Symptoms include mild pain and tightness in the back of the thigh.',
         'Grade 2: Moderate strain with partial tearing of muscle fibers. Symptoms include more severe pain, swelling, and difficulty walking or bending the knee.',
         'Grade 3: Severe strain with complete tearing of muscle fibers or tendon. Symptoms are severe, with a visible deformity or gap in the muscle.',
-        'Avulsions: The hamstring tendon may tear away from the bone, especially at the point where it attaches to the ischial tuberosity (sit bone) in the pelvis.'
+        'Difficulty bearing weight on the affected leg.',
+        'Limited range of motion.',
       ],
+      'Avulsions:': [
+        'The hamstring tendon may tear away from the bone, especially at the point where it attaches to the ischial tuberosity (sit bone) in the pelvis',
+      ],
+    },
       'Symptoms of Hamstring Injuries': [
         'Sudden onset of sharp pain or a popping sensation in the back of the thigh.',
         'Swelling and tenderness in the affected area.',
@@ -303,33 +310,48 @@ const  treatmentsData = {
     },
   },
   'acl-tear': {
-    title: 'ACL Tear',
-    description: `
-      An ACL tear refers to a tear or rupture of the anterior cruciate ligament (ACL),
-      one of the major ligaments in the knee joint. The ACL plays a crucial role in stabilizing
-      the knee and preventing excessive forward movement of the tibia (shin bone) relative
-      to the femur (thigh bone).
-      ACL tears are often sports-related injuries, particularly in activities that involve sudden
-      stops, changes in direction, jumping, or direct blows to the knee. Common sports
-      associated with ACL tears include soccer, basketball, football, and skiing. However,
-      ACL tears can also occur due to non-contact injuries, such as landing from a jump or
-      pivoting on a planted foot.
-    `,
-    image: '/home_new/acl.jpg',
-    content: {
-      'Severity of ACL Tears': [
-        'Partial Tear: Damage to only a portion of the ACL. It can cause pain, instability, and functional limitations.',
-        'Complete Tear: Rupture of the entire ACL, resulting in significant instability of the knee joint. This type of tear often causes a popping sensation at the time of injury and may be accompanied by severe pain, swelling, and difficulty bearing weight on the affected leg.',
+  title: 'ACL / MCL Tear',
+  description: `
+    ACL and MCL tears are injuries to the ligaments in the knee joint. The ACL (anterior cruciate ligament) and MCL (medial collateral ligament) are crucial for knee stability. An ACL tear affects the front-back stability, while an MCL tear affects side-to-side stability.
+    Understanding the differences and similarities between ACL and MCL tears is crucial for proper diagnosis and treatment.
+  `,
+  image: '/home_new/acl_tear_pain.jpg',
+  content: {
+    'Common Causes': [
+      'Sports Injuries: Both ACL and MCL tears commonly occur in sports involving sudden stops, changes in direction, jumping, or direct impacts (e.g., soccer, basketball, football, skiing).',
+      'Non-Contact Injuries (ACL): Landing from a jump or pivoting on a planted foot.',
+      'Direct Impact (MCL): A blow to the outer side of the knee, such as during a tackle or collision.',
+      'Twisting/Direction Changes (MCL): Rapid changes in direction or twisting movements with a planted foot.',
+      'Hyperextension (MCL): Forcing the knee beyond its normal range of motion.',
+    ],
+    'Severity': {
+      'ACL Tear': [
+        'Partial Tear: Damage to a portion of the ACL, causing pain, instability, and functional limitations. Complete Tear: Rupture of the entire ACL, leading to significant instability, a popping sensation, severe pain, swelling, and difficulty bearing weight.',
       ],
-      'Symptoms of an ACL Tear': [
-        'Sudden onset of severe pain in the knee.',
+      'MCL Tear': [
+        'Grade 1: Mild sprain with slight tearing or stretching of ligament fibers, causing pain and tenderness but minimal instability.',
+        'Grade 2: Moderate tear with partial tearing of ligament fibers, leading to more severe symptoms and increased instability.',
+        'Grade 3: Severe tear with complete rupture of the ligament, resulting in significant instability and possibly associated with other ligament injuries.',
+      ],
+    },
+    'Symptoms': {
+      'ACL Tear': [
+        'Sudden onset of severe knee pain.',
         'Swelling and tenderness around the knee joint.',
-        'Instability or a feeling of giving way in the knee, particularly during activities that involve cutting, pivoting, or jumping.',
+        'Instability or a feeling of the knee giving way.',
         'Difficulty bearing weight on the affected leg.',
-        'Limited range of motion in the knee joint.',
+        'Limited range of motion.',
+      ],
+      'MCL Tear': [
+        'Pain and tenderness along the inner side of the knee.',
+        'Swelling and bruising around the knee joint.',
+        'Instability or looseness, especially with side-to-side movements.',
+        'Difficulty bearing weight on the affected leg.',
+        'Limited range of motion.',
       ],
     },
   },
+},
   'mcl-tear': {
   title: 'MCL Tear',
   description: `
@@ -369,7 +391,7 @@ const  treatmentsData = {
       Heel spurs often develop over time in response to repetitive stress or strain on the
       plantar fascia and the muscles and ligaments of the foot.
     `,
-    image: '/home_new/heel_spur.jpg',
+    image: '/home_new/Heel_Spur.png',
     content: {
       'Factors contributing to Heel Spur development': [
         'Plantar Fasciitis: Persistent inflammation of the plantar fascia can lead to the formation of calcium deposits at the point where the fascia attaches to the heel bone, resulting in the formation of a heel spur.',
@@ -391,7 +413,7 @@ const  treatmentsData = {
       from mild discomfort to severe pain, with causes spanning from injury and overuse to
       arthritis and other underlying medical conditions.
     `,
-    image: '/home_new/knee_pain.jpg',
+    image: '/home_new/knee.jpg',
     content: {
       'Common Causes of Knee Pain': [
         'Injury: Injuries from sports, accidents, or falls can damage the ligaments, tendons, or meniscus (cartilage) of the knee, resulting in pain and restricted mobility.',
@@ -418,7 +440,7 @@ const  treatmentsData = {
     description: `
       Elbow pain can result from various factors including injury, overuse, strain, or underlying medical conditions. 
     `,
-    image: '/home_new/elbow_pain.jpg',
+    image: '/home_new/elbow.jpg',
     content: {
       'Common Causes of Elbow Pain': [
         'Tennis Elbow (Lateral Epicondylitis): Inflammation of the tendons attaching to the bony prominence on the outside of the elbow, often caused by repetitive wrist and forearm motions.',
@@ -442,13 +464,13 @@ const  treatmentsData = {
       ],
     },
   },
-  'shoulder-impingement': {
-    title: 'Shoulder Impingement Syndrome',
+  'post-surgery': {
+    title: 'Post Surgery',
     description: `
       Shoulder impingement syndrome occurs when the tendons of the rotator cuff and the subacromial bursa are pinched or compressed as they pass through the subacromial space.
       This condition is often caused by repetitive overhead activities, poor posture, muscle imbalances, or structural abnormalities in the shoulder.
     `,
-    image: '/home_new/shoulder_impingement.jpg',
+    image: '/home_new/Post_Surgery.png',
     content: {
       'Symptoms of Shoulder Impingement Syndrome': [
         'Pain: Typically felt at the front or side of the shoulder, especially with overhead movements, reaching behind the back, or lifting objects. Pain may be sharp or dull and may worsen at night.',
@@ -466,7 +488,7 @@ const  treatmentsData = {
     description: `
       Tendonitis, or tendinitis, is the inflammation, irritation, or swelling of a tendon, often due to overuse, repetitive motions, or sudden injury. Common areas affected include shoulders, elbows, wrists, knees, and ankles.
     `,
-    image: '/home_new/tendonitis.jpg',
+    image: '/home_new/Tendonitis.png',
     content: {
       'Symptoms of Tendonitis': [
         'Pain: Tenderness, soreness, or aching around the affected tendon, worsening with movement or activity.',
@@ -481,7 +503,7 @@ const  treatmentsData = {
     description: `
       Bursitis is the inflammation or irritation of a bursa, a small fluid-filled sac that helps reduce friction and cushion movement between bones and tendons or muscles. Common sites include the shoulder, elbow, hip, knee, and heel.
     `,
-    image: '/home_new/bursitis.jpg',
+    image: '/home_new/Bursitis.png',
     content: {
       'Symptoms of Bursitis': [
         'Pain: Localized to the affected area, worsening with movement or pressure.',
@@ -498,7 +520,7 @@ const  treatmentsData = {
     description: `
       Radiculopathy refers to a condition in which one or more nerve roots in the spine become compressed or irritated, leading to pain, weakness, numbness, or tingling along the path of the affected nerve(s). It can occur in any part of the spine but is most commonly seen in the cervical (neck) and lumbar (lower back) regions.
     `,
-    image: '/home_new/radiculopathy.jpg',
+    image: '/home_new/Radiculopathy.png',
     content: {
       'Causes of Radiculopathy': [
         'Herniated Disc: The soft inner core of a spinal disc protrudes through its tough outer layer and presses on nearby nerve roots.',
@@ -514,12 +536,12 @@ const  treatmentsData = {
       ]
     }
   },
-  'rotator_cuff_injury': {
+  'rotator-cuff-injury': {
     title: 'Rotator Cuff Injury',
     description: `
       A rotator cuff injury involves damage or tearing of one or more tendons or muscles of the rotator cuff in the shoulder. These injuries can range from mild inflammation (tendonitis) to partial or complete tears of the rotator cuff tendons.
     `,
-    image: '/home_new/rotator_cuff_injury.jpg',
+    image: '/home_new/Rotator_Cuf_Injury.png',
     content: {
       'Causes of Rotator Cuff Injury': [
         'Repetitive Overhead Activities: Such as throwing, pitching, swimming, or painting, which can strain the rotator cuff tendons over time.',
@@ -534,12 +556,12 @@ const  treatmentsData = {
       ]
     }
   },
-  'joint_dislocation': {
+  'joint-dislocation': {
     title: 'Joint Dislocation',
     description: `
       Joint dislocation occurs when the bones forming a joint are forced out of their normal position, disrupting the alignment of the joint surfaces. This can lead to severe pain, swelling, and loss of function in the affected joint. Dislocations can occur in any joint in the body but are most common in the shoulder, elbow, finger, hip, knee, and ankle joints.
     `,
-    image: '/home_new/joint_dislocation.jpg',
+    image: '/home_new/Joint_pain.png',
     content: {
       'Causes of Joint Dislocation': [
         'Trauma: Direct impact or force to the joint, such as a fall, sports injury, or motor vehicle accident, can cause the bones to become displaced.',

@@ -3,11 +3,34 @@
 import { motion } from "framer-motion";
 
 const Welcome = () => {
+  const videoOptions = {
+    playerVars: {
+      autoplay: 1,
+      loop: 1,
+      mute: 1,
+      controls: 0,
+      showinfo: 0,
+      modestbranding: 0,
+      playlist:
+        "https://www.youtube.com/embed/CCtJzygIwWw?controls=0&autoplay=1&mute=1&loop=1&playlist=CCtJzygIwWw&showinfo=0&modestbranding=1", // Use the same video ID for looping
+    },
+  };
+
   return (
     <div className="w-full md:h-screen h-screen welcomebg text-[#fff] bg-[#F7F7FC] relative ">
-      <video autoPlay muted loop src="/home_new/Interior.MP4">
+      <video autoPlay muted loop src="/home_new/MPC_INTRO_1.MP4">
         Video Not available - error
       </video>
+
+      {/* <div id="video-bg" className="absolute inset-0 z-0 video-player">
+        <YouTube
+          videoId="https://www.youtube.com/embed/CCtJzygIwWw?controls=0&autoplay=1&mute=1&loop=1&playlist=CCtJzygIwWw&showinfo=0&modestbranding=0"
+          opts={videoOptions}
+          className="w-full h-full object-cover"
+          iframeClassName="video-frame"
+        />
+        <iframe className="video-frame" src="https://www.youtube.com/embed/CCtJzygIwWw?si=VLFn_B62XGX0E3sE&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div> */}
       <div className="hidden md:flex justify-end items-end  gap-[3rem] md:h-full h-full py-[2rem] md:w-[100%] w-[90%] md:mx-0 mx-auto">
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -37,11 +60,12 @@ const Welcome = () => {
               </a>
             </div>
             <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
-              Your Journey</h2> 
-              <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
-              to a Pain-Free Life 
+              Your Journey
             </h2>
-              <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
+            <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
+              to a Pain-Free Life
+            </h2>
+            <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
               Begins Here
             </h2>
             <p className=" mf:text-[20px] text-[14px] md:my-2 my-1 md:w-10/12 text-right">
@@ -53,6 +77,6 @@ const Welcome = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Welcome
+export default Welcome;

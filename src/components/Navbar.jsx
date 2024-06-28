@@ -5,6 +5,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -23,14 +24,14 @@ const Navbar = () => {
       linkTo: "/weTreat",
       dropdownContent: [
         {
-          text: "Back Pain",
-          linkTo: "/specific-treatment/back-pain",
-          imgUrl: '/home_new/back.jpg'
+          text: "Post Surgery",
+          linkTo: "/specific-treatment/post-surgery",
+          imgUrl: '/home_new/Post_Surgery.png'
         },
         {
-          text: "Slipped Disc",
-          linkTo: "/specific-treatment/slipped-disc",
-          imgUrl: 'https://placehold.co/400'
+          text: "Joint Dislocation",
+          linkTo: "/specific-treatment/joint-dislocation",
+          imgUrl: '/home_new/Joint_pain.png'
         },
         {
           text: "Neck Pain",
@@ -38,59 +39,14 @@ const Navbar = () => {
           imgUrl: '/home_new/Neck.jpg'
         },
         {
-          text: "Cervical Spondylosis",
-          linkTo: "/specific-treatment/cervical-spondylosis",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Osteoarthritis",
-          linkTo: "/specific-treatment/osteoarthritis",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
           text: "Frozen Shoulder",
           linkTo: "/specific-treatment/frozen-shoulder",
           imgUrl: '/home_new/shoulder.jpg'
         },
         {
-          text: "Tennis Elbow",
-          linkTo: "/specific-treatment/tennis-elbow",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Plantar Fasciitis",
-          linkTo: "/specific-treatment/plantar-fasciitis",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Carpal Tunnel",
-          linkTo: "/specific-treatment/carpal-tunnel-syndrome",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Sciatica",
-          linkTo: "/specific-treatment/sciatica",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Hamstring Injuries",
-          linkTo: "/specific-treatment/hamstring-injuries",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Acl / Mcl Tear",
-          linkTo: "/specific-treatment/acl-tear",
-          imgUrl: '/home_new/acl_tear_pain.jpg'
-        },
-        {
-          text: "Heel Spur",
-          linkTo: "/specific-treatment/heel-spur",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Knee Pain",
-          linkTo: "/specific-treatment/heel-spur",
-          imgUrl: '/home_new/knee.jpg'
+          text: "Back Pain",
+          linkTo: "/specific-treatment/back-pain",
+          imgUrl: '/home_new/back.jpg'
         },
         {
           text: "Elbow Pain",
@@ -98,34 +54,79 @@ const Navbar = () => {
           imgUrl: '/home_new/elbow.jpg'
         },
         {
-          text: "Shoulder Impingement",
-          linkTo: "/specific-treatment/shoulder-impingement",
-          imgUrl: 'https://placehold.co/400'
+          text: "Knee Pain",
+          linkTo: "/specific-treatment/knee-pain",
+          imgUrl: '/home_new/knee.jpg'
         },
         {
-          text: "Tendonitis",
-          linkTo: "/specific-treatment/tendonitis",
-          imgUrl: 'https://placehold.co/400'
-        },
-        {
-          text: "Bursitis",
-          linkTo: "/specific-treatment/bursitis",
-          imgUrl: 'https://placehold.co/400'
+          text: "Cervical Spondylosis",
+          linkTo: "/specific-treatment/cervical-spondylosis",
+          imgUrl: '/home_new/Cervical_Spondylosis.png'
         },
         {
           text: "Radiculopathy",
           linkTo: "/specific-treatment/radiculopathy",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: '/home_new/Radiculopathy.png'
         },
         {
           text: "Rotator Cuff Injury",
-          linkTo: "/specific-treatment/rotator_cuff_injury",
-          imgUrl: 'https://placehold.co/400'
+          linkTo: "/specific-treatment/rotator-cuff-injury",
+          imgUrl: '/home_new/Rotator_Cuf_Injury.png'
         },
         {
-          text: "Joint Dislocation",
-          linkTo: "/specific-treatment/joint_dislocation",
-          imgUrl: 'https://placehold.co/400'
+          text: "Slipped Disc",
+          linkTo: "/specific-treatment/slipped-disc",
+          imgUrl: '/home_new/slipped_disk.png'
+        },
+        {
+          text: "Tennis Elbow",
+          linkTo: "/specific-treatment/tennis-elbow",
+          imgUrl: '/home_new/tennis_elbow.png'
+        },
+        {
+          text: "Carpal Tunnel Syndrome",
+          linkTo: "/specific-treatment/carpal-tunnel-syndrome",
+          imgUrl: '/home_new/Carpal_Tunnel_Syndrome.png'
+        },
+        {
+          text: "Osteoarthritis",
+          linkTo: "/specific-treatment/osteoarthritis",
+          imgUrl: '/home_new/Osteoarthritis.png'
+        },
+        {
+          text: "Sciatica",
+          linkTo: "/specific-treatment/sciatica",
+          imgUrl: '/home_new/Sciatica.png'
+        },
+        {
+          text: "Bursitis",
+          linkTo: "/specific-treatment/bursitis",
+          imgUrl: '/home_new/Bursitis.png'
+        },
+        {
+          text: "Acl / Mcl Tear",
+          linkTo: "/specific-treatment/acl-tear",
+          imgUrl: '/home_new/acl_tear_pain.jpg'
+        },
+        {
+          text: "Hamstring Injuries",
+          linkTo: "/specific-treatment/hamstring-injuries",
+          imgUrl: '/home_new/Hamstring_Injuries.png'
+        },
+        {
+          text: "Tendonitis",
+          linkTo: "/specific-treatment/tendonitis",
+          imgUrl: '/home_new/Tendonitis.png'
+        },
+        {
+          text: "Plantar Fasciitis",
+          linkTo: "/specific-treatment/plantar-fasciitis",
+          imgUrl: '/home_new/Plantar_Fasciitis.png'
+        },
+        {
+          text: "Heel Spur",
+          linkTo: "/specific-treatment/heel-spur",
+          imgUrl: '/home_new/Heel_Spur.png'
         },
       ],
     },
@@ -167,12 +168,17 @@ const Navbar = () => {
     //   linkTo: "/services",
     // },
     {
-      id: 6,
+      id: 4,
       text: "Blogs",
       linkTo: "https://mpcw.salt-tech.com/blog/",
     },
     {
-      id: 7,
+      id: 5,
+      text: "About Us",
+      linkTo: "/aboutus",
+    },
+    {
+      id: 6,
       text: "Contact Us",
       linkTo: "/contactus",
     },
@@ -230,18 +236,44 @@ const Navbar = () => {
             {dropdownContent && dropdownOpenIndex === index && (
               <div className={`bg-[#080808] text-[#fff] shadow-lg z-10 ${text === 'Our Treatments' ? 'top-[60px] rounded absolute w-full' : 'fixed overflow-y-auto left-0 w-full top-[70px] h-[100vh] px-4 md:px-[5rem] pb-[87px] opacity-100'}`}>
                 {text === 'Our Treatments' ? (
-                  <div className="flex flex-col gap-2">
-                    {dropdownContent.map((item, idx) => (
-                      <Link className="p-2 hover:bg-brandColor " key={idx} href={item.linkTo}>
-                        <div
-                          className="px-2 text-center text-[1.1rem]"
-                          onClick={handleCloseDropdown}
-                        >
+                  // <div className="flex flex-col gap-2">
+                  //   {dropdownContent.map((item, idx) => (
+                  //     <Link className="p-2 hover:bg-brandColor " key={idx} href={item.linkTo}>
+                  //       <div
+                  //         className="px-2 text-center text-[1.1rem]"
+                  //         onClick={handleCloseDropdown}
+                  //       >
+                  //         {item.text}
+                  //       </div>
+                  //     </Link>
+                  //   ))}
+                  // </div>
+                  <motion.div
+                  initial={{ scaleY: 0 }}
+                  animate={{ scaleY: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    staggerChildren: 0.1
+                  }}
+                  style={{ transformOrigin: 'top' }}
+                  className="flex flex-col gap-2 p-2 rounded-lg bg-[#080808] shadow-xl absolute top-[120%] left-[10%] translate-x-[-50%] w-48 z-50"
+                >
+                  {dropdownContent.map((item, idx) => (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.2 }}
+                      onClick={handleCloseDropdown}
+                    >
+                      <Link className="block p-2 hover:bg-brandColor" href={item.linkTo}>
+                        <div className="px-2 text-center text-[1.1rem] text-[#FAFAFA]">
                           {item.text}
                         </div>
                       </Link>
-                    ))}
-                  </div>
+                    </motion.div>
+                  ))}
+                </motion.div>
                 ) : (
                   <div className="grid grid-cols-7 gap-[30px] w-full">
                     {dropdownContent.map((item, idx) => (
