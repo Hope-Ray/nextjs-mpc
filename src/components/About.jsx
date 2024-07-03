@@ -16,7 +16,7 @@ const About = () => {
   };
   return (
     <div className=" relative py-[1rem] bg-[#F7F7FC] " id="about">
-      <motion.div {...yAxisAnimation} className="py-[2rem]">
+      <motion.div {...yAxisAnimation} viewport={{ once: true }} className="py-[2rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center ">
           About Us
         </h2>
@@ -27,7 +27,7 @@ const About = () => {
       <motion.div
         initial={{ x: 200, y: -100, opacity: 0 }} // Set initial position to center
         whileInView={{ x: 0, y: 0, opacity: 1 }} // Move to center when in view
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.2, // Increased delay for smoother scrolling
           x: { type: "spring", stiffness: 60 }, // Reduced stiffness for smoother motion

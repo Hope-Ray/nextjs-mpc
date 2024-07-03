@@ -93,7 +93,7 @@ const ConditionsTreat = () => {
 
   return (
     <div id="condition-we-treat">
-      <motion.div {...yAxisAnimation} className="py-[1rem]">
+      <motion.div {...yAxisAnimation} viewport={{ once: true }} className="py-[1rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center">
         Conditions We Treat
         </h2>
@@ -102,7 +102,7 @@ const ConditionsTreat = () => {
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.4,
           x: { type: "spring", stiffness: 50 },
