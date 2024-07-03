@@ -40,7 +40,7 @@ const TreatmentDetails = ({ params }) => {
   const renderContent = (items) => {
     if (Array.isArray(items)) {
       return (
-        <ul className="list-disc md:pl-6 text-lg ml-10 text-justify">
+        <ul className="list-disc list-inside md:pl-10 text-lg">
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
@@ -48,16 +48,12 @@ const TreatmentDetails = ({ params }) => {
       );
     } else {
       return (
-        <ul className="list-disc md:pl-6 text-lg ml-10 text-justify">
+        <ul className="list-disc md:pl-10 text-lg  text-justify">
           {Object.entries(items).map(([type, details], idx) => (
             <div key={idx}>
-              <div className="font-semibold">{type}</div>
+              {/* <div className="font-semibold">{type}</div> */}
               {Array.isArray(details) ? (
-                <ul className="list-disc md:pl-6 ml-5">
-                  {details.map((detail, subIdx) => (
-                    <li key={subIdx}>{detail}</li>
-                  ))}
-                </ul>
+                <div className="mt-1 leading-normal"><span className="font-semibold">{type}</span>{` ${details[0]}`}</div>
               ) : (
                 <p>{details}</p>
               )}
@@ -105,13 +101,16 @@ const TreatmentDetails = ({ params }) => {
                     </div>
                   )
                 )}
+                <div className="text-lg text-justify  mt-10">
+                  {treatmentData?.para}
+                </div>
             </div>
             <div className="flex-1">
               <AppointmentForm />
             </div>
           </div>
           <div className="px-4 md:px-[5rem] pb-[2rem] flex flex-col justify-center gap-4">
-            <p className="text-xl font-semibold">
+            <p className="text-base font-semibold">
               We provide tailored treatment solutions recognizing the
               individuality of each person's pain. To receive a personalised
               treatment plan, you can schedule a consultation at MY PAIN CLINIC,

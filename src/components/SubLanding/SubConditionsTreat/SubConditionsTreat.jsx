@@ -6,33 +6,33 @@ const SubConditionsTreat = ({ setIsOpen }) => {
   const team = [
     {
       id: 1,
-      image: "/home_new/Neck.jpg",
-      name: "Neckk Pain",
+      image: '/home_new/Neck.jpg',
+      name: "Neck Pain",
       slug: "neck-pain",
     },
     {
       id: 2,
-      image: "/home_new/back.jpg",
+      image: '/home_new/back.jpg',
       name: "Back Pain",
       slug: "back-pain",
     },
     {
       id: 3,
-      image: "/home_new/knee.jpg",
+      image: '/home_new/knee.jpg',
       name: "Knee Pain",
       slug: "knee-pain",
     },
     {
       id: 4,
-      image: "/home_new/foot.jpg",
-      name: "Foot Pain",
-      slug: "foot-pain",
+      image: '/home_new/foot.jpg',
+      name: "Heel Spur",
+      slug: "heel-spur",
     },
     {
       id: 5,
-      image: "/home_new/shoulder.jpg",
-      name: "Shoulder Pain",
-      slug: "shoulder-pain",
+      image: '/home_new/shoulder.jpg',
+      name: "Frozen Shoulder",
+      slug: "frozen-shoulder",
     },
   ];
 

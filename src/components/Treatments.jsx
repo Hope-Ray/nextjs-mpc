@@ -135,7 +135,7 @@ const Treatments = () => {
 
   return (
     <div className=" bg-[#fff] py-[1rem] " id="treatment">
-      <motion.div {...yAxisAnimation} viewport={{ once: true }} className="py-[1rem]">
+      <motion.div {...yAxisAnimation} className="py-[1rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center ">
           Our Treatments
         </h2>
@@ -146,7 +146,7 @@ const Treatments = () => {
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{
           delay: 0.4,
           x: { type: "spring", stiffness: 50 },

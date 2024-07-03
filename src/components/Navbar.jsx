@@ -24,12 +24,12 @@ const Navbar = () => {
       linkTo: "/weTreat",
       dropdownContent: [
         {
-          text: "Post Surgery",
-          linkTo: "/specific-treatment/post-surgery",
+          text: "Post-Surgical Rehabilitation",
+          linkTo: "/specific-treatment/post-surgical-rehabilitation",
           imgUrl: '/home_new/Post_Surgery.png'
         },
         {
-          text: "Joint Dislocation",
+          text: "Multiple Joint Pain",
           linkTo: "/specific-treatment/joint-dislocation",
           imgUrl: '/home_new/Joint_pain.png'
         },
@@ -289,7 +289,7 @@ const Navbar = () => {
                             alt="treatment-img"
                             className="h-[6rem] w-[6rem] rounded-full"
                           />
-                          <div className="block px-4 py-2 rounded text-xs">
+                          <div className="block px-4 py-2 rounded text-xs text-center">
                             {item.text}
                           </div>
                         </div>

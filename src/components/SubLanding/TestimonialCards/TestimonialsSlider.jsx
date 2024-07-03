@@ -88,7 +88,19 @@ export default function TestimonialSlider({ team }) {
               <div className="relative flex flex-col text-gray-700 bg-white shadow-[2px_2px_4px_rgba(0,0,0,0.2)] rounded-xl w-70 h-80 m-4">
                 <div className=" flex gap-4 mx-4 my-1 h-14 ">
                   <div className="w-full">
-                    <p className="font-medium text-2xl text-center">{items.name}</p>
+                  <div className="flex items-center">
+                      <span>
+                        <img
+                          className="min-h-[1.8rem]"
+                          src="/images/Icons/google-icon.svg"
+                          alt="google-icon"
+                        />
+                      </span>
+                      <p className="font-medium text-2xl w-full text-center">
+                        {items.name}
+                      </p>
+                      
+                    </div>
                     <div className="flex items-center justify-center">
                       {[...Array(5)].map((_, index) => (
                         <svg
