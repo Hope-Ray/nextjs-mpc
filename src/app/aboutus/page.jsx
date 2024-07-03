@@ -1,22 +1,18 @@
-// import ConditionContent from '@/components/WeTreat/ConditionContent'
-import Facilities from '@/components/WeTreat/Facilities'
-// import ServicesSlide from '@/components/WeTreat/Services'
-import Welcome from '@/components/WeTreat/Welcome'
-import WhyMpc from '@/components/WeTreat/WhyMpc'
-import AboutUsContent from '@/components/WeTreat/AboutUsContent'
-import React from 'react'
+import AboutUsPage from "./AboutUsPage"
+import { Metadata } from 'next'
 
-const WeTreatPage = () => {
+export const metadata = {
+  title: 'About Us',
+  description: 'About Us..',
+}
+
+
+const AboutUs = () => {
   return (
-    <div className=''>
-      <Welcome/>
-      <AboutUsContent/>
-      {/* <ServicesSlide/> */}
-      {/* <ConditionContent/> */}
-      <WhyMpc/>
-      <Facilities/>
-    </div>
+    <main>
+      <AboutUsPage/>
+    </main>
   )
 }
 
-export default WeTreatPage
+export default AboutUs

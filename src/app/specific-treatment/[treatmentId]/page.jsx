@@ -74,7 +74,7 @@ const TreatmentDetails = ({ params }) => {
         <div className="relative min-h-[20rem]">
           <div className="bg-brandColor px-4 md:flex md:px-[5rem]">
             <div className="w-full md:w-[70%] py-[2rem] md:pe-[2rem]">
-              <Link
+              {/* <Link
                 href="/weTreat"
                 className="mb-8 hidden md:flex items-center text-xs"
               >
@@ -82,7 +82,7 @@ const TreatmentDetails = ({ params }) => {
                   <FaArrowLeft />
                 </span>
                 <p className="ms-2">Back to Treatments</p>
-              </Link>
+              </Link> */}
               <div className="text-white">
                 <h2 className="text-5xl mb-4">{treatmentData.title}</h2>
                 <p className="text-justify text-lg">
