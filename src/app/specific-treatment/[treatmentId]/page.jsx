@@ -113,7 +113,7 @@ const TreatmentDetails = ({ params }) => {
             <p className="text-base font-semibold">
               We provide tailored treatment solutions recognizing the
               individuality of each person's pain. To receive a personalised
-              treatment plan, you can schedule a consultation at MY PAIN CLINIC,
+              treatment plan, you can schedule a consultation at <span className="font-futura">MY PAIN CLINIC</span>,
               today!
             </p>
             <div className="text-center">

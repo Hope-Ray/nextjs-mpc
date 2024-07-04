@@ -203,7 +203,7 @@ const ContactUsPage = () => {
               <IoLocationSharp className="text-brandColor text-[30px]"/>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-brandColor">
+              <h3 className="text-lg font-medium text-brandColor font-futura">
                 MY PAIN CLINIC
               </h3>
               <p className="text-sm font-medium">

@@ -3,8 +3,17 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FaWhatsapp  } from "react-icons/fa6";
+import { Sacramento } from "next/font/google"
 
 // const inter = Inter({ subsets: ["latin"] });
+
+const sacramento = Sacramento(
+  {
+    subsets: ['latin'],
+    weight: ['400'],
+    variable: '--font-sacramento'
+  }
+)
 
 const futura = localFont(
   {
@@ -23,7 +32,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${futura.variable}`}>
+    <html lang="en" className={`${futura.variable} ${sacramento.variable}`}>
       <body className='relative'>
         <Navbar/>
         {children}

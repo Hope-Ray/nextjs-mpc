@@ -3,12 +3,13 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "/home_new/advance%20physio_11zon.jpg",
-  "home_new/3%20Robotic%20Spine%20Aligner.jpg",
-  "/home_new/PBM%20laser_11zon.jpg",
-  "/home_new/advance%20physio_11zon.jpg",
-  "home_new/3%20Robotic%20Spine%20Aligner.jpg",
-  "/home_new/PBM%20laser_11zon.jpg",
+  "/home_new/5%20TECAR%20THERAPY.jpeg",
+  "/home_new/6%20Acoustic%20Wave.JPEG",
+  "/home_new/Spine%20Decompression%20_11zon.jpg",
+  "/home_new/5%20TECAR%20THERAPY.jpeg",
+  "/home_new/6%20Acoustic%20Wave.JPEG",
+  "/home_new/Spine%20Decompression%20_11zon.jpg",
+
 ];
 
 const ONE_SECOND = 1000;
@@ -22,8 +23,8 @@ const SPRING_OPTIONS = {
   damping: 50,
 };
 
-export const SubCarousel = () => {
-  const [imgIndex, setImgIndex] = useState(0);
+export const SubCarouselLeft = () => {
+  const [imgIndex, setImgIndex] = useState(5);
 
   const dragX = useMotionValue(0);
 
@@ -33,10 +34,10 @@ export const SubCarousel = () => {
 
       if (x === 0) {
         setImgIndex((pv) => {
-          if (pv === imgs.length - 1) {
-            return 0;
+          if (pv === 0) {
+            return imgs.length - 1;
           }
-          return pv + 1;
+          return pv - 1;
         });
       }
     }, AUTO_DELAY);

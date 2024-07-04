@@ -20,7 +20,7 @@ export default function TestimonialSlider({ team }) {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {

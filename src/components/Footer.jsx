@@ -313,10 +313,10 @@ const Footer = () => {
           width: "90%",
         }}
       >
-        <span>
+        <span className="text-base">
           &copy; 2024&nbsp;
           <a
-            className="hover:text-yellow-400"
+            className="font-futura hover:text-yellow-400"
             href="https://mypainclinicglobal.com/"
           >
             MY PAIN CLINIC&nbsp;

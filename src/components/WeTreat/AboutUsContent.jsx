@@ -71,7 +71,7 @@ const AboutUsContent = () => {
           >
             <div className="flex flex-col gap-4 text-justify">
               <p>
-                Welcome to My Pain Clinic, your ultimate destination for
+                Welcome to <span className="font-futura">My Pain Clinic</span>, your ultimate destination for
                 comprehensive assessment, rehabilitation, and recovery. Founded
                 under the esteemed banner of M/s. Global Body Fix with the
                 vision of creating a one-stop shop for all your pain management
@@ -91,7 +91,7 @@ const AboutUsContent = () => {
               </p>
               <p>
                 Whether you're dealing with chronic pain or looking to enhance
-                your overall well-being, My Pain Clinic is here to support you.
+                your overall well-being, <span className="font-futura">My Pain Clinic</span> is here to support you.
                 Join us and experience the difference that cutting-edge
                 technology and compassionate care can make in your journey to a
                 pain-free life.
@@ -114,7 +114,7 @@ const AboutUsContent = () => {
           <div className="flex-1">
             <div className="text-4xl mb-4 text-brandColor">Our Mission</div>
             <div className="text-justify text-base">
-              At My Pain Clinic, our mission is simple yet profound: to improve
+              At <span className="font-futura">My Pain Clinic</span>, our mission is simple yet profound: to improve
               the lives of everyone in pain. We strive to be a beacon of hope
               and relief, offering innovative treatments and compassionate care
               to those in need. Our approach is grounded in recognizing and
@@ -132,7 +132,7 @@ const AboutUsContent = () => {
               expanding our reach with multiple treatment centres, making our
               revolutionary approach to pain relief accessible to more people
               around the world. We are committed to continual innovation and
-              growth, ensuring that My Pain Clinic remains at the forefront of
+              growth, ensuring that <span className="font-futura">My Pain Clinic</span> remains at the forefront of
               advancements in pain management and rehabilitation. Join us on
               this journey to a brighter, pain-free future.
             </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { IoCall } from "react-icons/io5";
 import { HiMenuAlt2 } from "react-icons/hi";
@@ -26,107 +26,107 @@ const Navbar = () => {
         {
           text: "Post-Surgical Rehabilitation",
           linkTo: "/specific-treatment/post-surgical-rehabilitation",
-          imgUrl: '/home_new/Post_Surgery.png'
+          imgUrl: "/home_new/Post_Surgery.png",
         },
         {
           text: "Multiple Joint Pain",
           linkTo: "/specific-treatment/joint-dislocation",
-          imgUrl: '/home_new/Joint_pain.png'
+          imgUrl: "/home_new/Joint_pain.png",
         },
         {
           text: "Neck Pain",
           linkTo: "/specific-treatment/neck-pain",
-          imgUrl: '/home_new/Neck.jpg'
+          imgUrl: "/home_new/Neck.jpg",
         },
         {
           text: "Frozen Shoulder",
           linkTo: "/specific-treatment/frozen-shoulder",
-          imgUrl: '/home_new/shoulder.jpg'
+          imgUrl: "/home_new/shoulder.jpg",
         },
         {
           text: "Back Pain",
           linkTo: "/specific-treatment/back-pain",
-          imgUrl: '/home_new/back.jpg'
+          imgUrl: "/home_new/back.jpg",
         },
         {
           text: "Elbow Pain",
           linkTo: "/specific-treatment/elbow-pain",
-          imgUrl: '/home_new/elbow.jpg'
+          imgUrl: "/home_new/elbow.jpg",
         },
         {
           text: "Knee Pain",
           linkTo: "/specific-treatment/knee-pain",
-          imgUrl: '/home_new/knee.jpg'
+          imgUrl: "/home_new/knee.jpg",
         },
         {
           text: "Cervical Spondylosis",
           linkTo: "/specific-treatment/cervical-spondylosis",
-          imgUrl: '/home_new/Cervical_Spondylosis.png'
+          imgUrl: "/home_new/Cervical_Spondylosis.png",
         },
         {
           text: "Radiculopathy",
           linkTo: "/specific-treatment/radiculopathy",
-          imgUrl: '/home_new/Radiculopathy.png'
+          imgUrl: "/home_new/Radiculopathy.png",
         },
         {
           text: "Rotator Cuff Injury",
           linkTo: "/specific-treatment/rotator-cuff-injury",
-          imgUrl: '/home_new/Rotator_Cuf_Injury.png'
+          imgUrl: "/home_new/Rotator_Cuf_Injury.png",
         },
         {
           text: "Slipped Disc",
           linkTo: "/specific-treatment/slipped-disc",
-          imgUrl: '/home_new/slipped_disk.png'
+          imgUrl: "/home_new/slipped_disk.png",
         },
         {
           text: "Tennis Elbow",
           linkTo: "/specific-treatment/tennis-elbow",
-          imgUrl: '/home_new/tennis_elbow.png'
+          imgUrl: "/home_new/tennis_elbow.png",
         },
         {
           text: "Carpal Tunnel Syndrome",
           linkTo: "/specific-treatment/carpal-tunnel-syndrome",
-          imgUrl: '/home_new/Carpal_Tunnel_Syndrome.png'
+          imgUrl: "/home_new/Carpal_Tunnel_Syndrome.png",
         },
         {
           text: "Osteoarthritis",
           linkTo: "/specific-treatment/osteoarthritis",
-          imgUrl: '/home_new/Osteoarthritis.png'
+          imgUrl: "/home_new/Osteoarthritis.png",
         },
         {
           text: "Sciatica",
           linkTo: "/specific-treatment/sciatica",
-          imgUrl: '/home_new/Sciatica.png'
+          imgUrl: "/home_new/Sciatica.png",
         },
         {
           text: "Bursitis",
           linkTo: "/specific-treatment/bursitis",
-          imgUrl: '/home_new/Bursitis.png'
+          imgUrl: "/home_new/Bursitis.png",
         },
         {
           text: "Acl / Mcl Tear",
           linkTo: "/specific-treatment/acl-tear",
-          imgUrl: '/home_new/acl_tear_pain.jpg'
+          imgUrl: "/home_new/acl_tear_pain.jpg",
         },
         {
           text: "Hamstring Injuries",
           linkTo: "/specific-treatment/hamstring-injuries",
-          imgUrl: '/home_new/Hamstring_Injuries.png'
+          imgUrl: "/home_new/Hamstring_Injuries.png",
         },
         {
           text: "Tendonitis",
           linkTo: "/specific-treatment/tendonitis",
-          imgUrl: '/home_new/Tendonitis.png'
+          imgUrl: "/home_new/Tendonitis.png",
         },
         {
           text: "Plantar Fasciitis",
           linkTo: "/specific-treatment/plantar-fasciitis",
-          imgUrl: '/home_new/Plantar_Fasciitis.png'
+          imgUrl: "/home_new/Plantar_Fasciitis.png",
         },
         {
           text: "Heel Spur",
           linkTo: "/specific-treatment/heel-spur",
-          imgUrl: '/home_new/Heel_Spur.png'
+          imgUrl: "/home_new/Heel_Spur.png",
         },
       ],
     },
@@ -143,19 +143,19 @@ const Navbar = () => {
         {
           text: "Treatments",
           linkTo: "/treatments",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: "https://placehold.co/400",
         },
         {
           text: "Assessments",
           linkTo: "/assessments",
-          imgUrl: 'https://placehold.co/400'
+          imgUrl: "https://placehold.co/400",
         },
         {
           text: "Services",
           linkTo: "/services",
-          imgUrl: 'https://placehold.co/400'
-        }
-      ]
+          imgUrl: "https://placehold.co/400",
+        },
+      ],
     },
     // {
     //   id: 4,
@@ -186,26 +186,33 @@ const Navbar = () => {
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
-    setDropdownOpenIndex(index); 
+    setDropdownOpenIndex(index);
   };
 
   const handleMouseLeave = () => {
     setHoveredIndex(null);
-    setDropdownOpenIndex(null); 
+    setDropdownOpenIndex(null);
+  };
+
+  const handleToggleDropdown = (index) => {
+    setDropdownOpenIndex(dropdownOpenIndex === index ? null : index);
   };
 
   const handleCloseDropdown = () => {
-    setDropdownOpenIndex(null); 
+    setDropdownOpenIndex(null);
   };
 
   return (
-    <nav className="bg-[#080808] h-[87px] flex mf:justify-around justify-between px-[1rem] items-center text-[#B1B4B6] fixed top-0 w-[100%] z-50" id="navbar">
+    <nav
+      className="bg-[#080808] h-[87px] flex mf:justify-around justify-between px-[1rem] items-center text-[#B1B4B6] fixed top-0 w-[100%] z-50"
+      id="navbar"
+    >
       <div>
         <Link href="/">
           <img style={{ width: "40%" }} src="/images/logo-mpc.png" alt="logo" />
         </Link>
       </div>
-      
+
       {/* Desktop menu */}
       <div className="mf:flex justify-center items-center gap-[1.5rem] text-[16px] font-medium transition hidden">
         {navLinks.map(({ id, text, linkTo, dropdownContent }, index) => (
@@ -226,16 +233,20 @@ const Navbar = () => {
               </div>
             ) : (
               <Link href={linkTo}>
-                <span
-                  className="flex items-center py-4 text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105 text_gradient"
-                >
+                <span className="flex items-center py-4 text-[#FAFAFA] text-xl 2xl:text-2xl transition-all ease-out delay-150 hover:scale-105 text_gradient">
                   {text}
                 </span>
               </Link>
             )}
             {dropdownContent && dropdownOpenIndex === index && (
-              <div className={`bg-[#080808] text-[#fff] shadow-lg z-10 ${text === 'Our Treatments' ? 'top-[60px] rounded absolute w-full' : 'fixed overflow-y-auto left-0 w-full top-[70px] h-[100vh] px-4 md:px-[5rem] pb-[87px] opacity-100'}`}>
-                {text === 'Our Treatments' ? (
+              <div
+                className={`bg-[#080808] text-[#fff] shadow-lg z-10 ${
+                  text === "Our Treatments"
+                    ? "top-[60px] rounded absolute w-full"
+                    : "fixed overflow-y-auto left-0 w-full top-[70px] h-[100vh] px-4 md:px-[5rem] pb-[87px] opacity-100"
+                }`}
+              >
+                {text === "Our Treatments" ? (
                   // <div className="flex flex-col gap-2">
                   //   {dropdownContent.map((item, idx) => (
                   //     <Link className="p-2 hover:bg-brandColor " key={idx} href={item.linkTo}>
@@ -249,38 +260,41 @@ const Navbar = () => {
                   //   ))}
                   // </div>
                   <motion.div
-                  initial={{ scaleY: 0 }}
-                  animate={{ scaleY: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    staggerChildren: 0.1
-                  }}
-                  style={{ transformOrigin: 'top' }}
-                  className="flex flex-col gap-2 p-2 rounded-lg bg-[#080808] shadow-xl absolute top-[120%] left-[10%] translate-x-[-50%] w-48 z-50"
-                >
-                  {dropdownContent.map((item, idx) => (
-                    <motion.div
-                      key={idx}
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.2 }}
-                      onClick={handleCloseDropdown}
-                    >
-                      <Link className="block p-2 hover:bg-brandColor" href={item.linkTo}>
-                        <div className="px-2 text-center text-[1.1rem] text-[#FAFAFA]">
-                          {item.text}
-                        </div>
-                      </Link>
-                    </motion.div>
-                  ))}
-                </motion.div>
+                    initial={{ scaleY: 0 }}
+                    animate={{ scaleY: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      staggerChildren: 0.1,
+                    }}
+                    style={{ transformOrigin: "top" }}
+                    className="flex flex-col gap-2 p-2 rounded-lg bg-[#080808] shadow-xl absolute top-[120%] left-[10%] translate-x-[-50%] w-48 z-50"
+                  >
+                    {dropdownContent.map((item, idx) => (
+                      <motion.div
+                        key={idx}
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.2 }}
+                        onClick={handleCloseDropdown}
+                      >
+                        <Link
+                          className="block p-2 hover:bg-brandColor"
+                          href={item.linkTo}
+                        >
+                          <div className="px-2 text-center text-[1.1rem] text-[#FAFAFA]">
+                            {item.text}
+                          </div>
+                        </Link>
+                      </motion.div>
+                    ))}
+                  </motion.div>
                 ) : (
                   <div className="grid grid-cols-7 gap-[30px] w-full">
                     {dropdownContent.map((item, idx) => (
                       <Link key={idx} href={item.linkTo}>
                         <div
                           className="rounded-md p-4 flex flex-col items-center justify-center hover:bg-brandColor min-h-[10rem]"
-                          onMouseEnter={() => setHoveredIndex(index)} 
+                          onMouseEnter={() => setHoveredIndex(index)}
                           onMouseLeave={() => setHoveredIndex(null)}
                           onClick={handleCloseDropdown}
                         >
@@ -309,18 +323,62 @@ const Navbar = () => {
           show ? "hidden" : "top-4"
         }`}
       >
-        {navLinks.map(({ id, text, linkTo }, idx) => (
-          <Link
-            key={idx}
-            href={linkTo}
-            onClick={() => setShow(!show)} // Close mobile menu on link click
-            className="text-[#FAFAFA] transition-all ease-out delay-150 hover:scale-105 text_gradient"
-          >
-            {text}
-          </Link>
+        {navLinks.map(({ id, text, linkTo, dropdownContent }, index) => (
+          <div key={id} className="relative w-full px-4">
+            {dropdownContent ? (
+              <div
+                className="flex items-center justify-between py-4 text-[#FAFAFA] text-xl cursor-pointer"
+                onClick={() => handleToggleDropdown(index)}
+              >
+                {text}
+                <FaChevronDown
+                  className={`ml-2 transition-transform duration-300 ease-in-out ${
+                    dropdownOpenIndex === index ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </div>
+            ) : (
+              <Link href={linkTo} onClick={() => setShow(!show)}>
+                <span className="block py-4 text-[#FAFAFA] text-xl">
+                  {text}
+                </span>
+              </Link>
+            )}
+            {dropdownContent && dropdownOpenIndex === index && (
+              <div className="flex flex-col gap-2 bg-[#080808] text-[#fff] shadow-lg rounded px-4 py-2 max-h-64 overflow-y-auto">
+                {dropdownContent.map((item, idx) => (
+                  <Link
+                    key={idx}
+                    href={item.linkTo}
+                    onClick={() => {
+                      setShow(true);
+                      handleCloseDropdown();
+                    }}
+                    className="block py-2 hover:bg-gray-700 rounded text-sm"
+                  >
+                    {text === "We Treat" && (
+                      <span className="flex items-center gap-2">
+                        <img
+                          src={item.imgUrl}
+                          alt="treatment-img"
+                          className="h-[2rem] w-[2rem] rounded-full"
+                        />
+                        {item.text}
+                      </span>
+                    )}
+                    {text !== "We Treat" && (
+                      <span className="block py-2 hover:bg-gray-700 rounded text-sm">
+                        {item.text}
+                      </span>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
         <div
-          className="text-[30px] mf:hidden block absolute left-4 top-4"
+          className="text-[30px] mf:hidden block absolute left-4 top-4 cursor-pointer"
           onClick={() => setShow(!show)}
         >
           <RxCross2 />
@@ -342,7 +400,7 @@ const Navbar = () => {
 
       {/* Menu toggle for mobile */}
       <div
-        className="text-[30px] mf:hidden block"
+        className="text-[30px] mf:hidden block cursor-pointer"
         onClick={() => setShow(!show)}
       >
         <HiMenuAlt2 />

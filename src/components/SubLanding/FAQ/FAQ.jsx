@@ -28,7 +28,11 @@ const FAQ = () => {
         <Accordian2 className="flex flex-col gap-3">
           <AccordianItem
             value="1"
-            trigger="What types of pain conditions do you treat at My Pain Clinic?"
+            trigger={(
+              <span>
+                What types of pain conditions do you treat at <span className="font-futura">My Pain Clinic</span>?
+              </span>
+            )}
           >
             We treat various pain conditions including chronic pain,
             musculoskeletal issues, sports injuries, systemic illnesses, and
@@ -37,7 +41,11 @@ const FAQ = () => {
 
           <AccordianItem
             value="2"
-            trigger="What advanced physiotherapy techniques are available at My Pain Clinic?"
+            trigger={(
+              <span>
+                What advanced physiotherapy techniques are available at <span className="font-futura">My Pain Clinic</span>?
+              </span>
+            )}
           >
             Our advanced physiotherapy techniques include cupping, taping, dry
             needling, GK3, IASTM, and MFR, all tailored to your specific needs

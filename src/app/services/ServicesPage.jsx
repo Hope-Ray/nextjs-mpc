@@ -74,7 +74,7 @@ const ServicesPage = () => {
 
   return (
     <div className="bg-white py-32 text-black" id="services">
-      <div className="container mx-auto px-[5rem]">
+      <div className="container mx-auto px-2 md:px-[5rem]">
         <h2 className="text-5xl font-bold mb-8 text-center text-brandColor">Our Services</h2>
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-16">
           {cardsData.cards.map((card, index) => (
