@@ -368,52 +368,54 @@ const Navbar = () => {
                     </span>
                   </Link>
                 )}
-                {dropdownContent && dropdownOpenIndex === index && (
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
-                    variants={dropdownVariants}
-                    transition={{ duration: 0.3 }}
-                    className="flex flex-col gap-2 bg-[#0A1019] text-[#fff] shadow-lg rounded px-4 py-2 max-h-64 overflow-y-auto"
-                  >
-                    {dropdownContent.map((item, idx) => (
-                      <Link
-                        key={idx}
-                        href={item.linkTo}
-                        onClick={() => {
-                          setShow(true);
-                          handleCloseDropdown();
-                        }}
-                        className="block py-2 hover:bg-gray-700 rounded text-sm"
-                      >
-                        {text === "We Treat" && (
-                          <span className="flex items-center gap-2">
-                            <img
-                              src={item.imgUrl}
-                              alt="treatment-img"
-                              className="h-[2rem] w-[2rem] rounded-full"
-                            />
-                            {item.text}
-                          </span>
-                        )}
-                        {text !== "We Treat" && (
-                          <span className="block py-2 hover:bg-gray-700 rounded text-sm">
-                            {item.text}
-                          </span>
-                        )}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
+                <AnimatePresence>
+                  {dropdownContent && dropdownOpenIndex === index && (
+                    <motion.div
+                      initial="hidden"
+                      animate="visible"
+                      exit="hidden"
+                      variants={dropdownVariants}
+                      transition={{ duration: 0.3 }}
+                      className="flex flex-col gap-2 bg-[#0A1019] text-[#fff] shadow-lg rounded px-4 py-2 max-h-64 overflow-y-auto"
+                    >
+                      {dropdownContent.map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href={item.linkTo}
+                          onClick={() => {
+                            setShow(true);
+                            handleCloseDropdown();
+                          }}
+                          className="block py-2 hover:bg-gray-700 rounded text-sm"
+                        >
+                          {text === "We Treat" && (
+                            <span className="flex items-center gap-2">
+                              <img
+                                src={item.imgUrl}
+                                alt="treatment-img"
+                                className="h-[2rem] w-[2rem] rounded-full"
+                              />
+                              {item.text}
+                            </span>
+                          )}
+                          {text !== "We Treat" && (
+                            <span className="block py-2 hover:bg-gray-700 rounded text-sm">
+                              {item.text}
+                            </span>
+                          )}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             ))}
-            {/* <div
+            <div
               className="text-[30px] mf:hidden block absolute right-4 top-4 cursor-pointer"
               onClick={() => setShow(!show)}
             >
               <RxCross2 />
-            </div> */}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
