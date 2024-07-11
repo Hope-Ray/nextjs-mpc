@@ -34,7 +34,7 @@ const AboutUsContent = () => {
           }}
           id="curv-top"
         ></div>
-        <div className="flex w-full">
+        <div className="block md:flex w-full">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -49,11 +49,11 @@ const AboutUsContent = () => {
             className="flex-1 flex justify-center items-center p-4 text-white"
           >
             <div className="">
-              <p className="text-3xl">YOUR JOURNEY TO A</p>
-              <p className="text-4xl font-semibold whitespace-nowrap">
+              <p className="text-xl md:text-3xl px-2 md:p-0">YOUR JOURNEY TO A</p>
+              <p className="text-4xl font-semibold px-2 md:p-0">
                 PAIN-FREE, VIBRANT LIFE
               </p>
-              <p className="text-3xl">BEGINS HERE</p>
+              <p className="text-3xl px-2 md:p-0">BEGINS HERE</p>
             </div>
           </motion.div>
           <motion.div
@@ -109,12 +109,12 @@ const AboutUsContent = () => {
           id="curv-top"
         ></div>
       </main>
-      <div className="px-[5rem] mb-[6rem]">
-        <div className="flex w-full gap-4">
+      <div className="p-4 md:px-[5rem] mb-[6rem]">
+        <div className="flex-col flex md:flex-row  w-full gap-4">
           <div className="flex-1">
             <div className="text-4xl mb-4 text-brandColor">Our Mission</div>
             <div className="text-justify text-base">
-              At <span className="font-futura">My Pain Clinic</span>, our mission is simple yet profound: to improve
+              At <span className="font-futura_light">My Pain Clinic</span>, our mission is simple yet profound: to improve
               the lives of everyone in pain. We strive to be a beacon of hope
               and relief, offering innovative treatments and compassionate care
               to those in need. Our approach is grounded in recognizing and
@@ -132,7 +132,7 @@ const AboutUsContent = () => {
               expanding our reach with multiple treatment centres, making our
               revolutionary approach to pain relief accessible to more people
               around the world. We are committed to continual innovation and
-              growth, ensuring that <span className="font-futura">My Pain Clinic</span> remains at the forefront of
+              growth, ensuring that <span className="font-futura_light">My Pain Clinic</span> remains at the forefront of
               advancements in pain management and rehabilitation. Join us on
               this journey to a brighter, pain-free future.
             </div>

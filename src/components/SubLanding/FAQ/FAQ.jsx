@@ -24,13 +24,13 @@ const FAQ = () => {
         </h2>
         <div className=" w-[100px] h-[2px] mx-auto border-gradient"></div>
       </motion.div>
-      <div className="max-w-[70%] mx-auto mt-10 px-5 md:px-[5rem]">
+      <div className="max-w-[100%] md:max-w-[70%] md:mx-auto mt-10 px-5 md:px-[5rem]">
         <Accordian2 className="flex flex-col gap-3">
           <AccordianItem
             value="1"
             trigger={(
               <span>
-                What types of pain conditions do you treat at <span className="font-futura">My Pain Clinic</span>?
+                What types of pain conditions do you treat at <span className="font-futura_light">My Pain Clinic</span>?
               </span>
             )}
           >
@@ -43,7 +43,7 @@ const FAQ = () => {
             value="2"
             trigger={(
               <span>
-                What advanced physiotherapy techniques are available at <span className="font-futura">My Pain Clinic</span>?
+                What advanced physiotherapy techniques are available at <span className="font-futura_light">My Pain Clinic</span>?
               </span>
             )}
           >

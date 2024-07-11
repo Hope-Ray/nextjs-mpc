@@ -316,7 +316,7 @@ const Footer = () => {
         <span className="text-base">
           &copy; 2024&nbsp;
           <a
-            className="font-futura hover:text-yellow-400"
+            className="font-futura_light hover:text-yellow-400"
             href="https://mypainclinicglobal.com/"
           >
             MY PAIN CLINIC&nbsp;

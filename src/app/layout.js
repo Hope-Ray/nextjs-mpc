@@ -25,6 +25,16 @@ const futura = localFont(
   }
 );
 
+const futura_light = localFont(
+  {
+    src: [{
+      path: "../../public/fonts/Futura Book font.ttf",
+      weight: "500",
+    }],
+    variable: "--font-futura_light"
+  }
+);
+
 export const metadata = {
   title: "MPC",
   description: "",
@@ -32,7 +42,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${futura.variable} ${sacramento.variable}`}>
+    <html lang="en" className={`${futura.variable} ${futura_light.variable} ${sacramento.variable}`}>
       <body className='relative'>
         <Navbar/>
         {children}

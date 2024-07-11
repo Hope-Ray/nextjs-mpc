@@ -53,7 +53,7 @@ const TreatmentDetails = ({ params }) => {
             <div key={idx}>
               {/* <div className="font-semibold">{type}</div> */}
               {Array.isArray(details) ? (
-                <div className="mt-1 leading-normal"><span className="font-semibold">{type}</span>{` ${details[0]}`}</div>
+                <div className="mt-6 md:mt-1 leading-normal"><span className="font-semibold">{type}</span>{` ${details[0]}`}</div>
               ) : (
                 <p>{details}</p>
               )}
@@ -91,7 +91,7 @@ const TreatmentDetails = ({ params }) => {
             </div>
           </div>
           <div className="px-4 md:flex md:px-[5rem] py-[2rem] min-h-[20rem]">
-            <div className="w-full md:w-[70%] pe-[2rem]">
+            <div className="w-full md:w-[70%] md:pe-[2rem]">
               {treatmentData.content &&
                 Object.entries(treatmentData.content).map(
                   ([sectionTitle, items]) => (
@@ -105,7 +105,7 @@ const TreatmentDetails = ({ params }) => {
                   {treatmentData?.para}
                 </div>
             </div>
-            <div className="flex-1">
+            <div className="hidden md:block flex-1">
               <AppointmentForm />
             </div>
           </div>

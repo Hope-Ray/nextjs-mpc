@@ -16,7 +16,7 @@ const About = () => {
   };
   return (
     <div className=" relative py-[1rem] bg-[#F7F7FC] " id="about">
-      <motion.div {...yAxisAnimation} className="py-[2rem]">
+      <motion.div {...yAxisAnimation}  className="py-[2rem]">
         <h2 className=" text-brandColor text-[48px] font-medium text-center ">
           About Us
         </h2>
@@ -52,13 +52,13 @@ const About = () => {
         <div className=" flex h-auto">
           <div className=" flex flex-col gap-[2rem] md:w-[540px] w-[95%] md:mx-0 mx-auto  md:text-xl text-lg  text-justify">
             <p>
-            Welcome to <span className="font-futura">MY PAIN CLINIC</span>, a premier establishment under the esteemed banner of M/s. Global Body Fix, setting the gold standard for pain management and rehabilitation across the Asia-Pacific region.
+            Welcome to <span className="font-futura_light font-thin">MY PAIN CLINIC</span>, a premier establishment under the esteemed banner of M/s. Global Body Fix, setting the gold standard for pain management and rehabilitation across the Asia-Pacific region.
             </p>
             <p>
             Nestled in the vibrant heart of Mumbai's Bandra-West, our clinic is more than just a healthcare facility; it's a sanctuary of advanced solutions and compassionate care. We seamlessly blend cutting-edge technology in Physiotherapy and Sports Rehabilitation with a commitment to your well-being.
             </p>
             <p>
-            <span className="font-futura">MY PAIN CLINIC</span> stands at the forefront of clinical excellence, offering innovative pain management and rehabilitation solutions.
+            <span className="font-futura_light">MY PAIN CLINIC</span> stands at the forefront of clinical excellence, offering innovative pain management and rehabilitation solutions.
             </p>
             {/* <p>
               banner of M/s. Global Body Fix, setting the gold standard for pain

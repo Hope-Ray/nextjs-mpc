@@ -5,7 +5,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence  } from "framer-motion";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -202,6 +202,16 @@ const Navbar = () => {
     setDropdownOpenIndex(null);
   };
 
+  const dropdownVariants = {
+    hidden: { height: 0, opacity: 0 },
+    visible: { height: "auto", opacity: 1 },
+  };
+
+  const menuVariants = {
+    hidden: { x: "-100%" },
+    visible: { x: 0 },
+  };
+
   return (
     <nav
       className="bg-[#080808] h-[87px] flex mf:justify-around justify-between px-[1rem] items-center text-[#B1B4B6] fixed top-0 w-[100%] z-50"
@@ -318,72 +328,95 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <div
-        className={`mf:hidden items-center right-0 text-[16px] font-medium absolute h-screen bg-black text-[#fff] flex shadow-xl flex-col gap-[2rem] w-[300px] rounded-[30px] py-[2rem] transition-all ease-linear z-20 ${
-          show ? "hidden" : "top-4"
-        }`}
-      >
-        {navLinks.map(({ id, text, linkTo, dropdownContent }, index) => (
-          <div key={id} className="relative w-full px-4">
-            {dropdownContent ? (
-              <div
-                className="flex items-center justify-between py-4 text-[#FAFAFA] text-xl cursor-pointer"
-                onClick={() => handleToggleDropdown(index)}
-              >
-                {text}
-                <FaChevronDown
-                  className={`ml-2 transition-transform duration-300 ease-in-out ${
-                    dropdownOpenIndex === index ? "rotate-180" : "rotate-0"
-                  }`}
+      <AnimatePresence>
+        {!show && (
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={menuVariants}
+            transition={{ duration: 0.5 }}
+            className="md:hidden items-center left-0 top-0 text-[16px] font-medium absolute h-screen bg-[#0A1019] text-[#fff] flex shadow-xl flex-col gap-[0rem] w-[300px] py-[2rem] transition-all ease-linear z-20"
+          >
+            <div className="">
+              <Link className="flex justify-center" href="/">
+                <img
+                  style={{ width: "40%" }}
+                  src="/images/logo-mpc.png"
+                  alt="logo"
                 />
-              </div>
-            ) : (
-              <Link href={linkTo} onClick={() => setShow(!show)}>
-                <span className="block py-4 text-[#FAFAFA] text-xl">
-                  {text}
-                </span>
               </Link>
-            )}
-            {dropdownContent && dropdownOpenIndex === index && (
-              <div className="flex flex-col gap-2 bg-[#080808] text-[#fff] shadow-lg rounded px-4 py-2 max-h-64 overflow-y-auto">
-                {dropdownContent.map((item, idx) => (
-                  <Link
-                    key={idx}
-                    href={item.linkTo}
-                    onClick={() => {
-                      setShow(true);
-                      handleCloseDropdown();
-                    }}
-                    className="block py-2 hover:bg-gray-700 rounded text-sm"
+            </div>
+            {navLinks.map(({ id, text, linkTo, dropdownContent }, index) => (
+              <div key={id} className="relative w-full px-4">
+                {dropdownContent ? (
+                  <div
+                    className="flex items-center justify-between py-4 text-[#FAFAFA] text-xl cursor-pointer"
+                    onClick={() => handleToggleDropdown(index)}
                   >
-                    {text === "We Treat" && (
-                      <span className="flex items-center gap-2">
-                        <img
-                          src={item.imgUrl}
-                          alt="treatment-img"
-                          className="h-[2rem] w-[2rem] rounded-full"
-                        />
-                        {item.text}
-                      </span>
-                    )}
-                    {text !== "We Treat" && (
-                      <span className="block py-2 hover:bg-gray-700 rounded text-sm">
-                        {item.text}
-                      </span>
-                    )}
+                    {text}
+                    <FaChevronDown
+                      className={`ml-2 transition-transform duration-300 ease-in-out ${
+                        dropdownOpenIndex === index ? "rotate-180" : "rotate-0"
+                      }`}
+                    />
+                  </div>
+                ) : (
+                  <Link href={linkTo} onClick={() => setShow(!show)}>
+                    <span className="block py-4 text-[#FAFAFA] text-xl">
+                      {text}
+                    </span>
                   </Link>
-                ))}
+                )}
+                {dropdownContent && dropdownOpenIndex === index && (
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    variants={dropdownVariants}
+                    transition={{ duration: 0.3 }}
+                    className="flex flex-col gap-2 bg-[#0A1019] text-[#fff] shadow-lg rounded px-4 py-2 max-h-64 overflow-y-auto"
+                  >
+                    {dropdownContent.map((item, idx) => (
+                      <Link
+                        key={idx}
+                        href={item.linkTo}
+                        onClick={() => {
+                          setShow(true);
+                          handleCloseDropdown();
+                        }}
+                        className="block py-2 hover:bg-gray-700 rounded text-sm"
+                      >
+                        {text === "We Treat" && (
+                          <span className="flex items-center gap-2">
+                            <img
+                              src={item.imgUrl}
+                              alt="treatment-img"
+                              className="h-[2rem] w-[2rem] rounded-full"
+                            />
+                            {item.text}
+                          </span>
+                        )}
+                        {text !== "We Treat" && (
+                          <span className="block py-2 hover:bg-gray-700 rounded text-sm">
+                            {item.text}
+                          </span>
+                        )}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
               </div>
-            )}
-          </div>
-        ))}
-        <div
-          className="text-[30px] mf:hidden block absolute left-4 top-4 cursor-pointer"
-          onClick={() => setShow(!show)}
-        >
-          <RxCross2 />
-        </div>
-      </div>
+            ))}
+            {/* <div
+              className="text-[30px] mf:hidden block absolute right-4 top-4 cursor-pointer"
+              onClick={() => setShow(!show)}
+            >
+              <RxCross2 />
+            </div> */}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Call button */}
       <div>
@@ -403,7 +436,7 @@ const Navbar = () => {
         className="text-[30px] mf:hidden block cursor-pointer"
         onClick={() => setShow(!show)}
       >
-        <HiMenuAlt2 />
+        {show ? <HiMenuAlt2 /> : <RxCross2 />}
       </div>
     </nav>
   );

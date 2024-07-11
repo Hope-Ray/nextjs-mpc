@@ -46,7 +46,7 @@ const ContactUsPage = () => {
 
   return (
     <>
-      <div className="bg-white pt-44 text-black" id="assessments">
+      <div className="bg-white pt-[100px] md:pt-44 text-black" id="assessments">
         <div className="container mx-auto md:px-[5rem] px-4 grid md:grid-cols-2 gap-8 bg-white">
           <motion.div
             {...leftAxisAnimation}
@@ -83,8 +83,8 @@ const ContactUsPage = () => {
                 </div>
               </div>
             </div>
-            <form className="space-y-4 p-5">
-              <div className="flex space-x-4">
+            <form className="p-5">
+              <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                 <div className="relative flex-1">
                   <label className="block text-lg font-normal text-gray-700">
                     First Name <span className="text-red-500">*</span>
@@ -120,7 +120,7 @@ const ContactUsPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-4">
+              <div className="flex flex-col md:flex-row pt-2 gap-2 md:gap-4">
                 <div className="relative flex-1">
                   <label className="block text-lg font-normal text-gray-700">
                     Email <span className="text-red-500">*</span>
@@ -157,7 +157,7 @@ const ContactUsPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative">
+              <div className="relative pt-2">
                 <label className="block text-lg font-normal text-gray-700">
                   Subject
                 </label>
@@ -172,7 +172,7 @@ const ContactUsPage = () => {
                   />
                 </div>
               </div>
-              <div>
+              <div className="pt-2">
                 <label className="block text-lg font-normal text-gray-700">
                   Message
                 </label>
@@ -182,7 +182,7 @@ const ContactUsPage = () => {
                   placeholder="Type your message here"
                 ></textarea>
               </div>
-              <div className="text-center">
+              <div className="text-center pt-4">
                 <button
                   type="submit"
                   className="gap-[1rem] font-medium rounded-[36px] mf:w-[200px] mf:px-[0rem] px-[0.8rem] py-[0.8rem]  items-center transition border-gradient text-[#fff] hover:scale-105"

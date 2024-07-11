@@ -4,20 +4,21 @@ import { SubCarouselLeft } from "./SubCarousel/SubCarouselLeft";
 
 const SubWelcome = () => {
   return (
-    <div className="bg-no-repeat bg-cover bg-[#EAECEC] bg-bottom h-screen relative">
+    <div className="bg-no-repeat bg-cover bg-gradient-to-r from-white to-gray-400 bg-bottom h-screen relative">
       {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
       <div className="md:flex h-full pt-[87px]">
         <div className="hero-content md:w-[50%] flex flex-col h-full overflow-hidden">
           <div className="flex-1 w-full overflow-hidden">
             <SubCarousel />
           </div>
-          <div className="min-h-[20%] w-full flex flex-col gap-2 justify-center items-center p-4 overflow-hidden">
-            <h3 className="text-3xl md:text-[2.35rem] 2xl:text-3xl font-bold text-brandColor text-left w-full  font-sacramento">
+          <div className="min-h-[20%] w-full flex flex-col gap-0 justify-center items-center py-4 px-1 overflow-hidden">
+            <h3 className="text-[2.35rem] md:text-[2.35rem] 2xl:text-3xl font-bold text-brandColor text-left w-full  font-sacramento">
               Cutting Edge Technology
               </h3>
-              <h3 className="text-3xl md:text-3xl 2xl:text-3xl font-bold text-brandColor text-right w-full">
+              <h3 className="text-3xl md:text-3xl 2xl:text-3xl font-semibold text-brandColor text-right w-full">
               For the first time in INDIA
             </h3>
+
           </div>
           <div className="flex-1 w-full overflow-hidden">
             <SubCarouselLeft />
