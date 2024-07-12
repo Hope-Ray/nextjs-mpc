@@ -28,8 +28,7 @@ const futura = localFont(
 const futura_light = localFont(
   {
     src: [{
-      path: "../../public/fonts/Futura Book font.ttf",
-      weight: "500",
+      path: "../../public/fonts/Futura_Book_font.ttf",
     }],
     variable: "--font-futura_light"
   }

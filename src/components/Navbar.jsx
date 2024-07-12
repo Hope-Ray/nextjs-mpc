@@ -410,12 +410,12 @@ const Navbar = () => {
                 </AnimatePresence>
               </div>
             ))}
-            <div
+            {/* <div
               className="text-[30px] mf:hidden block absolute right-4 top-4 cursor-pointer"
               onClick={() => setShow(!show)}
             >
               <RxCross2 />
-            </div>
+            </div> */}
           </motion.div>
         )}
       </AnimatePresence>
