@@ -1,3 +1,5 @@
+
+
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -34,7 +36,7 @@ const futura_light = localFont(
   }
 );
 
-export const metadata = {
+ const metadata = {
   title: "MPC",
   description: "",
 };
@@ -42,6 +44,30 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${futura.variable} ${futura_light.variable} ${sacramento.variable}`}>
+     <head>
+     <title>{metadata.title}</title>
+     <meta name="description" content={metadata.description} />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16469387110"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16469387110');
+            `,
+          }}
+        />
+
+        <script id="conversion-event" strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+            __html: `gtag('event','conversion',{'send_to':'AW-16469387110/lrbtCOrchsMZEObOm609'});`
+          }} />
+       
+      </head>  
       <body className='relative'>
         <Navbar/>
         {children}

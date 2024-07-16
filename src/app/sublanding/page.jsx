@@ -8,6 +8,8 @@ import FAQ from "@/components/SubLanding/FAQ/FAQ";
 import Modal from "@/components/Modal/Modal";
 import Infographics from "@/components/SubLanding/Infographics";
 import SubConditionsTreat from "@/components/SubLanding/SubConditionsTreat/SubConditionsTreat";
+import Treatments from "@/components/Treatments";
+
 
 const SubLanding = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +24,7 @@ const SubLanding = () => {
           <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </div>
+      <Treatments/>
       <WhyMpc setIsOpen={setIsOpen}/>
       <div>
         <SubTestimonials setIsOpen={setIsOpen}/>

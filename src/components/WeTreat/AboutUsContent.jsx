@@ -112,7 +112,7 @@ const AboutUsContent = () => {
       <div className="p-4 md:px-[5rem] mb-[6rem]">
         <div className="flex-col flex md:flex-row  w-full gap-4">
           <div className="flex-1">
-            <div className="text-4xl mb-4 text-brandColor">Our Mission</div>
+            <div className="text-4xl mb-4 text-center text-brandColor">Our Mission</div>
             <div className="text-justify text-base">
               At <span className="font-futura_light">My Pain Clinic</span>, our mission is simple yet profound: to improve
               the lives of everyone in pain. We strive to be a beacon of hope
@@ -125,7 +125,7 @@ const AboutUsContent = () => {
             </div>
           </div>
           <div className="flex-1">
-            <div className="text-4xl mb-4 text-brandColor">Our Vision</div>
+            <div className="text-4xl mb-4 text-center text-brandColor">Our Vision</div>
             <div className="text-justify text-base">
               Our vision is to be the global frontrunner in pain management,
               setting new standards of excellence in the industry. We envision

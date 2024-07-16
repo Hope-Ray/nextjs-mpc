@@ -37,7 +37,7 @@ export function AccordianItem({ children, value, trigger, ...props }) {
         >
           <header
             role="button"
-            className={`flex justify-between items-center p-4 text-xl font-medium z-10 ${
+            className={`flex justify-between items-center p-2 text-xl font-medium z-10 ${
               open ? "text-slate-50" : "text-slate-500"
             }`}
           >

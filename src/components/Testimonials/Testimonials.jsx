@@ -1,6 +1,7 @@
 "use client"
 import TestimonialSlider from "./TestimonialCards/TestimonialsSlider";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 
 const Testimonials = () => {
@@ -85,14 +86,6 @@ const Testimonials = () => {
     },
   ];
 
-  const styles = {
-    borderTop: "1px solid",
-    backgroundImage:
-      "linear-gradient(283.4deg, #5BD6DD 23.54%, #036DED 70.28%)",
-    backgroundClip: "border-box",
-    backgroundOrigin: "border-box",
-    border: "1px, 0px, 0px, 0px",
-  };
 
   const yAxisAnimation = {
     initial: { y: 100, opacity: 0 },
@@ -105,6 +98,18 @@ const Testimonials = () => {
       duration: 1,
     },
   };
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.setAttribute('data-use-service-core', '');
+    script.defer = true;
+    document.body.appendChild(script);
+ 
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div id="testimonials" className="py-[2rem]">
@@ -127,6 +132,7 @@ const Testimonials = () => {
         }}
         className="mf:max-w-[90%] w-[95%] mx-auto"
       >
+        {/* <div className="elfsight-app-048e499b-46ed-4f2e-8801-d5c1774a0065" data-elfsight-app-lazy></div> */}
         <TestimonialSlider team={team} />
       </motion.div>
     </div>

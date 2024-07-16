@@ -43,7 +43,7 @@ const TreatmentsPage = () => {
         image: "/home_new/3 Robotic Spine Aligner.jpg",
         description:
           "Experience precise spinal adjustments to alleviate back pain and improve spinal health. This treatment aims to relax and release the paraspinal muscles, increasing flexibility and mobility in the spine. It is effective for addressing stiffness and posture-related issues such as kyphosis, scoliosis, degenerative spine conditions, and neck-back pain.",
-        btnText: "Robotic Spine Aligner",
+        btnText: "Robotic Spine Aligner (UK)",
       },
       {
         id: 3,
@@ -51,7 +51,7 @@ const TreatmentsPage = () => {
 
         description:
           "Detects and treats painful trigger points and promotes tissue healing with advanced laser technology. This therapy induces pain relief and deep tissue repair while controlling swelling and enhancing blood flow. It is beneficial for conditions including frozen shoulder, neuropathic pain, carpal tunnel syndrome, tennis elbow, golfer's elbow, tenosynovitis, tendonitis, fractures, muscle strains, sprains, and ligament tears.",
-        btnText: "Photobiomodulation Laser Therapy",
+        btnText: "Photobiomodulation Laser Therapy (UK)",
       },
       {
         id: 4,
@@ -59,7 +59,7 @@ const TreatmentsPage = () => {
 
         description:
           "Experience deep thermotherapy to reduce pain and enhance healing in muscles, tendons, and joints. This therapy is effective for treating acute and chronic injuries or inflammation, including muscle spasms, joint pain, synovitis, bursitis, tendinitis, post-surgical scars, and osteoarthritis. It helps with muscle relaxation, tissue regeneration, edema reduction, pain management, and muscle recovery.",
-        btnText: "Deep Tissue Thermo Therapy",
+        btnText: "Deep Tissue Thermo Therapy (Germany)",
       },
       {
         id: 5,
@@ -67,14 +67,14 @@ const TreatmentsPage = () => {
 
         description:
           "Stimulate tissue regeneration and alleviate pain with non-invasive treatment. This therapy is beneficial for promoting collagen synthesis, pain relief, and breaking down calcified deposits. It is useful for conditions such as heel spur, plantar fasciitis, tendinopathy, frozen shoulder, and calcific tendinitis of the shoulder joint.",
-        btnText: "Acoustic Wave Therapy",
+        btnText: "Acoustic Wave Therapy (Germany)",
       },
       {
         id: 6,
         image: "/home_new/Spine Decompression _11zon.jpg",
 
         description:
-          "Decompress spinal discs to relieve pressure and pain associated with herniated or degenerative discs. This treatment is useful for addressing herniated discs, sciatica, slipped discs, and vertigo. It provides targeted decompression and distraction, aiding in the stretching and relaxation of tight fascia   muscles in spasm.",
+          "Decompress spinal discs to relieve pressure and pain associated with herniated or degenerative discs. This treatment is useful for addressing herniated discs, sciatica, slipped discs, and vertigo. It provides targeted decompression and distraction, aiding in the stretching and relaxation of tight fascia and muscles in spasm.",
         btnText: "Spine Decompression Therapy",
       },
     ],
