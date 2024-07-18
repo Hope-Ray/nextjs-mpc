@@ -19,7 +19,7 @@ const Welcome = () => {
 
   return (
     <div className="w-full md:h-screen h-screen welcomebg text-[#fff] bg-[#F7F7FC] relative ">
-      <video autoPlay muted loop src="https://hope-ray.github.io/mpc-video/MPC_INTRO%20(1).mp4">
+      <video autoPlay muted loop src="https://hope-ray.github.io/mpc-video/MPC_INTRO%20(1).mp4" className="pointer-events-none">
         Video Not available - error
       </video>
 
