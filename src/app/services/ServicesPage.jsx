@@ -34,31 +34,31 @@ const ServicesPage = () => {
         id: 1,
         image: "/home_new/14 HBOT_11zon.jpg",
         description:
-          "Enhance healing with oxygen therapy in a pressurised chamber promoting muscle recovery, tissue repair and immune system support.",
-        btnText: "Hyperbaric Oxygen Therapy",
+          "Enhance healing with oxygen therapy in a pressurised chamber, promoting muscle recovery, tissue repair, and immune system support. This therapy increases oxygen supply to tissues, aiding in faster healing and reducing inflammation, beneficial for conditions like non-healing wounds, chronic pain, and sports injuries.",
+        btnText: "Hyperbaric Oxygen Therapy (Oxyhealth, USA)",
       },
       {
         id: 2,
         image: "/home_new/16 Pilates_11zon.jpg",
 
         description:
-          "Pilates is a system of exercise designed to strengthen core muscles and improve flexibility as well as to alleviate back pain and enhance mobility.",
-        btnText: "Pilates & Clinical Pilates",
+          "A system of exercise designed to strengthen core muscles and improve flexibility, Clinical Pilates alleviates back pain and enhances mobility. Tailored to individual needs, it focuses on controlled movements, proper alignment, and breathing techniques, making it effective for postural correction, injury prevention, and rehabilitation.",
+        btnText: "Clinical Pilates (Balanced Body, USA)",
       },
       {
         id: 3,
         image: "/home_new/cryotherapy_1.png",
 
         description:
-          "Provides whole-body exposure to extremely cold temperatures for a brief duration with the help of liquid nitrogen in vapour form. This therapy is often used for muscle recovery, pain relief, inflammation reduction, reduced stress and improved sleeping patterns.",
-        btnText: "Cryotherapy Chamber",
+          "Provides whole-body exposure to extremely cold temperatures for a brief duration using liquid nitrogen vapour. This therapy is used for muscle recovery, pain relief, inflammation reduction, stress reduction, and improved sleep patterns. The cold exposure triggers the release of endorphins, reduces muscle soreness, and accelerates recovery after intense physical activity.",
+        btnText: "Cryotherapy (Vacuactivus, USA)",
       },
       {
         id: 4,
         image: "/home_new/ice_bath_1.png",
 
         description:
-          "Ice baths involve immersing the body in ice-cold water to reduce inflammation and soothe sore muscles promoting faster recovery and pain relief.",
+          "Ice baths involve immersing the body in ice-cold water to reduce inflammation and soothe sore muscles, promoting faster recovery and pain relief. This modality is particularly effective for athletes and individuals with acute injuries, as it helps constrict blood vessels, reducing swelling and numbing nerve endings for pain relief.",
         btnText: "Ice Bath",
       },
       {
@@ -66,7 +66,7 @@ const ServicesPage = () => {
         image: "/home_new/EMS_11zon.jpg",
 
         description:
-          "EMS training uses electrical impulses to stimulate muscle contractions and reduces strain on your joints and ligaments, it allows for targeted muscle stimulation. Strengthen muscles and improve circulation with targeted electrical stimulation, reducing pain and promoting recovery.",
+          "EMS training uses electrical impulses to stimulate muscle contractions, reducing strain on joints and ligaments. It allows for targeted muscle stimulation, strengthening muscles, improving circulation, reducing pain, and promoting recovery. EMS is effective for rehabilitation, enhancing athletic performance, and muscle re-education post-injury.",
         btnText: "EMS Training",
       },
     ],

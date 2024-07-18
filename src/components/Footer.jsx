@@ -9,6 +9,7 @@ import {
   FaYoutube
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const yAxisAnimation = {
   initial: { y: 140, opacity: 0 },
   whileInView: { y: 0, opacity: 1 },
@@ -49,7 +50,9 @@ const Footer = () => {
               }}
               className="mb-2"
             >
+              <Link href="/aboutus" className="hover:text-yellow-400">
               About Us
+              </Link>
             </motion.li>
             <motion.li
               initial={{ x: -100, opacity: 0 }}
@@ -64,7 +67,9 @@ const Footer = () => {
               }}
               className="mb-2"
             >
+              <Link href="/assessments" className="hover:text-yellow-400">
               Assesments
+              </Link>
             </motion.li>
             <motion.li
               initial={{ x: -100, opacity: 0 }}
@@ -79,9 +84,9 @@ const Footer = () => {
               }}
               className="mb-2"
             >
-              <a href="tel:+1514890000" className="hover:text-yellow-400">
+              <Link href="/services" className="hover:text-yellow-400">
                 Services
-              </a>
+              </Link>
             </motion.li>
             <motion.li
               initial={{ x: -100, opacity: 0 }}
@@ -95,12 +100,12 @@ const Footer = () => {
                 duration: 1,
               }}
             >
-              <a
-                href="mailto:calinscompagnies@calins.com"
+              <Link
+                href="/treatments"
                 className="hover:text-yellow-400"
               >
                 Treatments
-              </a>
+              </Link>
             </motion.li>
           </ul>
         </div>

@@ -1,11 +1,87 @@
 "use client"
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaEnvelope, FaUser, FaRegUser, FaMobileAlt, FaPhoneVolume  } from "react-icons/fa";
 import { MdSubject } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import Career from "@/components/Contactus/Career";
+import { useState } from "react";
+import CustomNotification from "@/components/CustomNotification";
 
 const ContactUsPage = () => {
+  const [notifications, setNotifications] = useState([]);
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    number: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    console.log(value);
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const { firstName, lastName, email ,number ,subject, message } = formData;
+    const queryString = new URLSearchParams({
+      email: email,
+      last_name: lastName,
+      first_name: firstName,
+      message: message,
+      phone_number: number,
+      subject: subject,
+    }).toString();
+
+    const apiUrl = `https://mypainclinicglobal.com/send_email/index.php?${queryString}`;
+
+
+    try {
+      const response = await fetch(apiUrl, { method: "GET" });
+      if (response.ok) {
+        // alert("Form submitted successfully!");
+        addNotification(`Form submitted successfully`);
+      } else {
+        // alert("Failed to submit the form.");
+        addNotification("Failed to submit the form.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // alert("An error occurred. Please try again.");
+      addNotification("An error occurred. Please try again.");
+    } finally {
+      setLoading(false); 
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        number: "",
+        subject: "",
+        message: "",
+      });
+    }
+  };
+
+  const addNotification = (text) => {
+    const id = Math.random();
+    setNotifications((prev) => [...prev, { id, text }]);
+  };
+
+  const removeNotif = (id) => {
+    setNotifications((prev) => prev.filter((n) => n.id !== id));
+  };
+
+
   const yAxisAnimation = {
     initial: { y: 100, opacity: 0 },
     whileInView: { y: 0, opacity: 1 },
@@ -83,7 +159,7 @@ const ContactUsPage = () => {
                 </div>
               </div>
             </div>
-            <form className="p-5">
+            <form className="p-5" onSubmit={handleSubmit}>
               <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                 <div className="relative flex-1">
                   <label className="block text-lg font-normal text-gray-700">
@@ -100,6 +176,9 @@ const ContactUsPage = () => {
                       type="text"
                       className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor"
                       placeholder=""
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -116,6 +195,9 @@ const ContactUsPage = () => {
                       type="text"
                       className="block w-full pl-3 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor"
                       placeholder=""
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -136,6 +218,9 @@ const ContactUsPage = () => {
                       type="email"
                       className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor"
                       placeholder=""
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -149,10 +234,13 @@ const ContactUsPage = () => {
                     </span>
                     <input
                       id="phone"
-                      type="text"
+                      type="number"
                       title="Please enter valid phone number for ex: 9996667770"
                       className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor"
                       placeholder=""
+                      name="number"
+                      value={formData.number}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -169,6 +257,9 @@ const ContactUsPage = () => {
                     type="text"
                     className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor"
                     placeholder=""
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -180,14 +271,24 @@ const ContactUsPage = () => {
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor resize-none"
                   rows="4"
                   placeholder="Type your message here"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
               <div className="text-center pt-4">
                 <button
                   type="submit"
+                  disabled={loading}
                   className="gap-[1rem] font-medium rounded-[36px] mf:w-[200px] mf:px-[0rem] px-[0.8rem] py-[0.8rem]  items-center transition border-gradient text-[#fff] hover:scale-105"
                 >
-                  Submit
+                  {loading ? (
+                        <span className="loader">
+                          <span class="">Loading...</span>
+                        </span> // Add your loader here
+                      ) : (
+                        "Submit"
+                      )}
                 </button>
               </div>
             </form>
@@ -252,6 +353,18 @@ const ContactUsPage = () => {
           </div>
         </div>
         {/* <Career/> */}
+      </div>
+      <div className="fixed top-2 right-[10%] md:top-[90px] md:right-6 z-50 pointer-events-none flex flex-col gap-1 min-w-72">
+        <AnimatePresence>
+          {notifications.map((n) => (
+            <CustomNotification 
+              key={n.id}
+              text={n.text}
+              id={n.id}
+              removeNotif={removeNotif}
+            />
+          ))}
+        </AnimatePresence>
       </div>
     </>
   );

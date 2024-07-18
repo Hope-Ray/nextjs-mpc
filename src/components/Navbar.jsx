@@ -170,7 +170,7 @@ const Navbar = () => {
     {
       id: 4,
       text: "Blogs",
-      linkTo: "https://mpcw.salt-tech.com/blog/",
+      linkTo: "https://mypainclinicglobal.com//blog/",
     },
     {
       id: 5,

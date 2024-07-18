@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Welcome = () => {
   const videoOptions = {
@@ -52,12 +53,12 @@ const Welcome = () => {
               MY PAIN CLINIC
             </h2>
             <div className="flex justify-end gap-[2rem] md:w-10/12 text-right">
-              <a
+              <Link
                 href="/contactus"
                 className=" w-[200px] h-[53px] flex justify-center items-center text-brandColor text-[16px]  rounded-[6px] transition-all ease-linear delay-150 bg-white md:my-[1rem] my-[0.3rem] font-bold hover:opacity-90"
               >
                 Consult Now
-              </a>
+              </Link>
             </div>
             <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
               Your Journey

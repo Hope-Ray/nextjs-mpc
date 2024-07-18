@@ -93,6 +93,7 @@ html {
   position: absolute;
   object-fit: cover;
   z-index: 0;
+  pointer-events: none;
 }
 
 /* .welcomebg::before {
@@ -167,12 +168,12 @@ html {
 }
 
 @media screen and (max-width: 500px) {
-  .welcomebg {
+  /* .welcomebg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(/public/home/welocmebgmobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-  }
+  } */
 }
 
 .border_gradient {

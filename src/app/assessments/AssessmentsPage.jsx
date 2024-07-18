@@ -16,70 +16,70 @@ const AssessmentsPage = () => {
         id: 2,
         image: "/home_new/7_Gait.jpg",
         description:
-          "Involves the detailed assessment of an individual's walking or running pattern, identifying subtle abnormalities or imbalances. This analysis is crucial for diagnosing and correcting issues related to musculoskeletal problems, sports performance, and injury prevention.",
-        btnText: "Micro Gait Analysis & Correction",
+          "Involves a detailed assessment of an individual's walking or running pattern, identifying subtle abnormalities or imbalances. This analysis is crucial for diagnosing and correcting issues related to musculoskeletal problems, sports performance, and injury prevention.",
+        btnText: "Micro Gait Analysis & Correction (Italy)",
       },
       {
         id: 3,
         image: "/home_new/Assessment-3.jpeg",
         description:
-          "Improve endurance and manage cardiovascular conditions that may contribute to pain, ensuring a stronger, healthier heart. We test RMR (resting metabolic rate) and VO2 Max. It helps to assess the functioning of your heart and lungs.",
-        btnText: "Cardio Coach",
+          "Improve endurance and manage cardiovascular conditions that may contribute to pain, ensuring a stronger, healthier heart. We test RMR (resting metabolic rate) and VO2 Max to assess heart and lung function. This comprehensive analysis helps create personalized training plans to enhance cardiovascular health and overall fitness.",
+        btnText: "Cardio Coach (USA)",
       },
       {
         id: 4,
         image: "/home_new/9 Witty_11zon.jpg",
         description:
-          "Agility and endurance training programmes aim to enhance an individual's physical performance, including reaction time, change in direction, and cognitive awareness, which is beneficial for those seeking to improve their readiness while playing.",
-        btnText: "Witty System",
+          "Agility and endurance training programs designed to enhance physical performance, including reaction time, change in direction, and cognitive awareness. Ideal for athletes and individuals seeking to improve their readiness and agility, these programs use advanced equipment to track and optimize performance metrics.",
+        btnText: "Witty System (Italy)",
       },
       {
         id: 5,
         image: "/home_new/foot_analysis.png",
         description:
-          "Complete foot scanning and analysis related to posture and other ailments. Address foot- related pain with personalised shoe inserts, easing discomfort from conditions such as flat feet, heel spurs, plantar fasciitis, knee pain, and lower back pain.",
+          "Complete foot scanning and analysis related to posture and other ailments. Address foot-related pain with personalised shoe inserts, easing discomfort from conditions such as flat feet, heel spurs, plantar fasciitis, knee pain, and lower back pain. Custom insoles improve alignment and reduce stress on the body.",
         btnText: "Foot Analysis & Customised Insoles",
       },
       {
         id: 6,
         image: "/home_new/Posture analysis _11zon.jpg",
         description:
-          "Posture analysis & correction aim to identify and address issues related to body alignment and posture that may contribute to musculoskeletal discomfort. Correcting poor posture can alleviate pain and improve overall musculoskeletal health.",
+          "Identifies and addresses issues related to body alignment and posture that may contribute to musculoskeletal discomfort. Correcting poor posture can alleviate pain, enhance mobility, and improve overall musculoskeletal health through targeted exercises and ergonomic advice. ",
         btnText: "Posture Analysis & Correction",
       },
       {
         id: 7,
         image: "/home_new/11_cardio_thorasic_rehabilitation.jpg",
         description:
-          "Restore cardiovascular health and reduce musculoskeletal strain post-surgery with tailored rehabilitation. These programs help individuals regain cardiovascular fitness and pulmonary function, which may have implications for musculoskeletal health and overall well-being.",
+          "Tailored programs to restore cardiovascular health and reduce musculoskeletal strain post-surgery. These programs help individuals regain cardiovascular fitness and pulmonary function, improving overall well-being and musculoskeletal health.",
         btnText: "Cardio Thoracic Rehabilitation",
       },
       {
         id: 8,
         image: "/home_new/12 Diabetes _11zon.jpg",
         description:
-          "Diabetes can affect musculoskeletal health through complications like neuropathy and poor circulation. Proper diabetes management, including blood sugar control and lifestyle adjustments, is crucial for preventing and addressing these issues.",
+          "Proper diabetes management, including blood sugar control and lifestyle adjustments, is crucial for preventing and addressing musculoskeletal issues caused by complications like neuropathy and poor circulation. Tailored programs focus on diet, exercise, and monitoring to maintain optimal health.",
         btnText: "Diabetes Management",
       },
       {
         id: 9,
         image: "/home_new/Hypertension_11zon.jpg",
         description:
-          "Hypertension, or high blood pressure, is a risk factor for various health issues, including musculoskeletal conditions. Effective management through tailored-made programmes helps reduce the risk of associated health problems.",
+          "Hypertension, or high blood pressure, is a risk factor for various health issues, including musculoskeletal conditions. Effective management through tailored programs helps reduce the risk of associated health problems and improves overall health.",
         btnText: "Hypertension Management",
       },
       {
         id: 10,
         image: "/home_new/Untitled design_11zon.jpg",
         description:
-          "Antenatal care ensures the health of pregnant women and their babies through exercises and interventions by specialized doctors. Postnatal care focuses on women's physical well-being after childbirth, including musculoskeletal issues, with rehabilitation and exercises aiding recovery.",
-        btnText: "Antenatal & Postnatal Care",
+          "Ensures the health of pregnant women and their babies through exercises and interventions by specialised doctors. Postnatal care focuses on women's physical well-being after childbirth, including musculoskeletal issues, with rehabilitation and exercises aiding recovery and restoring strength.",
+        btnText: "Antenatal Care & Postnatal Care",
       },
       {
         id: 11,
         image: "/home_new/13 Stress Management _11zon.jpg",
         description:
-          "Stress can exacerbate musculoskeletal problems by causing muscle tension and pain. Effective stress management techniques such as relaxation exercises, mindfulness, and therapy can help individuals better cope with and reduce the impact of stress on their bodies.",
+          "Stress can exacerbate musculoskeletal problems by causing muscle tension and pain. Effective stress management techniques, such as relaxation exercises, mindfulness, and therapy, help individuals cope with and reduce the impact of stress on their bodies, promoting overall well-being. ",
         btnText: "Stress Management",
       },
     ],

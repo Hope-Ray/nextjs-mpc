@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   const yAxisAnimation = {
@@ -87,12 +88,12 @@ const About = () => {
               /> */}
               <button className=" flex justify-center gap-[1rem] rounded-[7px] w-[140px] px-[0.8rem] py-[0.8rem] sm:p-2 items-center transition bg-brandColor text-[#fff] hover:scale-105">
                 {" "}
-                <a
+                <Link
                   href="/contactus"
                   className=" text-[14px] font-bold mf:block "
                 >
                   Learn More
-                </a>
+                </Link>
               </button>
               {/* <Btn
                 text={"How we work"}
