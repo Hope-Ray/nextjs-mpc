@@ -47,6 +47,7 @@ export default function TestimonialSlider({ cardsData }) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplaySpeed: 4000,
         },
       },
     ],

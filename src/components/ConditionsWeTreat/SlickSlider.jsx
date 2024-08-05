@@ -19,7 +19,7 @@ const SlickSlider = ({ team }) => {
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
@@ -56,7 +56,7 @@ const SlickSlider = ({ team }) => {
             className="relative cursor-pointer text-white flex items-center justify-center custom-slick"
             onClick={next}
           >
-            <img className="" src="/images/Locations/icons_svg.svg" alt="" />
+            {/* <img className="" src="/images/Locations/icons_svg.svg" alt="" /> */}
 
             {/* <FaChevronRight /> */}
           </li>
@@ -83,13 +83,13 @@ const SlickSlider = ({ team }) => {
                 <div className=" mf:w-[97%] w-full relative h-[375px] overflow-hidden">
                 
                   <img
-                    className="absolute inset-0 w-full h-full object-cover rounded-[20px]"
+                    className="absolute inset-0 w-full h-full px-2 md:px-0 object-cover rounded-[20px]"
                     src={items.image}
                     alt="img"
                   />
                 
                   <div className="absolute inset-0 flex items-end">
-                    <h2 className="mx-auto mb-4 px-8 py-3 text-lg font-bold text-white  rounded-md bg-opacity-25 backdrop-blur-lg  bg-[#FFF]/30  dark:bg-opacity-30 dark:bg-gray-900 dark:shadow-lg dark:text-white">
+                    <h2 className="mx-auto mb-4 px-8 py-3 text-base  font-bold text-white  rounded-md bg-opacity-25 backdrop-blur-lg  bg-[#FFF]/30  dark:bg-opacity-30 dark:bg-gray-900 dark:shadow-lg dark:text-white">
                       {items.name}
                     </h2>
                   </div>

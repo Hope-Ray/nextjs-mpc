@@ -1,0 +1,180 @@
+import { MetadataRoute } from 'next'
+ 
+export default function sitemap() {
+  return [
+    {
+      url: 'https://mypainclinicglobal.com/',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 1,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/aboutus',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/sublanding',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    // {
+    //   url: 'https://mypainclinicglobal.com/blog',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'yearly',
+    //   priority: 0.4,
+    // },
+    {
+      url: 'https://mypainclinicglobal.com/contactus',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/treatments',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/assessments',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/services',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/post-surgical-rehabilitation',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/joint-dislocation',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/neck-pain',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/frozen-shoulder',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/back-pain',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/elbow-pain',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/knee-pain',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/cervical-spondylosis',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/radiculopathy',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/rotator-cuff-injury',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/slipped-disc',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/tennis-elbow',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/carpal-tunnel-syndrome',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/osteoarthritis',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/sciatica',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/bursitis',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/acl-tear',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/hamstring-injuries',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/tendonitis',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/plantar-fasciitis',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: 'https://mypainclinicglobal.com/specific-treatment/heel-spur',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+  ]
+}

@@ -83,7 +83,7 @@ const SubSlickSlider = ({ team }) => {
                 <div className=" mf:w-[97%] w-full relative h-[20rem] overflow-hidden">
                 
                   <img
-                    className="absolute inset-0 w-full h-full object-cover rounded-[20px]"
+                    className="absolute inset-0 w-full h-full px-2 md:px-0  object-cover rounded-[20px]"
                     src={items.image}
                     alt="img"
                   />

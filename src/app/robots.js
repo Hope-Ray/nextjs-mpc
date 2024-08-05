@@ -7,6 +7,6 @@ export default function robots() {
       allow: '/',
       disallow: '',
     },
-    // sitemap: 'https://acme.com/sitemap.xml',
+    sitemap: 'https://mypainclinicglobal.com/sitemap.xml',
   }
 }

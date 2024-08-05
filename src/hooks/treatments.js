@@ -1,5 +1,8 @@
 const  treatmentsData = {
   'back-pain': {
+    keywords: ['back pain physiotherapy', 'back pain sprain treatment', 'best treatment for back pain', 'back pain therapy','back pain treatment in mumbai'],
+    metaTitle: 'Best Treatment for Back Pain in Mumbai | My Pain Clinic',
+    metaDescription: 'Comprehensive back pain sprain treatment at My Pain Clinic in Bandra Mumbai. Our back pain therapy focus on relieving pain and restoring mobility.',
     title: 'Back Pain',
     description: `
       Back pain is a common issue addressed at MY PAIN CLINIC, a leading pain management clinic in Mumbai. Back pain can range from a mild, dull ache to severe, debilitating pain that affects your daily activities. It refers to discomfort or pain felt anywhere along your spine or in the muscles, nerves, or other soft tissues surrounding the spine. The causes of back pain vary and include muscle or ligament strain, poor posture, injury, degenerative conditions like osteoarthritis and spinal stenosis, herniated discs, and underlying medical conditions. Back pain can be acute, lasting for a few days to a few weeks, or chronic, lasting for more than three months. It can range from a dull, constant ache to a sudden, sharp pain that makes it difficult to move, and it can also radiate to other areas of the body, such as the hips, legs, or shoulders.
@@ -39,6 +42,9 @@ const  treatmentsData = {
     para: "If you're experiencing back pain, visit My Pain Clinic for a comprehensive assessment and personalized treatment plan. Our specialists are well-versed in managing chronic and acute back pain to help you achieve optimal health and mobility."
   },
   'slipped-disc': {
+  keywords: ['slipped disc treatment in mumbai', 'slipped disc pain treatment'],
+  metaTitle: 'Slipped Disc Treatment in Mumbai | My Pain Clinic',
+  metaDescription: 'Effective slipped disc treatment at My Pian Clinic Global. Our specialists are experts in diagnosing and treating herniated discs to help you regain mobility and reduce pain.',
   title: 'Slipped Disc',
   description: `
     A slipped disc, also known as a herniated disc or a ruptured disc, occurs when one of
@@ -73,6 +79,9 @@ const  treatmentsData = {
 },
   'neck-pain': {
     title: 'Neck Pain',
+    keywords: ['neck pain treatment', 'physiotherapy for neck pain','physiotherapy exercise for neck pain','neck pain best treatment','physical therapy for neck pain'],
+    metaTitle: 'Physiotherapy Exercise for Neck Pain Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Neck pain best treatment at My Pain Clinic in Bandra Mumbai. Our physiotherapy exercise for neck pain ensure lasting relief and recovery.',
     description: `
       Neck pain is a common issue that can result from a variety of causes, including muscle strain, poor posture, injury, or underlying medical conditions. The neck, or cervical spine, is composed of vertebrae that extend from the skull to the upper torso. Cervical discs absorb shock between the bones. The bones, ligaments, and muscles of your neck support your head and allow for motion. Any abnormalities, inflammation, or injury can cause neck pain or stiffness. In many cases, neck pain isn't a serious condition and can be relieved within a few days. But in other cases, neck pain can indicate a more severe issue that requires medical attention. Symptoms of neck pain can range from mild discomfort to severe pain that radiates to the shoulders, arms, or head, and can also include headaches, numbness, or weakness.
     `,
@@ -111,6 +120,9 @@ const  treatmentsData = {
   },
   'cervical-spondylosis': {
     title: 'Cervical Spondylosis',
+    keywords: ['arthritis cervical spine treatment','treatment for neck arthritis pain','physical therapy for neck arthritis','cervical arthritis physical therapy'],
+    metaTitle: 'Cervical Arthritis Physical Therapy in Mumbai | My Pain Clinic',
+    metaDescription: 'Arthritis cervical spine treatment options at My Pain Clinic in Bandra Mumbai for cervical spondylosis. Our expert cervical arthritis physical therapy focuses on alleviating symptoms and improving neck function.',
     description: `
       Cervical spondylosis, also known as cervical osteoarthritis or neck arthritis, is a
       condition that involves the degeneration of the vertebrae and discs in the cervical spine
@@ -157,6 +169,9 @@ const  treatmentsData = {
   },
   'osteoarthritis': {
   title: 'Osteoarthritis',
+  keywords: ['knee cartilage pain treatment','knee cartilage pain exercises'],
+  metaTitle: 'Knee Cartilage Pain Treatment in Mumbai | My Pain Clinic',
+  metaDescription: 'Knee cartilage pain treatment options at My Pain Clinic in Bandra Mumbai. Our specialists offer advanced therapies to manage osteoarthritis symptoms and improve joint function.',
   description: `
     Osteoarthritis is a degenerative joint disease frequently treated at MY PAIN CLINIC, a renowned pain management clinic in Mumbai. Osteoarthritis occurs when the protective cartilage that cushions the ends of your bones wears down over time. This can lead to pain, stiffness, and swelling in the affected joints, commonly in the knees, hips, and hands. 
   `,
@@ -201,6 +216,9 @@ const  treatmentsData = {
 },
   'frozen-shoulder': {
     title: 'Frozen Shoulder Pain',
+    keywords: ['shoulder joint pain exercise','frozen shoulder treatment physiotherapy', 'shoulder joint pain physiotherapy','shoulder pain treatment','physiotherapy for frozen shoulder','treatment for frozen shoulder','frozen shoulder therapies'],
+    metaTitle: 'Frozen Shoulder Treatment Physiotherapy in Mumbai | My Pain Clinic',
+    metaDescription: 'Shoulder joint pain physiotherapy at My Pain Clinic in Bandra Mumbai. Our expert frozen shoulder treatment physiotherapy ensure mobility and lasting relief.',
     description: `
       Frozen shoulder, also known as adhesive capsulitis, is a condition characterized by stiffness
       and pain in the shoulder joint. Whether you’re visiting a pain management clinic in Mumbai or seeking a physiotherapist in Bandra West, understanding the causes and treatments of frozen shoulder is crucial.
@@ -256,6 +274,9 @@ const  treatmentsData = {
   },
   'tennis-elbow': {
   title: 'Tennis Elbow',
+  keywords: ['tennis elbow pain treatment','tennis elbow treatment physiotherapy','tennis elbow best treatment'],
+  metaTitle: 'Tennis Elbow Treatment in Mumbai | My Pain Clinic',
+  metaDescription: 'Specialized tennis elbow treatment physiotherapy at My Pain Clinic in Bandra Mumbai. Our expert tennis elbow pain treatments aim to alleviate pain and regain your strength and mobility.',
   description: `
     Tennis elbow, medically known as lateral epicondylitis, is a painful condition that affects
     the tendons on the outside of the elbow. Despite its name, tennis elbow is not limited to
@@ -285,6 +306,9 @@ const  treatmentsData = {
 },
   'plantar-fasciitis': {
     title: 'Plantar Fasciitis',
+    keywords: ['plantar fasciitis treatment in mumbai', 'heel pain physical therapy'],
+    metaTitle: 'Plantar Fasciitis Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Effective plantar fasciitis treatment at My Pain Clinic in Bandra Mumbai. Our heel pain physical therapy aims to reduce discomfort and promote healing for plantar fasciitis.',
     description: `
       Plantar Fasciitis is a condition frequently treated at MY PAIN CLINIC, a premier pain management clinic in Mumbai. Plantar fasciitis occurs when the thick band of tissue that runs across the bottom of your foot and connects your heel bone to your toes becomes inflamed. This can cause stabbing pain in the heel, especially with the first steps in the morning. 
     `,
@@ -320,6 +344,9 @@ const  treatmentsData = {
   },
   'carpal-tunnel-syndrome': {
     title: 'Carpal Tunnel Syndrome',
+    keywords: ['carpal tunnel syndrome treatment physical therapy','carpal tunnel syndrome best treatment'],
+    metaTitle: 'Carpel Tunnel Syndrome Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Effective Carpal Tunnel Syndrome treatment with physical therapy at My Pain Clinic in Bandra Mumbai. Our treatments aim to help restore your hand function and alleviate discomfort.',
     description: `
       Carpal Tunnel Syndrome (CTS) is a condition we commonly treat at MY PAIN CLINIC, a leading pain management clinic in Mumbai. CTS occurs when the median nerve, which runs from your forearm into the palm of your hand, becomes pressed or squeezed at the wrist. This can cause pain, numbness, tingling, or weakness in your hand and wrist, radiating up your arm.
     `,
@@ -355,6 +382,9 @@ const  treatmentsData = {
   },
   'sciatica': {
     title: 'Sciatica',
+    keywords: ['sciatica treatment in mumbai','sciatic nerve treatment for pain','sciatic nerve treatment'],
+    metaTitle: 'Sciatica Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Sciatica nerve treatment for pain at My Pain Clinic in Bandra Mumbai. Our expert team offers comprehensive assessments and tailored treatment plans to address the root cause of your pain and improve your mobility.',
     description: `
       Sciatica is a condition we frequently address at MY PAIN CLINIC, a leading pain management clinic in Mumbai. Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back through your hips and buttocks and down each leg. It typically affects only one side of your body.
     `,
@@ -393,6 +423,9 @@ const  treatmentsData = {
   },
   'hamstring-injuries': {
     title: 'Hamstring Injuries',
+    keywords: ['physiotherapy for hamstring injury'],
+    metaTitle: 'Physiotherapy for Hamstring Injury in Mumbai | My Pain Clinic',
+    metaDescription: 'Physiotherapy for hamstring injury at My Pain Clinic in Bandra Mumbai. Our hamstring injury physical therapies aim to reduce pain and enhance recovery with expert guidance and support.',
     description: `
       Hamstring injuries are commonly addressed at MY PAIN CLINIC, a premier pain management clinic in Mumbai. Hamstring injuries occur when you strain or pull one of the three muscles at the back of your thigh. This can cause sudden, severe pain and even bruising. 
     `,
@@ -431,6 +464,9 @@ const  treatmentsData = {
   },
   'acl-tear': {
   title: 'ACL / MCL Tear',
+  keywords: ['mcl injury treatment','mcl tear treatment','acl tear treatment','knee ligament tear treatment','acl injury treatments'],
+  metaTitle: 'ACL / MCL Tear Treatment in Mumbai | My Pain Clinic',
+  metaDescription: 'Effective ACL and MCL tear treatment at My Pain Clinic in Bandra Mumbai. Our knee ligament tear treatments aim to alleviate pain and restore knee function.',
   description: `
     ACL (Anterior Cruciate Ligament) and MCL (Medial Collateral Ligament) tears are common injuries treated at MY PAIN CLINIC, a leading pain management clinic in Mumbai. These ligament injuries often occur during activities that involve sudden stops, jumps, or changes in direction, such as sports. An ACL tear affects the ligament that connects the thigh bone to the shin bone at the knee, while an MCL tear affects the ligament on the inside of the knee that provides stability
   `,
@@ -498,6 +534,9 @@ const  treatmentsData = {
 },
   'heel-spur': {
     title: 'Heel Spur',
+    keywords: ['heel spur treatment in mumbai','heel pain treatment in mumbai'],
+    metaTitle: 'Heel Spur Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Heel spur treatment at My Pain Clinic in Bandra Mumbai. Our heel pain treatments aim to alleviate heel pain and improve your mobility.',
     description: `
       Heel Spur is a common condition treated at MY PAIN CLINIC, a top pain management clinic in Mumbai. A heel spur is a calcium deposit causing a bony protrusion on the underside of the heel bone. This can cause significant heel pain, especially during walking or standing. 
     `,
@@ -533,6 +572,9 @@ const  treatmentsData = {
   },
   'knee-pain': {
     title: 'Knee Pain',
+    keywords: ['knee pain treatment in mumbai','knee pain physiotherapy','knee pain best treatment'],
+    metaTitle: 'Knee Pain Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Knee pain best treatmen at My Pain Clinic in Bandra Mumbai. Get expert knee pain physiotherapy to restore function and enhance your overall well-being.',
     description: `
       Knee pain is a prevalent issue affecting individuals across all age groups. It can range from mild discomfort to severe pain, with causes spanning from injury and overuse to arthritis and other underlying medical conditions. Whether you’re visiting a pain management clinic in Mumbai or seeking a physiotherapist in Bandra West, understanding the causes and treatments of knee pain is crucial.
     `,
@@ -589,6 +631,9 @@ const  treatmentsData = {
   },
   'elbow-pain': {
     title: 'Elbow Pain',
+    keywords: ['physiotherapy for elbow pain','elbow pain causes and treatment','physical therapy exercises for elbow pain','elbow pain treatment'],
+    metaTitle: 'Physical Therapy Exercises for Elbow Pain in Mumbai | My Pain Clinic',
+    metaDescription: 'Physiotherapy for elbow pain at My Pain Clinic in Bandra Mumbai. Our expert physical therapy exercises for elbow pain alleviate your symptoms and improve your elbow function.',
     description: `
       Elbow pain can significantly affect daily activities and overall quality of life. Whether you’re visiting a pain management clinic in Mumbai or seeking a physiotherapist in Bandra West, understanding the causes and treatments of elbow pain is crucial.
     `,
@@ -642,6 +687,9 @@ const  treatmentsData = {
   },
   'post-surgical-rehabilitation': {
     title: 'Post-Surgical Rehabilitation',
+    keywords: ['post surgical rehabilitation','post surgery rehabilitation','rehabilitation after surgery','post surgery physical therapy','post surgery physiotherapy'],
+    metaTitle: 'Post Surgery Rehabilitation and Physiotherapy in Mumbai | My Pain Cllinic',
+    metaDescription: 'Comprehensive post surgical rehabilitation services at My Pain Clinic in Bandra Mumbai in Bandra, Mumbai. Our team specializes post surgery rehabilitation and effective post surgery physical therapy to ensure a smooth and swift recovery.',
     description: `
       Post-surgical rehabilitation is a crucial phase in the recovery process following any surgical procedure. It involves a structured and personalized program designed to help patients regain strength, flexibility, and function. The goal is to ensure a safe and efficient recovery, minimize complications, and prevent future injuries. Rehabilitation may include physical therapy, exercise, pain management, and education about proper movement and care of the surgical area. Depending on the type of surgery, the rehabilitation program can vary significantly. For instance, post-operative rehab for joint replacement surgery will focus on restoring joint mobility and strength, while rehab for spinal surgery may prioritize spinal stability and reducing pain. The benefits of post-surgical rehabilitation include faster recovery, improved mobility, reduced pain and swelling, and better overall outcomes. Patients in a structured rehab program are more likely to return to their daily activities and maintain a higher quality of life.
     `,
@@ -666,6 +714,9 @@ const  treatmentsData = {
   },
   'tendonitis': {
     title: 'Tendonitis',
+    keywords: ['physiotherapy for tendonitis','tendonitis best treatment'],
+    metaTitle: 'Physitherapy for Tendonitis in Mumbai | My Pain Clinic',
+    metaDescription: 'Best treatment for tendonitis at My Pain Clinic in Bandra Mumbai. Our physiotherapy for tendonitis focus on providing the best care to alleviate pain and promote recovery.',
     description: `
       Tendonitis is a common condition managed at MY PAIN CLINIC, a leading pain management clinic in Mumbai. Tendonitis occurs when a tendon, the thick fibrous cord that attaches muscle to bone, becomes inflamed or irritated. This can cause pain and tenderness just outside a joint.
     `,
@@ -701,6 +752,9 @@ const  treatmentsData = {
   },
   'bursitis': {
     title: 'Bursitis',
+    keywords: ['bursitis treatment exercises','bursitis pain relief'],
+    metaTitle: 'Bursitis Treatment Exercises in Mumbai | My Pain Clinic',
+    metaDescription: 'Bursitis treatment exercises at My Pain Clinic in Bandra Mumbai. Our experts specialize in managing pain and inflammation to reduce discomfort and enhance joint health.',
     description: `
       Bursitis is a common condition treated at MY PAIN CLINIC, a top pain management clinic in Mumbai. Bursitis occurs when the bursae, small fluid-filled sacs that cushion the bones, tendons, and muscles near your joints, become inflamed. This inflammation can cause pain and restrict movement.
     `,
@@ -736,6 +790,9 @@ const  treatmentsData = {
   },
   'radiculopathy': {
     title: 'Radiculopathy',
+    keywords: ['cervical radiculopathy treatment exercises','lumbar radiculopathy treatment','nerve root compression treatment','physical therapy for radiculopathy','treatment for nerve root compression'],
+    metaTitle: 'Treatment for Nerve Root Compression in Mumbai | My Pain Clinic',
+    metaDescription: 'Effective cervical and lumbar radiculopathy treatment exercises at My Pain Clinic in Bandra Mumbai. Our physical therapy for radiculopathy alleviate nerve root compression and enhance mobility.',
     description: `
       Radiculopathy refers to a condition in which one or more nerve roots in the spine become compressed or irritated, leading to pain, weakness, numbness, or tingling along the path of the affected nerve(s). It can occur in any part of the spine but is most commonly seen in the cervical (neck) and lumbar (lower back) regions.
     `,
@@ -774,6 +831,9 @@ const  treatmentsData = {
   },
   'rotator-cuff-injury': {
     title: 'Rotator Cuff Injury',
+    keywords: ['shoulder tendonitis treatment','treatment of rotator cuff syndrome','best treatment for tendonitis in shoulder','therapy for shoulder tendonitis','muscle shoulder pain relief'],
+    metaTitle: 'Treatment of Rotator Cuff Syndrome in Mumbai | My Pain Clinic',
+    metaDescription: 'Best treatment for tendonitis in shoulder at My Pain Clinic in Bandra Mumbai. Our shoulder tendonitis treatments aim to alleviate discomfort and promote recovery from rotator cuff injury.',
     description: `
       A rotator cuff injury involves damage to any of the four muscles and their tendons that stabilize the shoulder joint. Whether you’re visiting a pain management clinic in Mumbai or seeking a physiotherapist in Bandra West, understanding the causes and treatments of rotator cuff injuries is essential. 
     `,
@@ -812,6 +872,9 @@ const  treatmentsData = {
   },
   'joint-dislocation': {
     title: 'Multiple Joint Pain',
+    keywords: ['multiple joint pain treatment','physiotherapy for joint pain','muscle joint pain treatment'],
+    metaTitle: 'Physiotherapy for Multiple Joint Pain Treatment in Mumbai | My Pain Clinic',
+    metaDescription: 'Best solutions for multiple joint pain treatment at My Pain Clinic in Bandra Mumbai. Our expert physiotherapy for joint pain and personalized muscle joint pain treatment provide effective results.',
     description: `
       Multiple joint pain is a common condition that can significantly impact daily life. Whether you’re visiting My Pain Clinic in Mumbai or seeking a physiotherapist in Bandra West understanding the causes and treatments of multiple joint pain is essential.
     `,

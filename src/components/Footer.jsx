@@ -232,11 +232,11 @@ const Footer = () => {
                 <p>
                   Phone :
                   <br />{" "}
-                  <a className="hover:text-yellow-400" href="https://wa.me/+918169400907">+91 81694 00907,</a>
+                  <a className="hover:text-yellow-400" target="_blank" rel="noopener noreferrer" href="https://wa.me/+918169400907">+91 81694 00907,</a>
                   <br />{" "}
-                  <a className="hover:text-yellow-400" href="https://wa.me/+918169400916">+91 81694 00916,</a>
+                  <a className="hover:text-yellow-400" target="_blank" rel="noopener noreferrer" href="https://wa.me/+918169400916">+91 81694 00916,</a>
                   <br />{" "}
-                  <a className="hover:text-yellow-400" href="https://wa.me/+918169400905">+91 81694 00905</a>
+                  <a className="hover:text-yellow-400" target="_blank" rel="noopener noreferrer" href="https://wa.me/+918169400905">+91 81694 00905</a>
                 </p>
               </div>
             </motion.li>
@@ -285,7 +285,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://www.facebook.com/MyPainClinicGBF?_rdr"
+                href="https://www.facebook.com/Mypainclinicglobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor"
@@ -293,17 +293,19 @@ const Footer = () => {
                 <FaFacebookF />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@mypainclinic.global"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor"
               >
                 <FaYoutube />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="p-1 border-solid border-2 border-white rounded-full text-xs hover:bg-white hover:text-brandColor"
               >
                 <FaLinkedinIn />
-              </a>
+              </a> */}
             </motion.li>
           </ul>
         </div>

@@ -45,8 +45,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${futura.variable} ${futura_light.variable} ${sacramento.variable}`}>
      <head>
-     <title>{metadata.title}</title>
-     <meta name="description" content={metadata.description} />
+     {/* <title>{metadata.title}</title> */}
+     {/* <meta name="description" content={metadata.description} /> */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-16469387110"
@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        
 
         <script id="conversion-event" strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -71,11 +72,13 @@ export default function RootLayout({ children }) {
       <body className='relative'>
         <Navbar/>
         {children}
-         <a href="https://wa.me/+918169400907" className="z-50 fixed min-h-[2.5rem] 
+         <a href="https://wa.me/+918169400907" rel="noopener noreferrer" target="_blank" className="z-50 fixed min-h-[2.5rem] 
           rounded-full bottom-5 bg-green-600 right-5 text-white text-4xl md:text-5xl">
            <FaWhatsapp  className="m-2"/>
          </a>
         <Footer/>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3PJF6D8"
+height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
       </body>
     </html>
   );

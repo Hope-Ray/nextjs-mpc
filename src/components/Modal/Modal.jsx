@@ -16,19 +16,49 @@ const Modal = ({ isOpen, setIsOpen }) => {
 
   const [loading, setLoading] = useState(false);
 
+  const [errors, setErrors] = useState({
+    number: "",
+  });
+
+  const validatePhoneNumber = (number) => {
+    const phoneRegex = /^[0-9]{10}$/;
+    return phoneRegex.test(number);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(value);
+
+    let error = "";
+
+    if (name === "number" && value !== "" && !validatePhoneNumber(value)) {
+      error = "Please enter a valid 10-digit phone number";
+    }
+
     setFormData({
       ...formData,
       [name]: value,
+    });
+
+    setErrors({
+      ...errors,
+      [name]: error,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    
     const { firstName, number } = formData;
+
+    if (!validatePhoneNumber(number)) {
+      setErrors({
+        ...errors,
+        number: "Please enter a valid 10-digit phone number",
+      });
+      return;
+    }
+    setLoading(true);
+
     const queryString = new URLSearchParams({
       first_name: firstName,
       phone_number: number,
@@ -150,6 +180,9 @@ const Modal = ({ isOpen, setIsOpen }) => {
                               onChange={handleChange}
                             />
                           </div>
+                          {errors.number && (
+                          <p className="text-red-500 text-left text-sm mt-1">{errors.number}</p>
+                        )}
                         </div>
                       </div>
                       <div className="text-center my-10">

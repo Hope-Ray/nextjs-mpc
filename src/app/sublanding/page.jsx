@@ -1,36 +1,29 @@
-"use client";
-import { useState } from "react";
-import SubWelcome from "@/components/SubLanding/SubWelcome";
-import SubTestimonials from "@/components/SubLanding/SubTestimonials";
-import WhyMpc from "@/components/SubLanding/WhyMpc";
-import React from "react";
-import FAQ from "@/components/SubLanding/FAQ/FAQ";
-import Modal from "@/components/Modal/Modal";
-import Infographics from "@/components/SubLanding/Infographics";
-import SubConditionsTreat from "@/components/SubLanding/SubConditionsTreat/SubConditionsTreat";
-import Treatments from "@/components/Treatments";
+import SubLandingPage from "./SubLandingPage";
 
+export const metadata = {
+  title: 'Sublanding',
+  description: 'Sub landing..',
+  alternates: {
+    canonical: 'https://mypainclinicglobal.com/sublanding',
+  },
+  openGraph: {
+    title: 'Pain Management Clinic & Physiotherapy in Mumbai, Bandra | My Pain Clinic',
+    description: `South Asia's largest pain management and physiotherapy clinic in Bandra, Mumbai. Get relief from pain with our personalized treatment plans. Book your appointment today`,
+    url: 'https://mypainclinicglobal.com/sublanding',
+    siteName: 'My Pain Clinic',
+    images: [
+      {
+        url: 'https://mypainclinicglobal.com/images/main-slider/banners1.jpg',
+      },
+    ],
+    type: 'website',
+  },
+}
 
 const SubLanding = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div>
-      <SubWelcome />
-      <div className="mb-10 mt-[2rem]">
-        {/* <ConditionsTreat setIsOpen={setIsOpen}/> */}
-        <SubConditionsTreat setIsOpen={setIsOpen}/>
-        <div className="text-right pr-[5rem]">
-          <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-        </div>
-      </div>
-      <Treatments/>
-      <WhyMpc setIsOpen={setIsOpen}/>
-      <div>
-        <SubTestimonials setIsOpen={setIsOpen}/>
-      </div>
-      <FAQ/>
-      <Infographics/>
+      <SubLandingPage/>
     </div>
   );
 };

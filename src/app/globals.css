@@ -353,12 +353,27 @@ html {
   border: 1px solid #555555;
 }
 
-.video-frame {
+.youtube-container {
   position: absolute;
-  /* padding-top: 87px; */
-  top: 0;
-  left: 0;
+  overflow: hidden;
   width: 100%;
+  aspect-ratio: 16 / 9;
+  pointer-events: none;
+  
+}
+
+@media screen and (max-width: 1180px) {
+  .youtube-container {
+    height: 70vh; 
+    padding-top: 0;
+    aspect-ratio: 3 / 5;
+    padding-bottom: 56.25%;
+  }
+}
+
+.youtube-container iframe {
+  width: 300%;
   height: 100%;
-  /* pointer-events: none; */
+  margin-left: -100%;
+  border: 0;
 }

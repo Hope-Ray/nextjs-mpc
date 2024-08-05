@@ -16,19 +16,47 @@ const AppointmentForm = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const [errors, setErrors] = useState({
+    number: "",
+  });
+
+  const validatePhoneNumber = (number) => {
+    const phoneRegex = /^[0-9]{10}$/;
+    return phoneRegex.test(number);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(value);
+    let error = "";
+
+    if (name === "number" && value !== "" && !validatePhoneNumber(value)) {
+      error = "Please enter a valid 10-digit phone number";
+    }
+
     setFormData({
       ...formData,
       [name]: value,
+    });
+
+    setErrors({
+      ...errors,
+      [name]: error,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
     const { firstName, number } = formData;
+
+    if (!validatePhoneNumber(number)) {
+      setErrors({
+        ...errors,
+        number: "Please enter a valid 10-digit phone number",
+      });
+      return;
+    }
+    setLoading(true);
+
     const queryString = new URLSearchParams({
       first_name: firstName,
       phone_number: number,
@@ -91,7 +119,7 @@ const AppointmentForm = () => {
                   type="text"
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-brandColor"
                   placeholder="Your Name"
-                  name='firstName'
+                  name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
                 />
@@ -113,6 +141,9 @@ const AppointmentForm = () => {
                   onChange={handleChange}
                 />
               </div>
+              {errors.number && (
+                <p className="text-red-500 text-sm mt-1">{errors.number}</p>
+              )}
             </div>
             {/* <div className="relative flex-1">
             <div className="flex items-center relative group">
@@ -154,12 +185,12 @@ const AppointmentForm = () => {
               className="gap-[1rem] font-semibold rounded-[36px] w-full md:w-auto px-6 py-2 items-center transition border-gradient text-[#fff] hover:scale-105"
             >
               {loading ? (
-                        <span className="loader">
-                          <span class="">Loading...</span>
-                        </span> // Add your loader here
-                      ) : (
-                        "Submit"
-                      )}
+                <span className="loader">
+                  <span class="">Loading...</span>
+                </span> // Add your loader here
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
         </form>
@@ -167,7 +198,7 @@ const AppointmentForm = () => {
       <div className="fixed top-2 right-[90%] md:top-[90px] md:right-6 z-50 pointer-events-none flex flex-col gap-1 min-w-72">
         <AnimatePresence>
           {notifications.map((n) => (
-            <CustomNotification 
+            <CustomNotification
               key={n.id}
               text={n.text}
               id={n.id}

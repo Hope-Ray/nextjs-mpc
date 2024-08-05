@@ -18,19 +18,40 @@ const Welcome = () => {
   };
 
   return (
-    <div className="w-full md:h-screen h-screen welcomebg text-[#fff] bg-[#F7F7FC] relative ">
-      <video autoPlay playsInline muted loop src="https://hope-ray.github.io/mpc-video/MPC_INTRO%20(1).mp4" className="pointer-events-none">
+    <div className="w-full min-h-[25rem] md:h-screen welcomebg text-[#fff] bg-[#F7F7FC] relative ">
+      <video
+        autoPlay
+        muted
+        disablePictureInPicture
+        playsInline
+        loop
+        src="https://hope-ray.github.io/mpc-video/MPC_INTRO%20(1).mp4"
+        className="pointer-events-none hidden md:block"
+      >
+        Video Not available - error
+      </video>
+      <video
+        autoPlay
+        muted
+        disablePictureInPicture
+        playsInline
+        loop
+        src="https://hope-ray.github.io/mpc-video/MPC_Mob.mp4"
+        className="block md:hidden pointer-events-none mt-[87px] md:mt-0 pb-[25%] md:pb-0"
+      >
         Video Not available - error
       </video>
 
-      {/* <div id="video-bg" className="absolute inset-0 z-0 video-player">
-        <YouTube
-          videoId="https://www.youtube.com/embed/CCtJzygIwWw?controls=0&autoplay=1&mute=1&loop=1&playlist=CCtJzygIwWw&showinfo=0&modestbranding=0"
-          opts={videoOptions}
-          className="w-full h-full object-cover"
-          iframeClassName="video-frame"
-        />
-        <iframe className="video-frame" src="https://www.youtube.com/embed/CCtJzygIwWw?si=VLFn_B62XGX0E3sE&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      {/* <div className="youtube-container hidden md:block">
+        <iframe
+          loading="lazy"
+          src="https://www.youtube.com/embed/CCtJzygIwWw?autoplay=1&mute=1&color=white&&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&loop=1&playlist=CCtJzygIwWw&vq=hd720"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div> */}
       <div className="hidden md:flex justify-end items-end  gap-[3rem] md:h-full h-full py-[2rem] md:w-[100%] w-[90%] md:mx-0 mx-auto">
         <motion.div
@@ -60,14 +81,14 @@ const Welcome = () => {
                 Consult Now
               </Link>
             </div>
-            <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
-              Your Journey
+            <h2 className="text-2xl font-medium md:w-10/12 text-right mb-0 md:mb-3 2xl:mb-4">
+              Multispeciality
             </h2>
-            <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
-              to a Pain-Free Life
+            <h2 className="text-2xl font-medium md:w-10/12 text-right mb-0 md:mb-3 2xl:mb-4">
+              Physiotherapy Clinic
             </h2>
-            <h2 className="text-2xl font-medium  md:w-10/12 text-right mb-0 md:mb-4">
-              Begins Here
+            <h2 className="text-2xl font-medium md:w-10/12 text-right mb-0 md:mb-3 2xl:mb-4">
+              for Pain-Free Living
             </h2>
             <p className=" mf:text-[20px] text-[14px] md:my-2 my-1 md:w-10/12 text-right">
               Clinical excellence, pain Management and sports medicine

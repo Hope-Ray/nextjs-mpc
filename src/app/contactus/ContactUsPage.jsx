@@ -6,9 +6,13 @@ import { IoLocationSharp } from "react-icons/io5";
 import Career from "@/components/Contactus/Career";
 import { useState } from "react";
 import CustomNotification from "@/components/CustomNotification";
+import { useRouter } from 'next/navigation';
 
 const ContactUsPage = () => {
+  const router = useRouter()
+ 
   const [notifications, setNotifications] = useState([]);
+
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -51,6 +55,7 @@ const ContactUsPage = () => {
       if (response.ok) {
         // alert("Form submitted successfully!");
         addNotification(`Form submitted successfully`);
+        router.push('/thankyou')
       } else {
         // alert("Failed to submit the form.");
         addNotification("Failed to submit the form.");
@@ -128,10 +133,10 @@ const ContactUsPage = () => {
             {...leftAxisAnimation}
             className="contact-content bg-white rounded-lg p-4 shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1"
           >
-            <h3 className="md:text-2xl font-medium text-brandColor">
+            <h3 className="md:text-2xl font-medium text-brandColor text-center">
               YOUR JOURNEY TO PAIN-FREE, VIBRANT LIFE BEGINS HERE
             </h3>
-            <p className="w-5/6 text-gray-500">
+            <p className="text-gray-500 text-center">
               We’re happy to answer any questions you may have and help your
               determine which of our services best fit your needs.
             </p>
@@ -162,7 +167,7 @@ const ContactUsPage = () => {
             <form className="p-5" onSubmit={handleSubmit}>
               <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                 <div className="relative flex-1">
-                  <label className="block text-lg font-normal text-gray-700">
+                  <label className="block text-lg font-normal text-gray-700 text-center md:text-left">
                     First Name <span className="text-red-500">*</span>
                   </label>
                   <div className="mt-1 flex items-center relative group">
@@ -183,7 +188,7 @@ const ContactUsPage = () => {
                   </div>
                 </div>
                 <div className="relative flex-1">
-                  <label className="block text-lg font-normal text-gray-700">
+                  <label className="block text-lg font-normal text-gray-700 text-center md:text-left">
                     Last Name
                   </label>
                   <div className="mt-1 flex items-center relative group">
@@ -204,7 +209,7 @@ const ContactUsPage = () => {
               </div>
               <div className="flex flex-col md:flex-row pt-2 gap-2 md:gap-4">
                 <div className="relative flex-1">
-                  <label className="block text-lg font-normal text-gray-700">
+                  <label className="block text-lg font-normal text-gray-700 text-center md:text-left">
                     Email <span className="text-red-500">*</span>
                   </label>
                   <div className="mt-1 flex items-center relative group">
@@ -225,7 +230,7 @@ const ContactUsPage = () => {
                   </div>
                 </div>
                 <div className="relative flex-1">
-                  <label className="block text-lg font-normal text-gray-700">
+                  <label className="block text-lg font-normal text-gray-700 text-center md:text-left">
                     Phone Number
                   </label>
                   <div className="mt-1 flex items-center relative group">
@@ -246,7 +251,7 @@ const ContactUsPage = () => {
                 </div>
               </div>
               <div className="relative pt-2">
-                <label className="block text-lg font-normal text-gray-700">
+                <label className="block text-lg font-normal text-gray-700 text-center md:text-left">
                   Subject
                 </label>
                 <div className="mt-1 flex items-center relative group">
@@ -264,7 +269,7 @@ const ContactUsPage = () => {
                 </div>
               </div>
               <div className="pt-2">
-                <label className="block text-lg font-normal text-gray-700">
+                <label className="block text-lg font-normal text-gray-700 text-center md:text-left">
                   Message
                 </label>
                 <textarea
@@ -287,7 +292,7 @@ const ContactUsPage = () => {
                           <span class="">Loading...</span>
                         </span> // Add your loader here
                       ) : (
-                        "Submit"
+                        <span className="font-bold">Submit</span>
                       )}
                 </button>
               </div>
@@ -304,7 +309,7 @@ const ContactUsPage = () => {
               <IoLocationSharp className="text-brandColor text-[30px]"/>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-brandColor font-futura">
+              <h3 className="text-lg font-medium text-brandColor text-center font-futura">
                 MY PAIN CLINIC
               </h3>
               <p className="text-sm font-medium">
@@ -317,13 +322,13 @@ const ContactUsPage = () => {
           <div>
             <motion.div
               {...yAxisAnimation}
-              className="shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1 bg-white rounded-md h-28 flex gap-2 p-2 content-center"
+              className="shadow-[5px_5px_4px_rgba(0,0,0,0.2)] border border-1 bg-white rounded-md min-h-28 flex gap-2 p-2 content-center"
             >
               <div className="flex justify-center items-center">
                 <FaPhoneVolume className="text-brandColor text-[30px]"/>
               </div>
               <div className="">
-                <h3 className="text-lg font-medium text-brandColor content-center">
+                <h3 className="text-lg font-medium text-brandColor text-center">
                   Reach Out To Us{" "}
                 </h3>
                 <h3 className="text-sm font-medium">
@@ -344,7 +349,7 @@ const ContactUsPage = () => {
                 <FaEnvelope className="text-brandColor text-[30px]"/>
               </div>
               <div>
-                <h3 className="text-lg font-medium text-brandColor">Career</h3>
+                <h3 className="text-lg font-medium text-brandColor text-center">Career</h3>
                 <p className="text-base font-medium">
                   career@mypainclinicglobal.com
                 </p>

@@ -33,7 +33,7 @@ const TreatmentsPage = () => {
     cards: [
       {
         id: 1,
-        image: "/home_new/advance physio_11zon.jpg",
+        image: "/home_new/advancePhysio.jpeg",
         description:
           "Experience a revolution in musculoskeletal care with our personalised treatment plans, tailored for pain relief and functional restoration. Our cutting-edge physiotherapy techniques, encompassing cupping, taping, dry needling, GK3, IASTM, and MFR, provide a comprehensive and holistic approach to healing. Each treatment is tailored to your specific needs, ensuring targeted relief and enhanced rehabilitation to optimise recovery and improve your overall quality of life.",
         btnText: "Advanced Physiotherapy",
